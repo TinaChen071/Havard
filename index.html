@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucare</title>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+
+  <!-- Document Wrapper -->
+  <section class="min-h-screen items-center" id="bg">
+
+    <!-- 登入區塊 -->
+    <div class="section grid md:grid-cols-2 items-center md:min-h-screen gap-8">
+
+      <!-- 左 -->
+      <div class="order-2 md:order-1">
+        <div class="flex flex-col gap-8">
+
+          <!-- 圖片 -->
+          <div class="flex flex-row md:flex-col gap-4  md:gap-6 justify-center">
+            <img class="w-1/3 md:w-3/5 md:mx-auto object-contain" src="img/login cover.png" alt="">
+            <img class="w-1/4 md:w-2/5 md:mx-auto object-contain" src="img/logo.png" alt="">
+          </div>
+  
+          <!-- 文字 -->
+          <div class="block text-center text-gray-500 text-sm">
+            <p class="font-semibold pb-2">諾亞克科技股份有限公司</p>
+            <p class="pb-2">106 台北市大安區仁愛路四段 1 號 2 樓</p>
+            <div class="flex gap-2 justify-center">
+              <p class="whitespace-nowrap">
+                <i class="fa-solid fa-phone"></i>
+                (02)2378-0968
+              </p>
+              <p class="whitespace-nowrap">
+                <i class="fa-solid fa-fax"></i>
+                (02)2378-0967
+              </p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+      <!-- 右 -->
+      <div class="rounded-3xl overflow-hidden order-1 md:order-2">
+
+        <!-- 標題區塊 -->
+        <div class="flex flex-col gap-4 text-center bg-white py-8 border-b-2 border-gray-100">
+          <p class="text-custom__primary text-3xl font-bold">uCare 長照資訊系統</p>
+          <p class="text-cyan-900/60 text-xl font-semibold">安全 · 安心 · 安定</p>
+        </div>
+
+        <!-- 表格區塊 -->
+        <div class="flex flex-col gap-10 bg-white/60 px-10 lg:px-20 py-10">
+
+          <!-- 輸入欄位 -->
+          <div class="flex flex-col gap-4">
+
+            <!-- 帳號 -->
+            <div>
+              <label for="first-name" class="input__title flex-1">帳號</label>
+              <div class="mt-1">
+                
+                <input type="password" autocomplete="current-password" class="input__input" placeholder="輸入使用者名稱">
+              </div>
+            </div>
+
+            <!-- 密碼 -->
+            <div>
+              <label for="hs-validation-name-error" class="input__title flex-1">密碼</label>
+
+              <div class="relative">
+                <input type="password" autocomplete="current-password" class="input__input" placeholder="輸入密碼">
+                <div class="absolute inset-y-0 right-0 flex items-center pr-3 text-custom__primary">
+                  <i onclick="password(this)" class="fa-solid fa-eye-slash"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- 驗證碼區塊 -->
+            <div class="flex flex-row gap-3 items-center">
+              <!-- 輸入 -->
+              <div class="w-3/5">
+                <div class="flex">
+                  <label for="first-name" class="input__title flex-1">驗證碼</label>
+                </div>
+                <div class="mt-1">
+                  <input type="password" autocomplete="current-password" class="input__input" placeholder="輸入驗證碼">
+                </div>
+              </div>
+
+              <!-- 圖片 -->
+              <div class="w-2/5">
+                <img src="img/verify code.png" alt="">
+              </div>
+                
+              <!-- 重整按鈕 -->
+              <button onclick="refresh(this)" class="text-custom__primary" id="refresh">
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- 按鈕 -->
+          <a href="dist/main.html" class="more__BTN">
+            <button type="button"  data-hs-overlay="#hs-vertically-centered-modal">
+              登入
+            </button>
+          </a>
+
+        </div>
+        
+      </div>
+
+    </div>
+
+  </section>
+     
+      
+
+  <!-- jQuery main -->
+  <script src="js/all.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+  
+  <!-- Preline -->
+  <script src="node_modules/preline/dist/preline.js"></script>
+
+  <!-- Swiper -->
+  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/a8b708c9db.js" crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+      
+</body>
+</html>
