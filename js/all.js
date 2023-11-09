@@ -102,7 +102,7 @@ $(window).scroll(myFunction);
 function myFunction() {
   var scrollpercent = (($(window).scrollTop() / ($(document).height() - $(window).height())));
   
-  var draw = length * scrollpercent*3.5;
+  var draw = length * scrollpercent*2;
 
   flower.style.strokeDashoffset = length - draw;
 }
