@@ -7,10 +7,9 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="output.css">
-    <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+    
 </head>
-<body>
+<body id="bg">
     <!-- Navbar -->
   <header class="sticky top-0 inset-x-0 flex flex-wrap lg:justify-between lg:flex-nowrap w-full bg-custom-darkBrown backdrop-blur-md text-sm py-3 z-100 transition-padding duration-300" id="nav">
     <nav class="relative max-w-7xl w-full mx-auto px-4 md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
@@ -103,62 +102,238 @@
     </nav>
   </header>
 
-
-
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+  <!-- Draw Flower -->
+  <div class="absolute left-0 top-128 z-50 opacity-20 hidden lg:block">
+    <svg id="mySVG" class="w-96"  viewBox="0 0 553 473" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="flower" fill="none"  stroke-width="4" opacity="1" d="M-4.64874 2.29403C-4.34638 9.1528 20.0376 18.8464 49.0942 45.7557C60.1811 56.0232 81.039 96.4454 92.0886 106.509C119.352 131.338 147.624 150.201 150.038 155.578C165.98 191.103 238.766 197.191 267.316 220.556C279.536 230.556 295.568 244.244 309.348 251.905C324.529 260.345 342.187 267.426 354.671 279.91C362.684 287.924 374.847 292.572 384.129 299.001C396.354 307.469 414.692 315.267 418.986 330.266C420.267 334.743 425.183 338.938 428.917 341.013C435.126 344.465 440.77 350.924 447.303 353.44C454.677 356.28 463.359 350.158 470.089 347.573C480.223 343.68 487.406 335.711 499.415 330.016C521.267 319.653 531.202 320.677 542.031 313.228C547.422 309.519 546.799 304.307 547.139 297.773C547.482 291.183 552.589 284.828 549.416 281.771C538.179 270.95 515.821 298.146 493.106 305.43C474.875 311.276 469.059 314.157 445.484 317.09C441.079 317.638 435.805 318.596 432.581 321.82C428.098 326.302 436.913 334.126 441.083 334.649C444.852 335.123 448.4 337.032 452.235 337.801C456.426 338.642 462.915 339.197 466.369 341.73C475.344 348.315 484.678 355.446 494.765 360.494C503.281 364.756 516.02 382.164 525.237 368.844C529.213 363.099 527.177 353.722 528.614 347.241C529.448 343.48 530.869 342.291 529.425 338.256C527.849 333.849 521.116 327.928 517.125 325.629C506.714 319.631 490.303 320.81 478.813 321.848C466.428 322.966 453.375 323.008 441.364 326.277C437.869 327.228 435.179 329.124 431.523 329.579C427.763 330.047 429.482 337.105 429.61 339.503C430.138 349.417 440.732 358.693 444.167 367.61C445.782 371.804 448.084 378.304 450.628 381.745C454.958 387.601 454.013 398.406 456.36 405.437C457.288 408.215 455.761 417.87 457.839 418.67C466.053 421.834 475.624 423.969 484.308 425.711C490.866 427.026 498.691 425.091 505.054 424.09C509.977 423.316 516.014 415.789 519.914 413.235C522.174 411.755 525.034 409.645 526.363 407.195C530.38 399.79 535.009 393.782 529.454 385.959C524.844 379.465 519.373 374.242 513.108 369.367C508.896 366.091 502.765 364.923 497.992 362.66C490.478 359.097 481.527 358.893 473.404 358.888C471.25 358.887 469.149 358.319 467.195 357.496C463.467 355.924 458.437 356.637 454.452 356.181C445.57 355.164 437.409 350.893 431.165 344.649C424.256 337.74 416.281 332.413 408.569 326.461C404.192 323.084 397.716 344.133 397.432 347.978C396.299 363.337 401.861 379.885 403.424 395.113C404.355 404.192 406.37 413.114 407.279 422.152C407.994 429.263 407.716 437.983 409.662 444.779C411.196 450.141 408.031 456.221 409.345 461.279C410.415 465.398 410.147 467.405 414.822 469.206C421.189 471.658 428.642 469.311 434.67 467.176C445.346 463.393 454.117 458.046 463.004 450.938C463.682 450.396 475.332 441.231 475.332 440.572C475.33 437.871 473.454 434.346 472.304 431.993C470.574 428.452 470.058 424.327 467.969 421.045C465.733 417.534 464.474 413.794 461.836 410.259C449.741 394.053 435.918 381.069 421.377 367.188C415.263 361.352 407.371 357.873 403.151 350.105C399.02 342.501 394.509 347.644 392.044 353.529C388.046 363.076 384.384 373.427 379.646 382.437C374.259 392.682 374.726 403.948 372.886 415.025C371.475 423.522 373.23 432.895 373.474 441.245C373.567 444.431 372.772 448.121 373.112 451.169C373.742 456.805 382.551 457.506 386.962 458.325C396.378 460.074 408.133 454.094 415.791 449.276C417.605 448.134 422.877 445.423 423.751 443.849C425.216 441.211 422.854 436.409 423.296 433.434C424.22 427.205 419.153 418.149 417.402 412.029C414.17 400.743 415.459 388.932 413.705 377.475C412.359 368.688 411.363 358.72 408.542 350.272C406.109 342.985 407.96 333.6 407.956 325.848" stroke="#806A58" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+  </div>
+  <!-- Carousel Section -->
+  <section class="relative md:max-w-7xl w-full mx-auto  lg:py-24 lg:px-36 overflow-hidden">
+    <!-- Blob -->
+    <div class="hidden lg:block z-50 absolute -top-32 -right-8 ">
+      <div class="blob"></div>
     </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
-
     
+    <!-- Carousel -->
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative aspect-video overflow-hidden">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://images.unsplash.com/photo-1682687981974-c5ef2111640c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
 
-    <script src="node_modules/preline/dist/preline.js"></script>
-    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+  </section>
+
+  <!-- News Section -->
+  <section class="relative grid md:grid-cols-2">
+    <!-- Left -->
+    <div class="bg-custom-beige/40 flex flex-col px-4 py-8 sm:p-16 xl:px-36 xl:py-28 gap-10 lg:gap-24 after:content-['News'] afterText">
+      <!-- Intro -->
+      <div>
+        <h1 class="text-2xl lg:text-6xl text-custom-darkBrown py-4 lg:py-8">
+          哈佛健康管理
+        </h1>
+        <p class="text-sm md:text-base text-stone-500 leading-loose">
+          哈佛健診成立至今已近30年，一直是民眾心中優質健檢的首選品牌。而哈佛健檢於2020年通過JCI國際醫療評鑑，成為台灣首家通過JCI美國國際醫療品質認證的健診中心，證明哈佛健診的服務與品質值得信賴，這是重大的里程碑，也將臺灣健康檢查理念帶入新時代。
+        </p>
+      </div>
+
+      <div class="z-10 flex justify-between md:flex-col">
+        <!-- News Title -->
+        <div class="text-custom-brown border-l-4 md:border-l-8 border-custom-darkBrown/20 pl-5 md:mb-8">
+          <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">
+            最新消息
+          </h2>
+          <p class="text-sm lg:text-xl">News</p>
+        </div>
+
+        <!-- Read More Button -->
+        <a href="https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/time" class="text-custom-brown flex items-center group readMore">
+          <p class="pr-3 group-hover:text-custom-darkBrown transition-all ease-in-out duration-300">
+            查看更多
+          </p>
+          <button class="rounded-full relative align-middle text-center border border-custom-brown/20 transition-all ease-in-out duration-300  h-[45px] w-[45px] group-hover:text-custom-darkBrown"
+          style="transition-timing-function: cubic-bezier(.4,.08,0,.97);"
+          >
+            <svg class="absolute left-0 top-0 svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <circle class="circle" cx="50" cy="50" r="48" stroke="#3A3532" stroke-width="3" fill="none"  />
+             </svg>
+             <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Right -->
+    <div class="grid">
+      <!-- Card 1 -->
+      <a href="" class="grid grid-cols-2 h-fit group ">
+        <!-- Img -->
+        <div class="overflow-hidden">
+          <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="p-4 md:p-8 bg-white group-hover:bg-custom-beige transition-all">
+          <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+            2023/10/20
+          </time>
+
+          <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+            【睡眠門診】-健檢方案限時預約中-哈佛健診
+          </h3>
+
+          <p class="text-sm md:text:base text-stone-500 line-clamp-2 sm:mb-6">
+            台灣睡眠醫學學會針對40到65歲民眾的最新調查發現，全台慢性失眠症盛行率高達10.7％，也就是全台有超過230萬人罹患慢性失眠症，平均每9人就有1人受慢性失眠之苦。
+          </p>
+
+          <!-- Button -->
+          <button type="button" class="hidden py-1.5 px-3 sm:inline-flex items-center gap-x-1 text-sm border border-custom-brown text-custom-brown transition-all duration-300 bg-gradient-to-r from-transparent via-transparent to-custom-brown  bg-[length:800px]  group-hover:bg-[100px] group-hover:text-white">
+          閱讀更多
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        </div>
+      </a>
+      <!-- Card 2 -->
+      
+      <!-- Card 3 -->
+    </div>
+  </section>
+
+  
+
+  
+
+  <!-- Footer Section -->
+  <footer class=" bg-blue-900 text-white ">
+    <!-- Content -->
+    <div class="section md:py-16">
+      <div class="grid md:grid-cols-2 items-center  gap-6">
+        <!-- Logo + link -->
+        <div class="flex flex-col gap-6 md:gap-12 horizon__center md:items-start justify-start">
+          <!-- Logo -->
+          <a class="w-2/3 md:w-5/6" href="javascript:void(0);" >
+            <img src="img/Logo-L.png" class="w-full h-full object-contain brightness-[1000]" alt="">
+          </a>
+          <!-- link -->
+          <div class="hidden md:grid grid-cols-4 justify-around gap-4 md:gap-8 ">
+            <a href="dist/about.html" class="text-sm md:text-base text-white hover:text-blue-300 transition-all whitespace-nowrap">關於我們
+            </a>
+            <a href="dist/news.html" class="text-sm md:text-base text-white hover:text-blue-300 transition-all whitespace-nowrap">最新消息
+            </a>
+            <a href="dist/service.html" class="text-sm md:text-base text-white hover:text-blue-300 transition-all whitespace-nowrap">服務項目
+            </a>
+            <a href="dist/taiwan.html" class="text-sm md:text-base text-white hover:text-blue-300 transition-all whitespace-nowrap">聯絡我們
+            </a>
+          </div>
+        </div>
+    
+        <!-- Location + Phone -->
+        <div class="flex flex-col gap-3 md:gap-6 items-start justify-self-center md:justify-self-end">
+          <!-- Location -->
+          <div class="flex gap-3 md:gap-6">
+            <i class="fa-solid fa-location-dot text-xl md:text-4xl text-blue-300"></i>
+            <div class="flex flex-col gap-2">
+              <p class="hidden md:block text-lg font-semibold text-blue-300">Our Location</p>
+              <p class="text-white">
+                台北市中山區南京東路二段137號11樓
+              </p>
+            </div>
+          </div>
+          <!-- Phone -->
+          <div class="flex gap-3 md:gap-6">
+            <i class="fa-solid fa-phone text-xl md:text-4xl text-blue-300"></i>
+            <div class="flex flex-col gap-2">
+              <p class="hidden md:block text-lg font-semibold text-blue-300">Our Phone</p>
+              <a class="text-white no-underline" href="tel:+886-2-2500-7189">886-2-2500-7189</a>
+              
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+  
+    <div class="horizon__center py-4 md:py-8 px-4 border-t border-white text-center text-xs md:text-sm">
+      <p>
+        © 2023 第一郵捷國際物流股份有限公司&nbsp;  
+      </p>
+      <p class="hidden sm:block">
+        - All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+ <!-- To Top BTN -->
+  <button class="fixed right-4 bottom-4 xs:right-8 xs:bottom-8 bg-blue-300 text-white  hover:bg-blue-400  transition-all duration-600 border-2 border-white rounded-full opacity-0 hidden z-100 shadow-md" id="backToTopBtn">
+    <div class="px-4 py-3 text-sm xs:text-base">
+      <i class="fa-solid fa-arrow-up w-4 h-4"></i>
+    </div>
+  </button>
+
+   
+  <!-- jQuery main -->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="js/all.js"></script>
+
+  <!-- Preline -->
+  <script src="node_modules/preline/dist/preline.js"></script>
+  <!-- Flowbite -->
+  <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/a8b708c9db.js" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
