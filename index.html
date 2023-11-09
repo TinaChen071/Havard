@@ -2,157 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New</title>
+    <title>Document</title>
 
-    <!-- Main css -->
     <link rel="stylesheet" href="output.css">
-
-    <!-- Swiper -->
-    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
-
-    <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
-    
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    
 </head>
 <body>
-
-  <!-- Document Wrapper -->
-  <section class="min-h-screen items-center" id="bg">
-
-    <!-- 登入區塊 -->
-    <div class="section grid md:grid-cols-2 items-center md:min-h-screen gap-8">
-
-      <!-- 左 -->
-      <div class="order-2 md:order-1">
-        <div class="flex flex-col gap-8">
-
-          <!-- 圖片 -->
-          <div class="flex flex-row md:flex-col gap-4  md:gap-6 justify-center">
-            <img class="w-1/3 md:w-3/5 md:mx-auto object-contain" src="img/login cover.png" alt="">
-            <img class="w-1/4 md:w-2/5 md:mx-auto object-contain" src="img/logo.png" alt="">
-          </div>
-  
-          <!-- 文字 -->
-          <div class="block text-center text-gray-500 text-sm">
-            <p class="font-semibold pb-2">諾亞克科技股份有限公司</p>
-            <p class="pb-2">106 台北市大安區仁愛路四段 1 號 2 樓</p>
-            <div class="flex gap-2 justify-center">
-              <p class="whitespace-nowrap">
-                <i class="fa-solid fa-phone"></i>
-                (02)2378-0968
-              </p>
-              <p class="whitespace-nowrap">
-                <i class="fa-solid fa-fax"></i>
-                (02)2378-0967
-              </p>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-
-      <!-- 右 -->
-      <div class="rounded-3xl overflow-hidden order-1 md:order-2">
-
-        <!-- 標題區塊 -->
-        <div class="flex flex-col gap-4 text-center bg-white py-8 border-b-2 border-gray-100">
-          <p class="text-custom__primary text-3xl font-bold">uCare 長照資訊系統</p>
-          <p class="text-cyan-900/60 text-xl font-semibold">安全 · 安心 · 安定</p>
-        </div>
-
-        <!-- 表格區塊 -->
-        <div class="flex flex-col gap-10 bg-white/60 px-10 lg:px-20 py-10">
-
-          <!-- 輸入欄位 -->
-          <div class="flex flex-col gap-4">
-
-            <!-- 帳號 -->
-            <div>
-              <label for="first-name" class="input__title flex-1">帳號</label>
-              <div class="mt-1">
-                
-                <input type="password" autocomplete="current-password" class="input__input" placeholder="輸入使用者名稱">
+    <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 sm:py-0 dark:bg-gray-800">
+        <nav class="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8" aria-label="Global">
+          <div class="relative sm:flex sm:items-center">
+            <div class="flex items-center justify-between">
+              <a class="flex-none text-xl font-semibold dark:text-white" href="#">Brand</a>
+              <div class="sm:hidden">
+                <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-collapse="#navbar-hover-event" aria-controls="navbar-hover-event" aria-label="Toggle navigation">
+                  <svg class="hs-collapse-open:hidden flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+                  <svg class="hs-collapse-open:block hidden flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
               </div>
             </div>
-
-            <!-- 密碼 -->
-            <div>
-              <label for="hs-validation-name-error" class="input__title flex-1">密碼</label>
-
-              <div class="relative">
-                <input type="password" autocomplete="current-password" class="input__input" placeholder="輸入密碼">
-                <div class="absolute inset-y-0 right-0 flex items-center pr-3 text-custom__primary">
-                  <i onclick="password(this)" class="fa-solid fa-eye-slash"></i>
-                </div>
-              </div>
-            </div>
-
-            <!-- 驗證碼區塊 -->
-            <div class="flex flex-row gap-3 items-center">
-              <!-- 輸入 -->
-              <div class="w-3/5">
-                <div class="flex">
-                  <label for="first-name" class="input__title flex-1">驗證碼</label>
-                </div>
-                <div class="mt-1">
-                  <input type="password" autocomplete="current-password" class="input__input" placeholder="輸入驗證碼">
-                </div>
-              </div>
-
-              <!-- 圖片 -->
-              <div class="w-2/5">
-                <img src="img/verify code.png" alt="">
-              </div>
-                
-              <!-- 重整按鈕 -->
-              <button onclick="refresh(this)" class="text-custom__primary" id="refresh">
-                <i class="fa-solid fa-arrows-rotate"></i>
-              </button>
-            </div>
-
-          </div>
-
-          <!-- 按鈕 -->
-          <a href="dist/main.html" class="more__BTN">
-            <button type="button"  data-hs-overlay="#hs-vertically-centered-modal">
-              登入
-            </button>
-          </a>
-
-        </div>
-        
-      </div>
-
-    </div>
-
-  </section>
-     
       
+            <div id="navbar-hover-event" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block">
+              <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+                <a class="font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" aria-current="page">Active</a>
+      
+                <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
+                  <button type="button" class="sm:py-4 flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                    Mega Menu
+                    <svg class="ms-2 flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                  </button>
+      
+                  <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full start-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg py-2 sm:px-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute">
+                    <div class="sm:grid sm:grid-cols-3">
+                      <div class="flex flex-col">
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                          About
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                          Services
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                          Customer Story
+                        </a>
+                      </div>
+      
+                      <div class="flex flex-col">
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                          Careers
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                          Careers: Overview
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                          Careers: Apply
+                        </a>
+                      </div>
+      
+                      <div class="flex flex-col">
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                          Log In
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                          Sign Up
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Project</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-  <!-- jQuery main -->
-  <script src="js/all.js"></script>
-  <script src="js/jquery-3.6.3.min.js"></script>
-  
-  <!-- Preline -->
-  <script src="node_modules/preline/dist/preline.js"></script>
-
-  <!-- Swiper -->
-  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/a8b708c9db.js" crossorigin="anonymous"></script>
 
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-      
+    <script src="./node_modules/preline/dist/preline.js"></script>
 </body>
 </html>
