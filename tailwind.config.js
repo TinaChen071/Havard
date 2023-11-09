@@ -8,7 +8,7 @@ module.exports = {
     // require('@tailwindcss/forms'),
     // require('@tailwindcss/typography'),
     require('preline/plugin'),
-    // require('flowbite/plugin'),
+    require('flowbite/plugin'),
     // require('@tailwindcss/line-clamp'),
   ],
 }

@@ -1,1 +1,1 @@
-@tailwind base;@tailwind components;@tailwind utilities/*# sourceMappingURL=input.min.css.map */
+@tailwind base;@tailwind components;@tailwind utilities;@layer components{.horizon__center{@apply flex items-center justify-center}}/*# sourceMappingURL=input.min.css.map */
