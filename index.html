@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>哈佛健康管理</title>
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="output.css">
-
-    <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
     
 </head>
-<body id="bg" >
+<body id="bg">
   <!-- Navbar -->
   <header class="sticky top-0 inset-x-0 flex flex-wrap lg:justify-between lg:flex-nowrap w-full bg-custom-darkBrown backdrop-blur-md text-sm py-3 z-100 transition-padding duration-300" id="nav">
     <nav class="relative max-w-7xl w-full mx-auto px-4 md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
@@ -51,17 +48,17 @@
             </button>
 
             <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2  before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
-              <a class="nav__SubBTN" href="dist/about.html">
+              <a class="nav__SubBTN" href="dist/品牌精神.html">
                 品牌精神
               </a>
 
-              <a class="nav__SubBTN" href="dist/affiliated.html">
+              <a class="nav__SubBTN" href="dist/專業團隊.html">
                 專業團隊
               </a>
             </div>
           </div>
           <!-- 最新消息 -->
-          <a class="nav__BTN" href="dist/news.html">最新消息</a>
+          <a class="nav__BTN" href="dist/最新消息.html">最新消息</a>
           <!-- 服務據點 -->
           <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group">
             <button type="button" class="flex items-center w-full nav__BTN group-hover:text-blue-5">
@@ -70,10 +67,10 @@
             </button>
 
             <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2  before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
-              <a class="nav__SubBTN" href="dist/taiwan.html">
+              <a class="nav__SubBTN" href="dist/大安院區.html">
                 大安院區
               </a>
-              <a class="nav__SubBTN" href="dist/world.html">
+              <a class="nav__SubBTN" href="dist/內湖院區.html">
                 內湖院區
               </a>
             </div>
@@ -86,19 +83,19 @@
             </button>
 
             <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2  before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
-              <a class="nav__SubBTN" href="dist/taiwan.html">
+              <a class="nav__SubBTN" href="dist/儀器設備.html">
                 儀器設備
               </a>
-              <a class="nav__SubBTN" href="dist/world.html">
+              <a class="nav__SubBTN" href="dist/健康檢查.html">
                 健康檢查
               </a>
-              <a class="nav__SubBTN" href="dist/contact.html">
+              <a class="nav__SubBTN" href="dist/保健食品.html">
                 保健食品
               </a>
             </div>
           </div>
           <!-- 衛教影音 -->
-          <a class="nav__BTN" href="dist/service.html">衛教影音</a>
+          <a class="nav__BTN" href="dist/衛教影音.html">衛教影音</a>
 
         </div>
       </div>
@@ -178,7 +175,9 @@
   <section class="relative grid lg:grid-cols-2">
     <!-- Left -->
     <div class="bg-custom-beige/40  after:content-['News'] afterText flex items-center justify-center">
-      <div class="flex flex-col px-4 py-8 sm:px-24 xl:px-36  gap-10 lg:gap-24">
+      
+      <!-- Wrapper -->
+      <div class="flex flex-col px-4 py-8 sm:px-24 xl:px-36 gap-10 lg:gap-24">
         <!-- Intro -->
         <div class="hidden sm:block">
           <h1 class="text-4xl lg:text-6xl text-custom-darkBrown py-4 lg:py-8">
@@ -482,24 +481,24 @@
         <!-- Right -->
         <div class="flex justify-between text-white border-y border-white px-1.5 py-4 md:p-10 order-1 md:order-2">
           <!-- 最新消息 -->
-          <a href="" class="text-xl hover:text-custom-beige transition-all">
+          <a href="" class="text-sm md:text-xl hover:text-custom-beige transition-all">
             最新消息
           </a>
           <!-- 衛教影音 -->
-          <a href="" class="text-xl hover:text-custom-beige transition-all">
+          <a href="" class="text-sm md:text-xl hover:text-custom-beige transition-all">
             衛教影音
           </a>
           <!-- 服務據點 -->
           <div>
-            <p class="text-xl mb-2">
+            <p class="text-sm md:text-xl mb-2">
               服務據點
             </p>
-            <ul class="border-l-2 border-white/20 pl-3">
+            <ul class="border-l-2 border-white/20 pl-3 text-xs md:text-base">
               <li class="hover:text-custom-beige transition-all mb-3">
-                <a href="">大安院區</a>
+                <a href="dist/大安院區.html">大安院區</a>
               </li>
               <li class="hover:text-custom-beige transition-all">
-                <a href="">內湖院區</a>
+                <a href="dist/內湖院區.html">內湖院區</a>
               </li>
             </ul>
           </div>

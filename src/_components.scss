@@ -35,5 +35,5 @@
 
 #bg {
     background-image: url(img/bg.png); 
-    @apply bg-repeat bg-top;
+    @apply bg-repeat bg-top bg-contain;
 }
