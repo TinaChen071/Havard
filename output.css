@@ -3219,6 +3219,10 @@ html {
     flex-wrap: nowrap;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
   }
