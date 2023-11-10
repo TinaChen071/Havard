@@ -112,9 +112,9 @@
       </svg>
   </div>
   <!-- Carousel Section -->
-  <section class="relative md:max-w-7xl w-full mx-auto  lg:py-24 lg:px-36 overflow-hidden">
+  <section class=" md:max-w-7xl w-full mx-auto  lg:py-16 lg:px-36 overflow-hidden">
     <!-- Blob -->
-    <div class="hidden lg:block z-50 absolute -top-32 -right-8 ">
+    <div class="hidden lg:block z-50 absolute -top-24 -right-4 ">
       <div class="blob"></div>
     </div>
     
@@ -173,12 +173,12 @@
   </section>
 
   <!-- News Section -->
-  <section class="relative grid md:grid-cols-2">
+  <section class="relative grid lg:grid-cols-2">
     <!-- Left -->
-    <div class="bg-custom-beige/40 flex flex-col px-4 py-8 sm:p-16 xl:px-36 xl:py-28 gap-10 lg:gap-24 after:content-['News'] afterText">
+    <div class="bg-custom-beige/40 flex flex-col px-4 py-8 sm:p-16 lg:px-36 xl:py-28 gap-10 lg:gap-24 after:content-['News'] afterText">
       <!-- Intro -->
-      <div>
-        <h1 class="text-2xl lg:text-6xl text-custom-darkBrown py-4 lg:py-8">
+      <div class="hidden sm:block">
+        <h1 class="text-4xl lg:text-6xl text-custom-darkBrown py-4 lg:py-8">
           哈佛健康管理
         </h1>
         <p class="text-sm md:text-base text-stone-500 leading-loose">
@@ -186,13 +186,15 @@
         </p>
       </div>
 
-      <div class="z-10 flex justify-between md:flex-col">
-        <!-- News Title -->
+      <div class="z-10 flex justify-between lg:flex-col">
+        <!-- Title -->
         <div class="text-custom-brown border-l-4 md:border-l-8 border-custom-darkBrown/20 pl-5 md:mb-8">
           <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">
             最新消息
           </h2>
-          <p class="text-sm lg:text-xl">News</p>
+          <p class="text-sm lg:text-xl">
+            News
+          </p>
         </div>
 
         <!-- Read More Button -->
@@ -245,13 +247,96 @@
         </div>
       </a>
       <!-- Card 2 -->
-      
+      <a href="" class="grid grid-cols-2 h-fit group ">
+        <!-- Img -->
+        <div class="overflow-hidden">
+          <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="p-4 md:p-8 bg-custom-gray group-hover:bg-custom-beige transition-all">
+          <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+            2023/10/20
+          </time>
+
+          <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+            【睡眠門診】-健檢方案限時預約中-哈佛健診
+          </h3>
+
+          <p class="text-sm md:text:base text-stone-500 line-clamp-2 sm:mb-6">
+            台灣睡眠醫學學會針對40到65歲民眾的最新調查發現，全台慢性失眠症盛行率高達10.7％，也就是全台有超過230萬人罹患慢性失眠症，平均每9人就有1人受慢性失眠之苦。
+          </p>
+
+          <!-- Button -->
+          <button type="button" class="hidden py-1.5 px-3 sm:inline-flex items-center gap-x-1 text-sm border border-custom-brown text-custom-brown transition-all duration-300 bg-gradient-to-r from-transparent via-transparent to-custom-brown  bg-[length:800px]  group-hover:bg-[100px] group-hover:text-white">
+          閱讀更多
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        </div>
+      </a>
       <!-- Card 3 -->
+      <a href="" class="grid grid-cols-2 h-fit group ">
+        <!-- Img -->
+        <div class="overflow-hidden">
+          <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="p-4 md:p-8 bg-white group-hover:bg-custom-beige transition-all">
+          <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+            2023/10/20
+          </time>
+
+          <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+            【睡眠門診】-健檢方案限時預約中-哈佛健診
+          </h3>
+
+          <p class="text-sm md:text:base text-stone-500 line-clamp-2 sm:mb-6">
+            台灣睡眠醫學學會針對40到65歲民眾的最新調查發現，全台慢性失眠症盛行率高達10.7％，也就是全台有超過230萬人罹患慢性失眠症，平均每9人就有1人受慢性失眠之苦。
+          </p>
+
+          <!-- Button -->
+          <button type="button" class="hidden py-1.5 px-3 sm:inline-flex items-center gap-x-1 text-sm border border-custom-brown text-custom-brown transition-all duration-300 bg-gradient-to-r from-transparent via-transparent to-custom-brown  bg-[length:800px]  group-hover:bg-[100px] group-hover:text-white">
+          閱讀更多
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        </div>
+      </a>
     </div>
   </section>
 
-  
+  <!-- Locations Section -->
+  <section class="hidden lg:block bg-[url('https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center w-full h-fit">
+      <div class="w-full h-full backdrop-blur-lg">
+        <div class="section flex flex-row justify-between text-white">
+          <!-- Title -->
+          <div class=" border-l-4 md:border-l-8 border-white/20 pl-5 md:mb-8 h-fit">
+            <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4 whitespace-nowrap">
+              服務據點
+            </h2>
+            <p class="text-sm lg:text-xl">
+              Our Locations
+            </p>
+          </div>
 
+          <!-- Info -->
+          <div>
+            <h3 class="text-5xl leading-snug lg:mb-10">
+              為每位前來的客人量身訂做健康檢查
+            </h3>
+            <p class="leading-8">
+              哈佛健診設立不同服務據點，提供民眾便利的就診服務。提供全身健康檢查包括：全身腫瘤篩檢、MRI腦部檢查、CTA心臟冠狀動脈血管攝影、無痛腸胃鏡檢查、LDCT低劑量肺部電腦斷層等健檢專案多樣選擇。
+            </p>
+          </div>
+        </div>
+      </div>
+     
+  </section>
+
+  <!-- Services Section -->
+  <section class="section">
+
+  </section>
   
 
   <!-- Footer Section -->
