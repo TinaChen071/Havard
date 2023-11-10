@@ -111,7 +111,7 @@
   <section class="section">
 
     <!-- Breadcrumbs -->
-    <ol class="flex items-center whitespace-nowrap text-custom-brown mb-16" aria-label="Breadcrumb">
+    <ol class="flex items-center whitespace-nowrap text-custom-brown mb-8" aria-label="Breadcrumb">
         <li class="inline-flex items-center">
           <a class="flex items-center text-sm  hover:text-custom-darkBrown transition-all" href="../index.html">
             <i class="fa-solid fa-house pr-2.5"></i>
@@ -134,7 +134,7 @@
     </ol>
 
     <!-- Title -->
-    <div class="text-custom-brown border-l-4 md:border-l-8 border-custom-darkBrown/20 pl-5 md:mb-8">
+    <div class="text-custom-brown border-l-4 md:border-l-8 border-custom-darkBrown/20 pl-5 ">
         <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">
           品牌精神
         </h2>
@@ -145,7 +145,7 @@
 
     <!-- Slogan -->
     <div class="bg-custom-darkBrown flex flex-col md:px-36 md:py-12 md:gap-4 text-center text-white ">
-        <p class="text-3xl  leading-loose">
+        <p class="text-sm md:text-2xl leading-loose">
             以「高效率、高產能、高品質」的獨創特色，創造高品質高效率的預防保健服務。
         </p>
         <p>
@@ -154,15 +154,35 @@
     </div>
 
     <!-- 品牌特色 -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-10 items-center">
+        <!-- Content -->
+        <div>
+            <h3 class=" md:text-2xl flex items-center mb-3 md:mb-6">
+                <i class="fa-solid fa-circle pr-4 text-xs md:text-xl"></i>
+                品牌特色
+            </h3>
+            <p class="text-base md:text-xl leading-relaxed">
+                若您需要加選健康檢查項目（加選項目），可於健康管理師與您聯絡時提出，或電洽各中心。
+            </p>
+        </div>
+
+        <!-- Img -->
+        <div class="my-paroller aspect-video bg-no-repeat bg-center bg-cover  bg-[url('https://images.unsplash.com/photo-1616593918824-4fef16054381?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+        data-paroller-factor="0.3"
+        data-paroller-transition="all 0.2s ease-in">
+        </div>
+    </div>
+
+    <!-- 經營理念 -->
     <div class="grid grid-cols-3 gap-8 ">
 
         <div class="my-paroller h-96 bg-no-repeat bg-center bg-cover  bg-[url('https://unsplash.it/1920/800?image=950')]"
-        data-paroller-factor="0.5"
-        data-paroller-factor-xs="0.2">
+        data-paroller-factor="0.3"
+        data-paroller-transition="all 0.2s ease-in">
         </div>
         <div class="my-paroller mt-16 h-96 bg-no-repeat bg-center bg-cover  bg-[url('https://unsplash.it/1920/800?image=950')]"
-        data-paroller-factor="0.5"
-        data-paroller-factor-xs="0.2">
+        data-paroller-factor="0.3"
+        data-paroller-transition="all 0.2s ease-in">
         </div>
         <p class="text-sm my-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti culpa architecto ab quas, laudantium sequi nemo, nesciunt nihil dolorum atque maiores fuga suscipit consequatur.</p>
       </div>
@@ -243,5 +263,17 @@
   <script>
     AOS.init();
   </script>
+
+  <!-- Paroller -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js"></script>
+  <script>
+    $('.my-paroller').paroller(); 
+   </script>
+
+   <!-- Rellax -->
+   <!-- <script src="../node_modules/rellax/rellax.min.js"></script>
+   <script>
+    var rellax = new Rellax('.rellax');
+   </script> -->
 </body>
 </html>
