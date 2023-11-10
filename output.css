@@ -2282,11 +2282,6 @@ input:checked + .toggle-bg {
   line-height: 1.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -3075,6 +3070,10 @@ html {
 
   .md\:h-8 {
     height: 2rem;
+  }
+
+  .md\:h-full {
+    height: 100%;
   }
 
   .md\:w-10 {
