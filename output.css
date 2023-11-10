@@ -2282,6 +2282,11 @@ input:checked + .toggle-bg {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -3006,6 +3011,10 @@ html {
     border-width: 1px;
   }
 
+  .sm\:bg-fixed {
+    background-attachment: fixed;
+  }
+
   .sm\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -3133,6 +3142,10 @@ html {
     border-left-width: 8px;
   }
 
+  .md\:bg-fixed {
+    background-attachment: fixed;
+  }
+
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -3232,6 +3245,10 @@ html {
 
   .lg\:gap-24 {
     gap: 6rem;
+  }
+
+  .lg\:bg-fixed {
+    background-attachment: fixed;
   }
 
   .lg\:px-36 {
