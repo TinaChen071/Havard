@@ -108,6 +108,44 @@ function myFunction() {
 }
 });
 
+// copy link
+document.getElementById('copyLinkButton').addEventListener('click', function() {
+  const linkToCopy = document.createElement('textarea');
+  linkToCopy.value = window.location.href;
 
+  // Append the textarea to the document
+  document.body.appendChild(linkToCopy);
+
+  // Select the text within the textarea
+  linkToCopy.select();
+
+  // Copy the selected text to the clipboard
+  document.execCommand('copy');
+
+  // Remove the textarea (cleanup)
+  document.body.removeChild(linkToCopy);
+
+  // Show the custom alert
+  openCustomAlert();
+
+  // Automatically hide the alert after 2 seconds
+  setTimeout(closeCustomAlert, 2000); // 2000 milliseconds = 2 seconds
+});
+
+function openCustomAlert() {
+  var customAlert = document.getElementById('customAlert');
+  customAlert.style.opacity = '1';
+  customAlert.style.display = 'block'; // Display the alert
+}
+
+function closeCustomAlert() {
+  var customAlert = document.getElementById('customAlert');
+  customAlert.style.opacity = '0';
+
+  // Hide the alert after the transition
+  setTimeout(function() {
+    customAlert.style.display = 'none';
+  }, 300); // Wait for the 300ms transition duration
+}
 
 // location.reload();
