@@ -20,6 +20,9 @@
     .toTop__BTN {
         @apply vertical__center  text-center text-sm md:text-base bg-custom__primary hover:bg-gray-900 transition duration-150 rounded-full  px-3 py-1 md:px-5 md:py-2 -top-2 md:top-5 lg:top-10
     }
+    .pagination__BTN {
+        @apply min-h-[38px] min-w-[38px] flex justify-center items-center text-gray-800 py-2 px-3 text-sm rounded-lg hover:bg-custom-brown hover:text-white transition-all
+    }
     
 
 }

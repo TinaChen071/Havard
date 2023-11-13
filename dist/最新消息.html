@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈佛健康管理</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../output.css">
+    
+</head>
+<body id="bg">
+  <!-- Navbar -->
+  <header class="sticky top-0 inset-x-0 flex flex-wrap lg:justify-between lg:flex-nowrap w-full bg-custom-darkBrown backdrop-blur-md text-sm py-3 z-100 transition-padding duration-300" id="nav">
+    <nav class="relative max-w-7xl w-full mx-auto px-4 md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
+      <!-- Logo & 漢堡選單 -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a class="flex items-center group" id="logo" href="../index.html" aria-label="Brand">
+          <div class="bg-white group-hover:bg-custom-beige text-2xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300">
+            <span class="inline-block w-7 h-6">H</span>
+          </div>
+          <p class="font-sans text-2xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300">哈佛健康管理</p>
+        </a>
+
+        <!-- 漢堡選單 -->
+        <div class="md:hidden">
+          <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-white font-medium bg-custom-darkBrown text-gray-700 shadow-sm align-middle hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50 transition-all text-sm " data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="white" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="white" viewBox="0 0 16 16">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- 按鈕 -->
+      <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+        <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7 py-4">
+          
+          <!-- 關於我們 -->
+          <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group">
+            <button type="button" class="flex items-center w-full nav__BTN group-hover:text-blue-5">
+              關於我們
+              <i class="fa-solid fa-chevron-down ml-1.5 text-xs"></i>
+            </button>
+
+            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2  before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
+              <a class="nav__SubBTN" href="../dist/品牌精神.html">
+                品牌精神
+              </a>
+
+              <a class="nav__SubBTN" href="../dist/專業團隊.html">
+                專業團隊
+              </a>
+            </div>
+          </div>
+          <!-- 最新消息 -->
+          <a class="nav__BTN" href="../dist/最新消息.html">最新消息</a>
+          <!-- 服務據點 -->
+          <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group">
+            <button type="button" class="flex items-center w-full nav__BTN group-hover:text-blue-5">
+              服務據點
+              <i class="fa-solid fa-chevron-down ml-1.5 text-xs"></i>
+            </button>
+
+            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2  before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
+              <a class="nav__SubBTN" href="../dist/大安院區.html">
+                大安院區
+              </a>
+              <a class="nav__SubBTN" href="../dist/內湖院區.html">
+                內湖院區
+              </a>
+            </div>
+          </div>
+          <!-- 關係企業 -->
+          <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group">
+            <button type="button" class="flex items-center w-full nav__BTN group-hover:text-blue-5">
+              關係企業
+              <i class="fa-solid fa-chevron-down ml-1.5 text-xs"></i>
+            </button>
+
+            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2  before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
+              <a class="nav__SubBTN" href="../dist/儀器設備.html">
+                儀器設備
+              </a>
+              <a class="nav__SubBTN" href="../dist/健康檢查.html">
+                健康檢查
+              </a>
+              <a class="nav__SubBTN" href="../dist/保健食品.html">
+                保健食品
+              </a>
+            </div>
+          </div>
+          <!-- 衛教影音 -->
+          <a class="nav__BTN" href="../dist/衛教影音.html">衛教影音</a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+  <!-- Banner Section -->
+  <section class="aspect-[3/1] bg-[url('https://images.unsplash.com/photo-1618211535056-e678b388af32?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] sm:bg-fixed bg-cover bg-center bg-no-repeat">
+  </section>
+
+  <!-- Content Section -->
+  <section class="section relative after:content-['News'] afterText">
+    
+    <!-- Breadcrumbs -->
+    <ol class="flex items-center whitespace-nowrap text-custom-brown mb-8" aria-label="Breadcrumb">
+        <li class="inline-flex items-center">
+          <a class="flex items-center text-sm  hover:text-custom-darkBrown transition-all" href="../index.html">
+            <i class="fa-solid fa-house pr-2.5"></i>
+            首頁
+          </a>
+          <svg class="flex-shrink-0 h-5 w-5 mx-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"/>
+          </svg>
+        </li>
+        </li>
+        <li class="inline-flex items-center text-sm text-custom-darkBrown truncate cursor-default" aria-current="page">
+            最新消息
+        </li>
+    </ol>
+
+    <!-- Title -->
+    <div class="text-custom-brown border-l-4 md:border-l-8 border-custom-darkBrown/20 pl-5 ">
+        <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">
+          最新消息
+        </h2>
+        <p class="text-sm lg:text-xl">
+          News
+        </p>
+    </div>
+
+    <!-- 最新消息區塊 -->
+    <div class="grid md:grid-cols-2">
+        <!-- Card 1 -->
+        <a href="../dist/news-1.html" class="grid grid-cols-2 h-fit group ">
+            <!-- Img -->
+            <div class="overflow-hidden">
+            <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="p-4 md:p-8 bg-white group-hover:bg-custom-beige transition-all">
+            <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+                2023/10/20
+            </time>
+
+            <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+                【睡眠門診】-健檢方案限時預約中-哈佛健診
+            </h3>
+
+            <p class="text-sm md:text:base text-stone-500 line-clamp-2 sm:mb-6">
+                台灣睡眠醫學學會針對40到65歲民眾的最新調查發現，全台慢性失眠症盛行率高達10.7％，也就是全台有超過230萬人罹患慢性失眠症，平均每9人就有1人受慢性失眠之苦。
+            </p>
+
+            <!-- Button -->
+            <button type="button" class="hidden py-1.5 px-3 sm:inline-flex items-center gap-x-1 text-sm border border-custom-brown text-custom-brown transition-all duration-300 bg-gradient-to-r from-transparent via-transparent to-custom-brown  bg-[length:800px]  group-hover:bg-[100px] group-hover:text-white">
+            閱讀更多
+            <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            </div>
+        </a>
+        <!-- Card 2 -->
+        <a href="" class="grid grid-cols-2 h-fit group ">
+            <!-- Img -->
+            <div class="overflow-hidden">
+            <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="p-4 md:p-8 bg-custom-gray group-hover:bg-custom-beige transition-all">
+            <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+                2023/10/20
+            </time>
+
+            <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+                【睡眠門診】-健檢方案限時預約中-哈佛健診
+            </h3>
+
+            <p class="text-sm md:text:base text-stone-500 line-clamp-2 sm:mb-6">
+                台灣睡眠醫學學會針對40到65歲民眾的最新調查發現，全台慢性失眠症盛行率高達10.7％，也就是全台有超過230萬人罹患慢性失眠症，平均每9人就有1人受慢性失眠之苦。
+            </p>
+
+            <!-- Button -->
+            <button type="button" class="hidden py-1.5 px-3 sm:inline-flex items-center gap-x-1 text-sm border border-custom-brown text-custom-brown transition-all duration-300 bg-gradient-to-r from-transparent via-transparent to-custom-brown  bg-[length:800px]  group-hover:bg-[100px] group-hover:text-white">
+            閱讀更多
+            <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            </div>
+        </a>
+        <!-- Card 3 -->
+        <a href="" class="grid grid-cols-2 h-fit group ">
+            <!-- Img -->
+            <div class="overflow-hidden">
+            <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="p-4 md:p-8 bg-white md:bg-custom-gray group-hover:bg-custom-beige transition-all">
+            <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+                2023/10/20
+            </time>
+
+            <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+                【睡眠門診】-健檢方案限時預約中-哈佛健診
+            </h3>
+
+            <p class="text-sm md:text:base text-stone-500 line-clamp-2 sm:mb-6">
+                台灣睡眠醫學學會針對40到65歲民眾的最新調查發現，全台慢性失眠症盛行率高達10.7％，也就是全台有超過230萬人罹患慢性失眠症，平均每9人就有1人受慢性失眠之苦。
+            </p>
+
+            <!-- Button -->
+            <button type="button" class="hidden py-1.5 px-3 sm:inline-flex items-center gap-x-1 text-sm border border-custom-brown text-custom-brown transition-all duration-300 bg-gradient-to-r from-transparent via-transparent to-custom-brown  bg-[length:800px]  group-hover:bg-[100px] group-hover:text-white">
+            閱讀更多
+            <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            </div>
+        </a>
+        <!-- Card 4 -->
+        <a href="../dist/news-1.html" class="grid grid-cols-2 h-fit group ">
+            <!-- Img -->
+            <div class="overflow-hidden">
+            <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="p-4 md:p-8 bg-custom-gray md:bg-white group-hover:bg-custom-beige transition-all">
+            <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+                2023/10/20
+            </time>
+
+            <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+                【睡眠門診】-健檢方案限時預約中-哈佛健診
+            </h3>
+
+            <p class="text-sm md:text:base text-stone-500 line-clamp-2 sm:mb-6">
+                台灣睡眠醫學學會針對40到65歲民眾的最新調查發現，全台慢性失眠症盛行率高達10.7％，也就是全台有超過230萬人罹患慢性失眠症，平均每9人就有1人受慢性失眠之苦。
+            </p>
+
+            <!-- Button -->
+            <button type="button" class="hidden py-1.5 px-3 sm:inline-flex items-center gap-x-1 text-sm border border-custom-brown text-custom-brown transition-all duration-300 bg-gradient-to-r from-transparent via-transparent to-custom-brown  bg-[length:800px]  group-hover:bg-[100px] group-hover:text-white">
+            閱讀更多
+            <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            </div>
+        </a>
+    </div>
+
+    <!-- Pagination -->
+    <nav class="flex items-center gap-x-1 mx-auto text-custom-darkBrown">
+        <!-- 上一頁 -->
+        <button type="button" class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex jusify-center items-center gap-x-2 text-sm rounded-lg hover:bg-custom-beige transition-all">
+          <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          <span aria-hidden="true" class="sr-only">Previous</span>
+        </button>
+        <div class="flex items-center gap-x-1">
+          <!-- 第 1 頁 -->
+          <button type="button" class="min-h-[38px] min-w-[38px] flex justify-center items-center bg-custom-brown text-white py-2 px-3 text-sm rounded-lg " aria-current="page">1</button>
+          <!-- 第 2 頁 -->
+          <button type="button" class="pagination__BTN">2</button>
+          <!-- 第 3 頁 -->
+          <button type="button" class="pagination__BTN">3</button>
+          <!-- 後 4 頁 -->
+          <div class="hs-tooltip inline-block">
+            <button type="button" class="hs-tooltip-toggle group min-h-[38px] min-w-[38px] flex justify-center items-center hover:bg-custom-beige hover:text-custom-brown p-2 text-sm rounded-lg focus:bg-custom-beige transition-all">
+              <span class="group-hover:hidden text-xs">•••</span>
+              <svg class="group-hover:block hidden flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
+              <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm " role="tooltip">
+                後 4 頁
+              </span>
+            </button>
+          </div>
+          <!-- 最末頁 -->
+          <button type="button" class="pagination__BTN">8</button>
+        </div>
+        <!-- 下一頁 -->
+        <button type="button" class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex jusify-center items-center gap-x-2 text-sm rounded-lg hover:bg-custom-beige transition-all">
+          <span aria-hidden="true" class="sr-only">Next</span>
+          <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+    </nav>
+  </section>
+  
+
+  <!-- Footer Section -->
+  <footer class="bg-custom-darkBrown text-white ">
+    <!-- Content -->
+    <div class="section md:py-16">
+      <div class="grid md:grid-cols-2 items-center gap-6">
+        <!-- Left -->
+        <div class="md:h-full flex md:flex-col justify-between items-end md:items-start order-2 md:order-1">
+          <!-- Logo -->
+          <a class="flex items-center group " id="logo" href="../index.html" aria-label="Brand">
+            <div class="bg-white group-hover:bg-custom-beige text-2xl md:text-4xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300">
+              <span class="inline-block w-7 h-6 md:w-10 md:h-8">H</span>
+            </div>
+            <p class="font-sans text-2xl md:text-4xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300">哈佛健康管理</p>
+          </a>
+          <!-- CopyRight -->
+          <p class="text-white/50 text-sm md:text-base">
+            © 2023 哈佛健康管理.
+          </p>
+        </div>
+        
+        <!-- Right -->
+        <div class="flex justify-between text-white border-y border-white px-1.5 py-4 md:p-10 order-1 md:order-2">
+          <!-- 最新消息 -->
+          <a href="" class="text-sm md:text-xl hover:text-custom-beige transition-all">
+            最新消息
+          </a>
+          <!-- 衛教影音 -->
+          <a href="" class="text-sm md:text-xl hover:text-custom-beige transition-all">
+            衛教影音
+          </a>
+          <!-- 服務據點 -->
+          <div>
+            <p class="text-sm md:text-xl mb-2">
+              服務據點
+            </p>
+            <ul class="border-l-2 border-white/20 pl-3 text-xs md:text-base">
+              <li class="hover:text-custom-beige transition-all mb-3">
+                <a href="dist/大安院區.html">大安院區</a>
+              </li>
+              <li class="hover:text-custom-beige transition-all">
+                <a href="dist/內湖院區.html">內湖院區</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+    
+      </div>
+    </div>
+  </footer>
+
+ <!-- To Top BTN -->
+  <button class="fixed right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige   hover:bg-custom-brown/80  transition-all duration-600 rounded-full opacity-0 hidden z-100 shadow-md group" id="backToTopBtn">
+    <div class="px-4 py-3 text-sm text-custom-darkBrown group-hover:text-white transition duration-150 xs:text-base ">
+      <i class="fa-solid fa-arrow-up w-4 h-4"></i>
+    </div>
+  </button>
+
+   
+  <!-- jQuery main -->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="../js/all.js"></script>
+
+  <!-- Preline -->
+  <script src="../node_modules/preline/dist/preline.js"></script>
+  <!-- Flowbite -->
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/a8b708c9db.js" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Paroller -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js"></script>
+  <script>
+    $('.my-paroller').paroller(); 
+   </script>
+
+</body>
+</html>
