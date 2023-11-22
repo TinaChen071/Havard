@@ -180,7 +180,7 @@
             <h3 class="text-2xl md:text-4xl ">
               大安院區
             </h3>
-            <p class="text-base md:text-lg">
+            <p class="text-base md:text-lg leading-loose">
               哈佛健康管理大安院區位處台北市大安區敦化南路林蔭大道，占地逾600坪，近台北捷運文湖線六張犁站、和平高中、大安運動中心、台北遠東國際大飯店，以國泰綜合醫院為醫療資源後盾，提供醫學中心等級的健康檢查服務，並備有多項健康檢查設備，守護你的健康。
             </p>
           </div>
@@ -189,7 +189,7 @@
             <h3 class="text-2xl md:text-4xl ">
               院區資訊
             </h3>
-            <div class="text-base md:text-lg">
+            <div class="text-base md:text-lg flex flex-col gap-3">
               <!-- 地址 -->
               <div class="flex items-start">
                 <div class="flex items-center">
@@ -205,7 +205,7 @@
               <!-- 電話 -->
               <div class="flex items-start">
                 <div class="flex items-center">
-                  <i class="fa-solid fa-location-dot mr-2"></i>
+                  <i class="fa-solid fa-phone mr-2"></i>
                   <p class="whitespace-nowrap">
                     聯絡電話：
                   </p>
@@ -217,7 +217,7 @@
               <!-- 時間 -->
               <div class="flex items-start">
                 <div class="flex items-center">
-                  <i class="fa-solid fa-location-dot mr-2"></i>
+                  <i class="fa-solid fa-clock mr-2"></i>
                   <p class="whitespace-nowrap">
                     營業時間：
                   </p>
@@ -234,9 +234,118 @@
       </div>
       <!-- 服務項目 -->
       <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
-        <p class="text-gray-500 dark:text-gray-400">
-          This is the <em class="font-semibold text-gray-800 dark:text-gray-200">second</em> item's tab body.
-        </p>
+        <!-- 方案卡片區塊 -->
+        <div class="grid md:grid-cols-3 gap-4 md:gap-10 mb-6 md:mb-0">
+          <!-- 方案 1 -->
+          <a href="">
+            <div class="border-2 border-custom-beige text-custom-brown bg-white divide-y-2 divide-custom-beige group overflow-hidden">
+              <!-- Img -->
+              <div class="overflow-hidden aspect-video">
+                <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+              </div>
+              <!-- 介紹 -->
+              <div class="p-6">
+                <h3 class="text-2xl text-custom-darkBrown mb-4">
+                  經濟方案
+                </h3>
+                <p>
+                  欲瞭解身體是否有血液、代謝、三高(高血脂、高血壓、高血糖)或肝腎疾病者
+                </p>
+              </div>
+              <!-- 按鈕 -->
+              <button class="w-full flex items-center group gap-2 justify-end px-6 py-4 group-hover:bg-custom-brown group-hover:text-white transition-all duration-300">
+                <p class="mr-2">
+                  查看內容
+                </p>
+                <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
+              </button>
+            </div>
+          </a>
+          <!-- 方案 2 -->
+          <a href="">
+            <div class="border-2 border-custom-beige text-custom-brown bg-white divide-y-2 divide-custom-beige group overflow-hidden">
+              <!-- Img -->
+              <div class="overflow-hidden aspect-video">
+                <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+              </div>
+              <!-- 介紹 -->
+              <div class="p-6">
+                <h3 class="text-2xl text-custom-darkBrown mb-4">
+                  經濟方案
+                </h3>
+                <p>
+                  欲瞭解身體是否有血液、代謝、三高(高血脂、高血壓、高血糖)或肝腎疾病者
+                </p>
+              </div>
+              <!-- 按鈕 -->
+              <button class="w-full flex items-center group gap-2 justify-end px-6 py-4 group-hover:bg-custom-brown group-hover:text-white transition-all duration-300">
+                <p class="mr-2">
+                  查看內容
+                </p>
+                <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
+              </button>
+            </div>
+          </a>
+          <!-- 方案 3 -->
+          <a href="">
+            <div class="border-2 border-custom-beige text-custom-brown bg-white divide-y-2 divide-custom-beige group overflow-hidden">
+              <!-- Img -->
+              <div class="overflow-hidden aspect-video">
+                <div class="bg-[url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"></div>
+              </div>
+              <!-- 介紹 -->
+              <div class="p-6">
+                <h3 class="text-2xl text-custom-darkBrown mb-4">
+                  經濟方案
+                </h3>
+                <p>
+                  欲瞭解身體是否有血液、代謝、三高(高血脂、高血壓、高血糖)或肝腎疾病者
+                </p>
+              </div>
+              <!-- 按鈕 -->
+              <button class="w-full flex items-center group gap-2 justify-end px-6 py-4 group-hover:bg-custom-brown group-hover:text-white transition-all duration-300">
+                <p class="mr-2">
+                  查看內容
+                </p>
+                <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
+              </button>
+            </div>
+          </a>
+          
+        </div>
+        <!-- Pagination -->
+        <nav class="flex items-center justify-center gap-x-1 mx-auto text-custom-darkBrown md:hidden">
+          <!-- 上一頁 -->
+          <button type="button" class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex jusify-center items-center gap-x-2 text-sm rounded-lg hover:bg-custom-beige transition-all">
+            <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            <span aria-hidden="true" class="sr-only">Previous</span>
+          </button>
+          <div class="flex items-center gap-x-1">
+            <!-- 第 1 頁 -->
+            <button type="button" class="min-h-[38px] min-w-[38px] flex justify-center items-center bg-custom-brown text-white py-2 px-3 text-sm rounded-lg " aria-current="page">1</button>
+            <!-- 第 2 頁 -->
+            <button type="button" class="pagination__BTN">2</button>
+            <!-- 第 3 頁 -->
+            <button type="button" class="pagination__BTN">3</button>
+            <!-- 後 4 頁 -->
+            <div class="hs-tooltip inline-block">
+              <button type="button" class="hs-tooltip-toggle group min-h-[38px] min-w-[38px] flex justify-center items-center hover:bg-custom-beige hover:text-custom-brown p-2 text-sm rounded-lg focus:bg-custom-beige transition-all">
+                <span class="group-hover:hidden text-xs">•••</span>
+                <svg class="group-hover:block hidden flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
+                <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm " role="tooltip">
+                  後 4 頁
+                </span>
+              </button>
+            </div>
+            <!-- 最末頁 -->
+            <button type="button" class="pagination__BTN">8</button>
+          </div>
+          <!-- 下一頁 -->
+          <button type="button" class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex jusify-center items-center gap-x-2 text-sm rounded-lg hover:bg-custom-beige transition-all">
+            <span aria-hidden="true" class="sr-only">Next</span>
+            <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </nav>
       </div>
       <!-- 聯絡我們 -->
       <div id="segment-3" class="hidden" role="tabpanel" aria-labelledby="segment-item-3">
