@@ -12,7 +12,7 @@
         @apply text-lg text-white hover:text-custom-beige whitespace-nowrap
     }
     .nav__SubBTN {
-        @apply flex items-center gap-x-3.5 py-2 px-3 rounded-md text-base text-custom-brown hover:bg-gray-100 
+        @apply flex items-center gap-x-3.5 py-2 px-3 rounded-md text-base text-custom-brown hover:bg-custom-beige/30 
     }
     .title {
         @apply text-custom-darkBrown border-l-4 md:border-l-8 border-custom-darkBrown/20 pl-5
