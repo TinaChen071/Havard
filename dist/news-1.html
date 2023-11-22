@@ -129,11 +129,11 @@
             <!-- Link -->
             <i class="fa-solid fa-link hover:text-custom-darkBrown transition-all cursor-pointer" id="copyLinkButton"></i>
             <!-- FB -->
-            <button class="button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="facebook" data-hashtag="hashtag" data-url="">
+            <button class="fb button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="facebook" data-hashtag="hashtag" data-url="">
               <i class="fa-brands fa-facebook-f"></i>
             </button>
             <!-- Line -->
-            <button class="button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="line" data-title="分享至 Line" data-url="">
+            <button class="line button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="line" data-title="分享至 Line" data-url="">
               <i class="fa-brands fa-line"></i>
             </button>
           </div>
@@ -247,9 +247,13 @@
   <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 
   <script>
-    var button = document.querySelector('.button');
+    // Get the buttons
+  var fbButton = document.querySelector('.fb.button');
+  var lineButton = document.querySelector('.line.button');
 
-    button.setAttribute('data-url', window.location.href);
+  // Set the data-url attribute to the current page's URL for both buttons
+  fbButton.setAttribute('data-url', window.location.href);
+  lineButton.setAttribute('data-url', window.location.href);
   </script>
 </body>
 </html>
