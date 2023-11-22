@@ -26,7 +26,9 @@
     .pagination__BTN {
         @apply min-h-[38px] min-w-[38px] flex justify-center items-center text-gray-800 py-2 px-3 text-sm rounded-lg hover:bg-custom-brown hover:text-white transition-all
     }
-    
+    .keyword {
+        @apply rounded-full bg-custom-beige/80 p-6 sm:p-8 lg:p-12 aspect-square inline-flex items-center justify-center text-sm sm:text-xl lg:text-2xl text-center h-full hover:text-white hover:bg-custom-brown transition-all duration-300 cursor-default
+    }
 
 }
 
