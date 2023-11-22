@@ -11,7 +11,8 @@ module.exports = {
           darkBrown: '#3A3532',
           brown: '#806A58',
           beige: '#D6CDC6',
-          gray: '#F1F1F1'
+          gray: '#F1F1F1',
+          line: '#06C655'
         }
       },
       spacing: {

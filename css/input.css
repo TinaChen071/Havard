@@ -141,6 +141,9 @@ html {
   .keyword {
     @apply rounded-full bg-custom-beige/80 p-6 sm:p-8 lg:p-12 aspect-square inline-flex items-center justify-center text-sm sm:text-xl lg:text-2xl text-center h-full hover:text-white hover:bg-custom-brown transition-all duration-300 cursor-default;
   }
+  .input {
+    @apply py-3 px-4 pl-11 block w-full bg-white border-custom-beige placeholder-custom-brown/70 text-sm focus:z-10 focus:border-custom-brown focus:ring-custom-brown;
+  }
 }
 @screen sm {
   #checkIn__bg {

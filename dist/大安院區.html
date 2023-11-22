@@ -544,16 +544,143 @@
           role="tabpanel"
           aria-labelledby="segment-item-3"
         >
-          <p class="text-gray-500 dark:text-gray-400">
-            This is the
-            <em class="font-semibold text-gray-800 dark:text-gray-200"
-              >third</em
-            >
-            item's tab body.
-          </p>
+          <!-- Form -->
+          <div class="grid md:grid-cols-2 gap-4 md:gap-16 text-custom-darkBrown mb-8 md:mb-14">
+            <!-- Left -->
+            <div class="flex flex-col gap-4 sm:gap-6">
+              <!-- 諮詢院區 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">諮詢院區<span class="pl-1 text-red-500">*</span></label>
+                <select class="py-3 px-4 pe-9 block w-full border-custom-beige text-custom-darkBrown text-sm focus:border-custom-brown focus:ring-custom-brown">
+                  <option selected>請選擇院區</option>
+                  <option>院區一</option>
+                  <option>院區二</option>
+                  <option>院區三</option>
+                </select>
+              </div>
+              <!-- 姓名 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">姓名<span class="pl-1 text-red-500">*</span></label>
+                
+                <div class="flex gap-4 items-center">
+                  <!-- Input -->
+                  <div class="relative w-full">
+                    <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入姓名">
+                    <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+
+                  <!-- Gender -->
+                  <div class="flex gap-3 md:gap-4">
+                    <div class="flex">
+                      <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
+                      <label for="hs-radio-vertical-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">先生</label>
+                    </div>
+                    
+                    <div class="flex">
+                      <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                      <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">小姐</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 聯絡電話 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">聯絡電話<span class="pl-1 text-red-500">*</span></label>
+                <div class="relative">
+                  <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入聯絡電話">
+                  <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- 行動電話 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">行動電話<span class="pl-1 text-red-500">*</span></label>
+                <div class="relative">
+                  <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入行動電話">
+                  <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- 信箱 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">信箱</label>
+                <div class="relative">
+                  <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入信箱">
+                  <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4 ">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right -->
+            <div class="flex flex-col gap-4 sm:gap-6 h-full">
+              <!-- 優先聯絡時段 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">諮詢院區</label>
+                <select class="py-3 px-4 pe-9 block w-full border-custom-beige text-custom-darkBrown text-sm focus:border-custom-brown focus:ring-custom-brown">
+                  <option selected>請選擇聯絡時段</option>
+                  <option>早上</option>
+                  <option>中午</option>
+                  <option>下午</option>
+                </select>
+              </div>
+              <!-- 諮詢項目 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">諮詢項目<span class="pl-1 text-red-500">*</span></label>
+                <select class="py-3 px-4 pe-9 block w-full border-custom-beige text-custom-darkBrown text-sm focus:border-custom-brown focus:ring-custom-brown">
+                  <option selected>請選擇諮詢項目</option>
+                  <option>項目一</option>
+                  <option>項目二</option>
+                  <option>項目三</option>
+                </select>
+              </div>
+              <!-- 訊息 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">請簡述您的健康問題</label>
+                <textarea class="py-3 px-4 block w-full border-custom-beige placeholder-custom-brown/70 text-sm focus:border-custom-brown focus:ring-custom-brown " rows="11" placeholder="請輸入訊息"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- 按鈕區塊 -->
+          <div class="flex flex-col w-fit mx-auto">
+            <!-- 重填 + 送出 -->
+            <div class="inline-flex gap-4 md:gap-6 mb-5">
+              <button type="button" class="py-3 px-4 inline-flex items-center text-base md:text-2xl border-2 border-custom-darkBrown text-custom-darkBrown hover:bg-custom-darkBrown hover:text-white transition-all duration-300 w-full md:w-fit" >
+                重新填寫
+              </button>
+              <button type="button" class="py-3 px-4 items-center text-base md:text-2xl border-2 border-custom-darkBrown/90 bg-custom-darkBrown/90 text-white hover:bg-custom-darkBrown hover:border-custom-darkBrown transition-all duration-300 w-full md:w-fit" data-hs-overlay="#hs-vertically-centered-modal">
+                確認送出
+              </button>
+            </div>
+            <!-- Line 聯繫按鈕 -->
+            <button type="button" class="text-base md:text-2xl text-white bg-custom-line px-4 py-4 md:px-6 md:py-4 w-full rounded-md hover:bg-green-500 transition-all duration-300">
+              <i class="fa-brands fa-line mr-2 md:mr-4"></i>
+              透過 Line 聯繫
+            </button>
+          </div>
+        </div>
+    </section>
+
+    <!-- 確認送出 Modal -->
+    <div id="hs-vertically-centered-modal" class="hs-overlay hidden w-full h-full fixed top-0 start-0 z-[60] overflow-x-hidden overflow-y-auto pointer-events-none ">
+      <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center justify-center">
+        <div class="flex flex-col bg-white border shadow-sm">
+          <div class="p-12 overflow-y-auto text-center">
+            <i class="fa-solid fa-circle-check text-5xl md:text-6xl mb-4 text-custom-line"></i>
+            <p class="text-custom-darkBrown text-lg md:text-2xl text-center">
+              您的表單已送出！
+              <br>
+              我們會盡快與您聯繫
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Footer Section -->
     <footer class="bg-custom-darkBrown text-white">
