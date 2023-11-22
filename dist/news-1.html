@@ -129,11 +129,11 @@
             <!-- Link -->
             <i class="fa-solid fa-link hover:text-custom-darkBrown transition-all cursor-pointer" id="copyLinkButton"></i>
             <!-- FB -->
-            <button class="button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="facebook" data-hashtag="hashtag" data-url="https://www.facebook.com/share.php?u={{url}}">
+            <button class="button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="facebook" data-hashtag="hashtag" data-url="">
               <i class="fa-brands fa-facebook-f"></i>
             </button>
             <!-- Line -->
-            <button class="button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="line" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+            <button class="button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="line" data-title="" data-url="">
               <i class="fa-brands fa-line"></i>
             </button>
           </div>
@@ -246,6 +246,10 @@
   <!-- social share js -->
   <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 
-  
+  <script>
+    var button = document.querySelector('.button');
+
+    button.setAttribute('data-url', window.location.href);
+  </script>
 </body>
 </html>

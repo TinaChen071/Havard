@@ -1,3 +1,42 @@
+// 回到服務項目 button
+// Check for the anchor when the page loads
+window.addEventListener('DOMContentLoaded', function () {
+  var targetAnchor = window.location.hash.substring(1);
+
+  // If the anchor is "backToSegment2", switch to segment-2 and mark the corresponding tab as active
+  if (targetAnchor === 'backToSegment2') {
+    changeTab(2);
+    markTabActive(2);
+  }
+});
+
+// Your existing JavaScript functions for changing tabs
+function changeTab(tabNumber) {
+  document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+  document.getElementById(`segment-${tabNumber}`).classList.remove('hidden');
+  history.pushState({ tab: tabNumber }, '', `?tab=${tabNumber}`);
+}
+
+function markTabActive(tabNumber) {
+  document.getElementById(`segment-item-1`).classList.remove('active' );
+  document.getElementById(`segment-1`).classList.add('hidden' );
+  document.getElementById(`segment-item-1`).classList.remove('active' );
+  document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active'));
+  document.getElementById(`segment-item-${tabNumber}`).classList.add('active' );
+}
+
+// Your existing event listener for changes in the browser history
+window.addEventListener('popstate', function (event) {
+  if (event.state && event.state.tab) {
+    changeTab(event.state.tab);
+    markTabActive(event.state.tab);
+  } else {
+    // If no state is present, default to Tab 1 and hide its corresponding content
+    changeTab(1);
+    markTabActive(1);
+  }
+});
+
 // Swiper
 $(document).ready(function () {
     
@@ -147,5 +186,6 @@ function closeCustomAlert() {
     customAlert.style.display = 'none';
   }, 300); // Wait for the 300ms transition duration
 }
+
 
 // location.reload();
