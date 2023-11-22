@@ -126,6 +126,9 @@ html {
   .nav__SubBTN {
     @apply flex items-center gap-x-3.5 py-2 px-3 rounded-md text-base text-custom-brown hover:bg-gray-100;
   }
+  .title {
+    @apply text-custom-darkBrown border-l-4 md:border-l-8 border-custom-darkBrown/20 pl-5;
+  }
   .afterText {
     @apply after:ml-0.5 after:text-custom-brown/5 after:text-9xl after:absolute after:left-0 after:bottom-0 after:hidden after:sm:block;
   }

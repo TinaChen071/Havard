@@ -108,7 +108,7 @@ function myFunction() {
 }
 });
 
-// copy link
+// Copy link
 document.getElementById('copyLinkButton').addEventListener('click', function() {
   const linkToCopy = document.createElement('textarea');
   linkToCopy.value = window.location.href;
