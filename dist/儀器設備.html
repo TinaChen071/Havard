@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>哈佛健康管理</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../output.css" />
+  </head>
+  <body id="bg">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 inset-x-0 flex flex-wrap lg:justify-between lg:flex-nowrap w-full bg-custom-darkBrown backdrop-blur-md text-sm py-3 z-100 transition-padding duration-300"
+      id="nav"
+    >
+      <nav
+        class="relative max-w-7xl w-full mx-auto px-4 md:flex md:items-center md:justify-between lg:px-36"
+        aria-label="Global"
+      >
+        <!-- Logo & 漢堡選單 -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a
+            class="flex items-center group"
+            id="logo"
+            href="../index.html"
+            aria-label="Brand"
+          >
+            <div
+              class="bg-white group-hover:bg-custom-beige text-2xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300"
+            >
+              <span class="inline-block w-7 h-6">H</span>
+            </div>
+            <p
+              class="font-sans text-2xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300"
+            >
+              哈佛健康管理
+            </p>
+          </a>
+
+          <!-- 漢堡選單 -->
+          <div class="md:hidden">
+            <button
+              type="button"
+              class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-white font-medium bg-custom-darkBrown text-gray-700 shadow-sm align-middle hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50 transition-all text-sm"
+              data-hs-collapse="#navbar-collapse-with-animation"
+              aria-controls="navbar-collapse-with-animation"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                class="hs-collapse-open:hidden w-4 h-4"
+                width="16"
+                height="16"
+                fill="white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+              <svg
+                class="hs-collapse-open:block hidden w-4 h-4"
+                width="16"
+                height="16"
+                fill="white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 按鈕 -->
+        <div
+          id="navbar-collapse-with-animation"
+          class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
+        >
+          <div
+            class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7 py-4"
+          >
+            <!-- 關於我們 -->
+            <div
+              class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group"
+            >
+              <button
+                type="button"
+                class="flex items-center w-full nav__BTN group-hover:text-blue-5"
+              >
+                關於我們
+                <i class="fa-solid fa-chevron-down ml-1.5 text-xs"></i>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5"
+              >
+                <a class="nav__SubBTN" href="../dist/品牌精神.html">
+                  品牌精神
+                </a>
+
+                <a class="nav__SubBTN" href="../dist/專業團隊.html">
+                  專業團隊
+                </a>
+              </div>
+            </div>
+            <!-- 最新消息 -->
+            <a class="nav__BTN" href="../dist/最新消息.html">最新消息</a>
+            <!-- 服務據點 -->
+            <div
+              class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group"
+            >
+              <button
+                type="button"
+                class="flex items-center w-full nav__BTN group-hover:text-blue-5"
+              >
+                服務據點
+                <i class="fa-solid fa-chevron-down ml-1.5 text-xs"></i>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5"
+              >
+                <a class="nav__SubBTN" href="../dist/大安院區.html">
+                  大安院區
+                </a>
+                <a class="nav__SubBTN" href="../dist/內湖院區.html">
+                  內湖院區
+                </a>
+              </div>
+            </div>
+            <!-- 關係企業 -->
+            <div
+              class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group"
+            >
+              <button
+                type="button"
+                class="flex items-center w-full nav__BTN group-hover:text-blue-5"
+              >
+                關係企業
+                <i class="fa-solid fa-chevron-down ml-1.5 text-xs"></i>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5"
+              >
+                <a class="nav__SubBTN" href="../dist/儀器設備.html">
+                  儀器設備
+                </a>
+                <a class="nav__SubBTN" href="../dist/健康檢查.html">
+                  健康檢查
+                </a>
+                <a class="nav__SubBTN" href="../dist/保健食品.html">
+                  保健食品
+                </a>
+              </div>
+            </div>
+            <!-- 衛教影音 -->
+            <a class="nav__BTN" href="../dist/衛教影音.html">衛教影音</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section
+      class="aspect-[3/1] bg-[url('https://images.unsplash.com/photo-1618211535056-e678b388af32?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] sm:bg-fixed bg-cover bg-center bg-no-repeat"
+    ></section>
+
+    <!-- Content Section -->
+    <section class="section relative">
+      <!-- Text Decoration -->
+      <div
+        class="absolute left-0 bottom-0 ml-0.5 text-custom-brown/5 text-9xl hidden sm:block -z-10"
+      >
+        Hua Mao <br />
+        Nano-Tech Co.
+      </div>
+
+      <!-- Breadcrumbs -->
+      <ol
+        class="flex items-center whitespace-nowrap text-custom-brown text-sm md:text-xl"
+        aria-label="Breadcrumb"
+      >
+        <li class="inline-flex items-center">
+          <a
+            class="flex items-center hover:text-custom-darkBrown transition-all"
+            href="../index.html"
+          >
+            <i class="fa-solid fa-house pr-2.5"></i>
+            首頁
+          </a>
+          <svg
+            class="flex-shrink-0 h-5 w-5 mx-2"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
+          </svg>
+        </li>
+        <li
+          class="inline-flex items-center truncate cursor-default"
+          aria-current="page"
+        >
+          關係企業
+        </li>
+        <svg
+          class="flex-shrink-0 h-5 w-5 mx-2"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
+        </svg>
+        <li
+          class="inline-flex items-center text-custom-darkBrown truncate cursor-default"
+          aria-current="page"
+        >
+          儀器設備
+        </li>
+      </ol>
+
+      <!-- Title + Tab -->
+      <div
+        class="flex items-start md:items-center justify-between flex-col md:flex-row gap-4"
+      >
+        <!-- Title -->
+        <div class="title">
+          <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">華懋生醫</h2>
+          <p class="text-sm lg:text-xl">Hua Mao Nano-Tech Co.</p>
+        </div>
+
+        <!-- Tab -->
+        <div
+          class="flex bg-custom-beige transition p-1 md:p-1.5 w-full md:w-fit"
+        >
+          <nav class="flex space-x-2 w-full" aria-label="Tabs" role="tablist">
+            <!-- 公司介紹 -->
+            <button
+              type="button"
+              class="hs-tab-active:bg-custom-brown hs-tab-active:text-white py-1.5 md:py-3 md:px-4 items-center text-base lg:text-2xl text-custom-darkBrown active w-full text-center"
+              id="segment-item-1"
+              data-hs-tab="#segment-1"
+              aria-controls="segment-1"
+              role="tab"
+            >
+              公司介紹
+            </button>
+            <!-- 產品介紹 -->
+            <button
+              type="button"
+              class="hs-tab-active:bg-custom-brown hs-tab-active:text-white py-1.5 md:py-3 md:px-4 items-center text-base lg:text-2xl text-custom-darkBrown w-full text-center"
+              id="segment-item-2"
+              data-hs-tab="#segment-2"
+              aria-controls="segment-2"
+              role="tab"
+            >
+              產品介紹
+            </button>
+            <!-- 聯絡我們 -->
+            <button
+              type="button"
+              class="hs-tab-active:bg-custom-brown hs-tab-active:text-white py-1.5 md:py-3 md:px-4 items-center text-base lg:text-2xl text-custom-darkBrown w-full text-center"
+              id="segment-item-3"
+              data-hs-tab="#segment-3"
+              aria-controls="segment-3"
+              role="tab"
+            >
+              聯絡我們
+            </button>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Tab 內容 -->
+      <div class="">
+        <!-- 院區介紹 -->
+        <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1">
+          <div class="grid md:grid-cols-2">
+            <!-- Img -->
+            <img
+              src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="aspect-[5/4] object-cover h-full w-full"
+            />
+            <!-- 介紹 -->
+            <div
+              class="bg-white text-custom-brown flex flex-col gap-3 md:gap-8 py-6 px-4 md:p-16"
+            >
+              <h3 class="text-2xl md:text-4xl">華懋生醫</h3>
+              <p class="text-base md:text-lg leading-loose">
+                本公司自1994年即生產遠紅外線等機能性粉體，提供國內各化纖廠做紡紗使用之機能性材料，並與工研院工業材料所 ( 現為材化所 ) 合作開發多項機能性新材料，以及多項創新性的技術與專利。
+              </p>
+            </div>
+            <!-- 聯絡資訊 -->
+            <div
+              class="bg-custom-beige/40 text-custom-darkBrown flex flex-col gap-3 md:gap-8 py-6 px-4 md:p-16 order-2 md:order-1"
+            >
+              <h3 class="text-2xl md:text-4xl">院區資訊</h3>
+              <div class="text-base md:text-lg flex flex-col gap-3">
+                <!-- 地址 -->
+                <div class="flex items-start">
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-location-dot mr-2 w-4"></i>
+                    <p class="whitespace-nowrap">院區地址：</p>
+                  </div>
+                  <p>114台北市內湖區內湖路一段300號2樓</p>
+                </div>
+                <!-- 電話 -->
+                <div class="flex items-start">
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-phone mr-2 w-4"></i>
+                    <p class="whitespace-nowrap">聯絡電話：</p>
+                  </div>
+                  <a href="tel:+886-2-11111111"> 02-1111-1111 </a>
+                </div>
+                <!-- 時間 -->
+                <div class="flex items-start">
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-clock mr-2 w-4"></i>
+                    <p class="whitespace-nowrap">營業時間：</p>
+                  </div>
+                  <p>週一至週五 9:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+            <!-- 地圖 -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.5900022904257!2d121.56614101012977!3d25.08188183627063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac638174a9b9%3A0x2059ce680c3de9ab!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A5YWn5rmW6Lev5LiA5q61MzAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1700619733966!5m2!1szh-TW!2stw"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="aspect-[5/4] h-full w-full order-1 md:order-2"
+            ></iframe>
+          </div>
+        </div>
+        <!-- 產品介紹 -->
+        <div
+          id="segment-2"
+          class="hidden"
+          role="tabpanel"
+          aria-labelledby="segment-item-2"
+        >
+          <!-- 產品卡片區塊 -->
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-16"
+          >
+            <!-- 產品 1 -->
+            <a href="../dist/產品一.html">
+              <div
+                class="border-2 border-custom-beige text-custom-brown bg-white divide-y-2 divide-custom-beige group overflow-hidden"
+              >
+                <!-- Img -->
+                <div class="overflow-hidden aspect-video">
+                  <div
+                    class="bg-[url('https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"
+                  ></div>
+                </div>
+                <!-- 介紹 -->
+                <div class="p-6">
+                  <h3 class="text-2xl text-custom-darkBrown mb-4">儀器A</h3>
+                  <p>
+                    接受血液、尿液、糞便等檢體併進行相關的檢驗工作，以提供醫師進行生理診斷的數據。
+                  </p>
+                </div>
+                <!-- 按鈕 -->
+                <button
+                  class="w-full flex items-center group gap-2 justify-end px-6 py-4 group-hover:bg-custom-brown group-hover:text-white transition-all duration-300"
+                >
+                  <p class="mr-2">查看內容</p>
+                  <i
+                    class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"
+                  ></i>
+                </button>
+              </div>
+            </a>
+            <!-- 產品 2 -->
+            <a href="../dist/產品一.html">
+                <div
+                  class="border-2 border-custom-beige text-custom-brown bg-white divide-y-2 divide-custom-beige group overflow-hidden"
+                >
+                  <!-- Img -->
+                  <div class="overflow-hidden aspect-video">
+                    <div
+                      class="bg-[url('https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"
+                    ></div>
+                  </div>
+                  <!-- 介紹 -->
+                  <div class="p-6">
+                    <h3 class="text-2xl text-custom-darkBrown mb-4">儀器A</h3>
+                    <p>
+                      接受血液、尿液、糞便等檢體併進行相關的檢驗工作，以提供醫師進行生理診斷的數據。
+                    </p>
+                  </div>
+                  <!-- 按鈕 -->
+                  <button
+                    class="w-full flex items-center group gap-2 justify-end px-6 py-4 group-hover:bg-custom-brown group-hover:text-white transition-all duration-300"
+                  >
+                    <p class="mr-2">查看內容</p>
+                    <i
+                      class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"
+                    ></i>
+                  </button>
+                </div>
+            </a>
+            <!-- 產品 3 -->
+            <a href="../dist/產品一.html">
+                <div
+                  class="border-2 border-custom-beige text-custom-brown bg-white divide-y-2 divide-custom-beige group overflow-hidden"
+                >
+                  <!-- Img -->
+                  <div class="overflow-hidden aspect-video">
+                    <div
+                      class="bg-[url('https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center group-hover:scale-125 transition-all duration-300 w-full h-full"
+                    ></div>
+                  </div>
+                  <!-- 介紹 -->
+                  <div class="p-6">
+                    <h3 class="text-2xl text-custom-darkBrown mb-4">儀器A</h3>
+                    <p>
+                      接受血液、尿液、糞便等檢體併進行相關的檢驗工作，以提供醫師進行生理診斷的數據。
+                    </p>
+                  </div>
+                  <!-- 按鈕 -->
+                  <button
+                    class="w-full flex items-center group gap-2 justify-end px-6 py-4 group-hover:bg-custom-brown group-hover:text-white transition-all duration-300"
+                  >
+                    <p class="mr-2">查看內容</p>
+                    <i
+                      class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"
+                    ></i>
+                  </button>
+                </div>
+            </a>
+          </div>
+          <!-- Pagination -->
+          <nav
+            class="flex items-center justify-center gap-x-1 mx-auto text-custom-darkBrown"
+          >
+            <!-- 上一頁 -->
+            <button
+              type="button"
+              class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex jusify-center items-center gap-x-2 text-sm rounded-lg hover:bg-custom-beige transition-all"
+            >
+              <svg
+                class="flex-shrink-0 w-3.5 h-3.5"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+              <span aria-hidden="true" class="sr-only">Previous</span>
+            </button>
+            <div class="flex items-center gap-x-1">
+              <!-- 第 1 頁 -->
+              <button
+                type="button"
+                class="min-h-[38px] min-w-[38px] flex justify-center items-center bg-custom-brown text-white py-2 px-3 text-sm rounded-lg"
+                aria-current="page"
+              >
+                1
+              </button>
+              <!-- 第 2 頁 -->
+              <button type="button" class="pagination__BTN">2</button>
+              <!-- 第 3 頁 -->
+              <button type="button" class="pagination__BTN">3</button>
+              <!-- 後 4 頁 -->
+              <div class="hs-tooltip inline-block">
+                <button
+                  type="button"
+                  class="hs-tooltip-toggle group min-h-[38px] min-w-[38px] flex justify-center items-center hover:bg-custom-beige hover:text-custom-brown p-2 text-sm rounded-lg focus:bg-custom-beige transition-all"
+                >
+                  <span class="group-hover:hidden text-xs">•••</span>
+                  <svg
+                    class="group-hover:block hidden flex-shrink-0 w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 17 5-5-5-5" />
+                    <path d="m13 17 5-5-5-5" />
+                  </svg>
+                  <span
+                    class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm"
+                    role="tooltip"
+                  >
+                    後 4 頁
+                  </span>
+                </button>
+              </div>
+              <!-- 最末頁 -->
+              <button type="button" class="pagination__BTN">8</button>
+            </div>
+            <!-- 下一頁 -->
+            <button
+              type="button"
+              class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex jusify-center items-center gap-x-2 text-sm rounded-lg hover:bg-custom-beige transition-all"
+            >
+              <span aria-hidden="true" class="sr-only">Next</span>
+              <svg
+                class="flex-shrink-0 w-3.5 h-3.5"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </nav>
+        </div>
+        <!-- 聯絡我們 -->
+        <div
+          id="segment-3"
+          class="hidden"
+          role="tabpanel"
+          aria-labelledby="segment-item-3"
+        >
+          <!-- Form -->
+          <div class="grid md:grid-cols-2 gap-4 md:gap-16 text-custom-darkBrown mb-8 md:mb-14">
+            <!-- Left -->
+            <div class="flex flex-col gap-4 sm:gap-6">
+              <!-- 諮詢院區 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">諮詢院區<span class="pl-1 text-red-500">*</span></label>
+                <select class="py-3 px-4 pe-9 block w-full border-custom-beige text-custom-darkBrown text-sm focus:border-custom-brown focus:ring-custom-brown">
+                  <option selected>請選擇院區</option>
+                  <option>院區一</option>
+                  <option>院區二</option>
+                  <option>院區三</option>
+                </select>
+              </div>
+              <!-- 姓名 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">姓名<span class="pl-1 text-red-500">*</span></label>
+                
+                <div class="flex gap-4 items-center">
+                  <!-- Input -->
+                  <div class="relative w-full">
+                    <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入姓名">
+                    <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+
+                  <!-- Gender -->
+                  <div class="flex gap-3 md:gap-4">
+                    <div class="flex">
+                      <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
+                      <label for="hs-radio-vertical-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">先生</label>
+                    </div>
+                    
+                    <div class="flex">
+                      <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                      <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">小姐</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 聯絡電話 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">聯絡電話<span class="pl-1 text-red-500">*</span></label>
+                <div class="relative">
+                  <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入聯絡電話">
+                  <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- 行動電話 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">行動電話</label>
+                <div class="relative">
+                  <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入行動電話">
+                  <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- 信箱 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">信箱</label>
+                <div class="relative">
+                  <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入信箱">
+                  <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4 ">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right -->
+            <div class="flex flex-col gap-4 sm:gap-6 h-full">
+              <!-- 優先聯絡時段 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">諮詢院區</label>
+                <select class="py-3 px-4 pe-9 block w-full border-custom-beige text-custom-darkBrown text-sm focus:border-custom-brown focus:ring-custom-brown">
+                  <option selected>請選擇聯絡時段</option>
+                  <option>早上</option>
+                  <option>中午</option>
+                  <option>下午</option>
+                </select>
+              </div>
+              <!-- 諮詢項目 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">諮詢項目<span class="pl-1 text-red-500">*</span></label>
+                <select class="py-3 px-4 pe-9 block w-full border-custom-beige text-custom-darkBrown text-sm focus:border-custom-brown focus:ring-custom-brown">
+                  <option selected>請選擇諮詢項目</option>
+                  <option>項目一</option>
+                  <option>項目二</option>
+                  <option>項目三</option>
+                </select>
+              </div>
+              <!-- 訊息 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">請簡述您的健康問題</label>
+                <textarea class="py-3 px-4 block w-full border-custom-beige placeholder-custom-brown/70 text-sm focus:border-custom-brown focus:ring-custom-brown " rows="11" placeholder="請輸入訊息"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- 按鈕區塊 -->
+          <div class="flex flex-col w-full md:w-fit mx-auto">
+            <!-- 重填 + 送出 -->
+            <div class="inline-flex gap-4 md:gap-6 mb-5">
+              <button type="button" class="py-3 px-5 md:py-4 md:px-10 items-center text-base md:text-2xl border-2 border-custom-darkBrown text-custom-darkBrown hover:bg-custom-darkBrown hover:text-white transition-all duration-300 w-full md:w-fit" >
+                重新填寫
+              </button>
+              <button type="button" class="py-3 px-5 md:py-4 md:px-10 items-center text-base md:text-2xl border-2 border-custom-darkBrown/90 bg-custom-darkBrown/90 text-white hover:bg-custom-darkBrown hover:border-custom-darkBrown transition-all duration-300 w-full md:w-fit" data-hs-overlay="#hs-vertically-centered-modal">
+                確認送出
+              </button>
+            </div>
+            <!-- Line 聯繫按鈕 -->
+            <!-- <button type="button" class="text-base md:text-2xl text-white bg-custom-line px-4 py-4 md:px-6 md:py-4 w-full rounded-md hover:bg-green-500 transition-all duration-300">
+              <i class="fa-brands fa-line mr-2 md:mr-4"></i>
+              透過 Line 聯繫
+            </button> -->
+          </div>
+        </div>
+    </section>
+
+    <!-- 確認送出 Modal -->
+    <div id="hs-vertically-centered-modal" class="hs-overlay hidden w-full h-full fixed top-0 start-0 z-[60] overflow-x-hidden overflow-y-auto pointer-events-none ">
+      <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center justify-center">
+        <div class="flex flex-col bg-white border shadow-sm rounded-lg">
+          <div class="p-12 overflow-y-auto text-center">
+            <i class="fa-solid fa-circle-check text-5xl md:text-6xl mb-4 text-custom-line"></i>
+            <p class="text-custom-darkBrown text-lg md:text-2xl text-center">
+              您的表單已送出！
+              <br>
+              我們會盡快與您聯繫
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-custom-darkBrown text-white">
+      <!-- Content -->
+      <div class="section md:py-16">
+        <div class="grid md:grid-cols-2 items-center gap-6">
+          <!-- Left -->
+          <div
+            class="md:h-full flex md:flex-col justify-between items-end md:items-start order-2 md:order-1"
+          >
+            <!-- Logo -->
+            <a
+              class="flex items-center group"
+              id="logo"
+              href="../index.html"
+              aria-label="Brand"
+            >
+              <div
+                class="bg-white group-hover:bg-custom-beige text-2xl md:text-4xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300"
+              >
+                <span class="inline-block w-7 h-6 md:w-10 md:h-8">H</span>
+              </div>
+              <p
+                class="font-sans text-2xl md:text-4xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300"
+              >
+                哈佛健康管理
+              </p>
+            </a>
+            <!-- CopyRight -->
+            <p class="text-white/50 text-sm md:text-base">
+              © 2023 哈佛健康管理.
+            </p>
+          </div>
+
+          <!-- Right -->
+          <div
+            class="flex justify-between text-white border-y border-white px-1.5 py-4 md:p-10 order-1 md:order-2"
+          >
+            <!-- 最新消息 -->
+            <a
+              href=""
+              class="text-sm md:text-xl hover:text-custom-beige transition-all"
+            >
+              最新消息
+            </a>
+            <!-- 衛教影音 -->
+            <a
+              href=""
+              class="text-sm md:text-xl hover:text-custom-beige transition-all"
+            >
+              衛教影音
+            </a>
+            <!-- 服務據點 -->
+            <div>
+              <p class="text-sm md:text-xl mb-2">服務據點</p>
+              <ul class="border-l-2 border-white/20 pl-3 text-xs md:text-base">
+                <li class="hover:text-custom-beige transition-all mb-3">
+                  <a href="dist/大安院區.html">大安院區</a>
+                </li>
+                <li class="hover:text-custom-beige transition-all">
+                  <a href="dist/內湖院區.html">內湖院區</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- To Top BTN -->
+    <button
+      class="fixed right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige hover:bg-custom-brown/80 transition-all duration-600 rounded-full opacity-0 hidden z-100 shadow-md group"
+      id="backToTopBtn"
+    >
+      <div
+        class="px-4 py-3 text-sm text-custom-darkBrown group-hover:text-white transition duration-150 xs:text-base"
+      >
+        <i class="fa-solid fa-arrow-up w-4 h-4"></i>
+      </div>
+    </button>
+
+    <!-- jQuery main -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/all.js"></script>
+
+    <!-- Preline -->
+    <script src="../node_modules/preline/dist/preline.js"></script>
+    <!-- Flowbite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a8b708c9db.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Paroller -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js"></script>
+    <script>
+      $(".my-paroller").paroller();
+    </script>
+  </body>
+</html>

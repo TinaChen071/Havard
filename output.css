@@ -1335,7 +1335,7 @@ input:checked + .toggle-bg {
   justify-content: center;
   border-radius: 9999px;
   background-color: rgb(214 205 198 / 0.8);
-  padding: 1.5rem;
+  padding: 0.5rem;
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1666,6 +1666,10 @@ input:checked + .toggle-bg {
   margin-left: 0.5rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -1854,11 +1858,6 @@ input:checked + .toggle-bg {
   width: calc(100% - 2rem);
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1971,10 +1970,6 @@ input:checked + .toggle-bg {
 
 .resize {
   resize: both;
-}
-
-.list-inside {
-  list-style-position: inside;
 }
 
 .list-disc {
@@ -2335,6 +2330,10 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1511174511562-5f7f18b874f8\?q\=80\&w\=2670\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
 .bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1519710164239-da123dc03ef4\?q\=80\&w\=2574\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
   background-image: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
@@ -2518,11 +2517,6 @@ input:checked + .toggle-bg {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pb-1 {
@@ -3741,6 +3735,10 @@ html {
     margin-bottom: 3.5rem;
   }
 
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .md\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -3897,6 +3895,11 @@ html {
     padding: 2rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:px-36 {
     padding-left: 9rem;
     padding-right: 9rem;
@@ -3935,11 +3938,6 @@ html {
   .md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .md\:pb-16 {
@@ -4068,13 +4066,6 @@ html {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:px-36 {
-    padding-left: 9rem;
-    padding-right: 9rem;
   }
 }
 /*# sourceMappingURL=output.css.map */
