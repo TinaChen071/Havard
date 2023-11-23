@@ -1838,6 +1838,10 @@ input:checked + .toggle-bg {
   width: 1.25rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-64 {
   width: 16rem;
 }
@@ -1865,10 +1869,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .min-w-\[14rem\] {
@@ -2398,10 +2398,6 @@ input:checked + .toggle-bg {
   --tw-gradient-to: #806A58 var(--tw-gradient-to-position);
 }
 
-.bg-\[length\:1px_1px\] {
-  background-size: 1px 1px;
-}
-
 .bg-\[length\:800px\] {
   background-size: 800px;
 }
@@ -2445,10 +2441,6 @@ input:checked + .toggle-bg {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-1 {
@@ -3272,10 +3264,6 @@ html {
 .group:hover .group-hover\:bg-custom-beige {
   --tw-bg-opacity: 1;
   background-color: rgb(214 205 198 / var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:bg-custom-beige\/60 {
-  background-color: rgb(214 205 198 / 0.6);
 }
 
 .group:hover .group-hover\:bg-custom-brown {
