@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "flowbite": "^2.0.0",
+    "locomotive-scroll": "^4.1.4",
     "paroller.js": "^1.4.7",
     "preline": "^2.0.0",
     "rellax": "^1.12.1"

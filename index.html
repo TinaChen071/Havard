@@ -7,11 +7,10 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="output.css">
-     <!-- favicon -->
-     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico" />
-    
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico" />
 </head>
-<body id="bg">
+<body id="bg" class="scroll-zone">
   <!-- Navbar -->
   <header class="sticky top-0 inset-x-0 flex flex-wrap lg:justify-between lg:flex-nowrap w-full bg-custom-darkBrown backdrop-blur-md text-sm py-3 z-100 transition-padding duration-300" id="nav">
     <nav class="relative max-w-7xl w-full mx-auto px-4 md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
@@ -174,7 +173,7 @@
   </section>
 
   <!-- News Section -->
-  <section class="max-w-7xl w-full mx-auto relative grid lg:grid-cols-2">
+  <section class="max-w-7xl w-full mx-auto relative grid lg:grid-cols-2" data-scroll-section>
     <!-- Left -->
     <div class="sm:bg-custom-beige/40  after:content-['News'] afterText flex items-center justify-center">
       
@@ -537,5 +536,6 @@
   <script>
     AOS.init();
   </script>
+  
 </body>
 </html>
