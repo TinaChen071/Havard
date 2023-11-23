@@ -12,7 +12,8 @@ module.exports = {
           brown: '#806A58',
           beige: '#D6CDC6',
           gray: '#F1F1F1',
-          line: '#06C655'
+          line: '#06C655',
+          YT: '#FF0000'
         }
       },
       spacing: {

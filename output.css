@@ -1858,21 +1858,17 @@ input:checked + .toggle-bg {
   width: calc(100% - 2rem);
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-7\/12 {
-  width: 58.333333%;
-}
-
-.w-5\/12 {
-  width: 41.666667%;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-6 {
+  width: 1.5rem;
 }
 
 .min-w-\[14rem\] {
@@ -2402,6 +2398,10 @@ input:checked + .toggle-bg {
   --tw-gradient-to: #806A58 var(--tw-gradient-to-position);
 }
 
+.bg-\[length\:1px_1px\] {
+  background-size: 1px 1px;
+}
+
 .bg-\[length\:800px\] {
   background-size: 800px;
 }
@@ -2445,6 +2445,10 @@ input:checked + .toggle-bg {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-1 {
@@ -2694,6 +2698,11 @@ input:checked + .toggle-bg {
   color: rgb(28 100 242 / var(--tw-text-opacity));
 }
 
+.text-custom-YT {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+}
+
 .text-custom-brown {
   --tw-text-opacity: 1;
   color: rgb(128 106 88 / var(--tw-text-opacity));
@@ -2745,11 +2754,6 @@ input:checked + .toggle-bg {
 
 .text-white\/50 {
   color: rgb(255 255 255 / 0.5);
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .placeholder-custom-brown\/70::-moz-placeholder {
@@ -3065,6 +3069,11 @@ html {
   width: 100%;
 }
 
+.after\:content-\[\'Medias\'\]::after {
+  --tw-content: 'Medias';
+  content: var(--tw-content);
+}
+
 .after\:content-\[\'News\'\]::after {
   --tw-content: 'News';
   content: var(--tw-content);
@@ -3072,10 +3081,6 @@ html {
 
 .hover\:mr-2:hover {
   margin-right: 0.5rem;
-}
-
-.hover\:ml-2:hover {
-  margin-left: 0.5rem;
 }
 
 .hover\:border-custom-darkBrown:hover {
@@ -3267,6 +3272,10 @@ html {
 .group:hover .group-hover\:bg-custom-beige {
   --tw-bg-opacity: 1;
   background-color: rgb(214 205 198 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-custom-beige\/60 {
+  background-color: rgb(214 205 198 / 0.6);
 }
 
 .group:hover .group-hover\:bg-custom-brown {
@@ -3633,16 +3642,16 @@ html {
     width: 10rem;
   }
 
-  .sm\:w-full {
-    width: 100%;
+  .sm\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .sm\:w-7\/12 {
     width: 58.333333%;
   }
 
-  .sm\:w-5\/12 {
-    width: 41.666667%;
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:min-w-\[14rem\] {
@@ -3769,6 +3778,10 @@ html {
     margin-bottom: 4rem;
   }
 
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -3783,10 +3796,6 @@ html {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:ml-4 {
-    margin-left: 1rem;
   }
 
   .md\:block {
