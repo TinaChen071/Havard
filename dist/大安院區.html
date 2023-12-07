@@ -550,16 +550,6 @@
           <div class="grid md:grid-cols-2 gap-4 md:gap-16 text-custom-darkBrown mb-8 md:mb-14">
             <!-- Left -->
             <div class="flex flex-col gap-4 sm:gap-6">
-              <!-- 諮詢院區 -->
-              <div>
-                <label for="hs-leading-icon" class="block mb-2 md:text-xl">諮詢院區<span class="pl-1 text-red-500">*</span></label>
-                <select class="py-3 px-4 pe-9 block w-full border-custom-beige text-custom-darkBrown text-sm focus:border-custom-brown focus:ring-custom-brown">
-                  <option selected>請選擇院區</option>
-                  <option>院區一</option>
-                  <option>院區二</option>
-                  <option>院區三</option>
-                </select>
-              </div>
               <!-- 姓名 -->
               <div>
                 <label for="hs-leading-icon" class="block mb-2 md:text-xl">姓名<span class="pl-1 text-red-500">*</span></label>
@@ -575,15 +565,52 @@
 
                   <!-- Gender -->
                   <div class="flex gap-3 md:gap-4">
-                    <div class="flex">
+                    <div class="flex items-center">
                       <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
                       <label for="hs-radio-vertical-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">先生</label>
                     </div>
                     
-                    <div class="flex">
+                    <div class="flex items-center">
                       <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
                       <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">小姐</label>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 年齡 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">年齡<span class="pl-1 text-red-500">*</span></label>
+                
+                <!-- 選項 -->
+                <div class="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-x-4 md:gap-y-3">
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
+                    <label for="hs-radio-vertical-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">20歲以下</label>
+                  </div>
+                  
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                    <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">20-29歲</label>
+                  </div>
+
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                    <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">30-39歲</label>
+                  </div>
+
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                    <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">40-49歲</label>
+                  </div>
+
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                    <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">50-59歲</label>
+                  </div>
+
+                  <div class="flexitems-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                    <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">60歲以上</label>
                   </div>
                 </div>
               </div>
@@ -594,16 +621,6 @@
                   <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入聯絡電話">
                   <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
                     <i class="fa-solid fa-phone"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- 行動電話 -->
-              <div>
-                <label for="hs-leading-icon" class="block mb-2 md:text-xl">行動電話</label>
-                <div class="relative">
-                  <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入行動電話">
-                  <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
                   </div>
                 </div>
               </div>
@@ -620,30 +637,54 @@
             </div>
             <!-- Right -->
             <div class="flex flex-col gap-4 sm:gap-6 h-full">
+              <!-- 優先聯絡方式 -->
+              <div>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">優先聯絡方式</label>
+                
+                <!-- 選項 -->
+                <div class="flex gap-3 md:gap-4">
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
+                    <label for="hs-radio-vertical-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">電話</label>
+                  </div>
+                  
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                    <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">Email</label>
+                  </div>
+                </div>
+              </div>
               <!-- 優先聯絡時段 -->
               <div>
-                <label for="hs-leading-icon" class="block mb-2 md:text-xl">諮詢院區</label>
-                <select class="py-3 px-4 pe-9 block w-full border-custom-beige text-custom-darkBrown text-sm focus:border-custom-brown focus:ring-custom-brown">
-                  <option selected>請選擇聯絡時段</option>
-                  <option>早上</option>
-                  <option>中午</option>
-                  <option>下午</option>
-                </select>
-              </div>
-              <!-- 諮詢項目 -->
-              <div>
-                <label for="hs-leading-icon" class="block mb-2 md:text-xl">諮詢項目<span class="pl-1 text-red-500">*</span></label>
-                <select class="py-3 px-4 pe-9 block w-full border-custom-beige text-custom-darkBrown text-sm focus:border-custom-brown focus:ring-custom-brown">
-                  <option selected>請選擇諮詢項目</option>
-                  <option>項目一</option>
-                  <option>項目二</option>
-                  <option>項目三</option>
-                </select>
+                <label for="hs-leading-icon" class="block mb-2 md:text-xl">優先聯絡時段</label>
+                
+                <!-- 選項 -->
+                <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-x-4 md:gap-y-3">
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
+                    <label for="hs-radio-vertical-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">9:00-12:00</label>
+                  </div>
+                  
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                    <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">13:00-17:00</label>
+                  </div>
+
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                    <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">18:00-20:00</label>
+                  </div>
+
+                  <div class="flex items-center">
+                    <input type="radio" name="hs-radio-vertical-group" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-vertical-group-2">
+                    <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">時間皆可</label>
+                  </div>
+                </div>
               </div>
               <!-- 訊息 -->
               <div>
                 <label for="hs-leading-icon" class="block mb-2 md:text-xl">請簡述您的健康問題</label>
-                <textarea class="py-3 px-4 block w-full border-custom-beige placeholder-custom-brown/70 text-sm focus:border-custom-brown focus:ring-custom-brown " rows="11" placeholder="請輸入訊息"></textarea>
+                <textarea class="py-3 px-4 block w-full border-custom-beige placeholder-custom-brown/70 text-sm focus:border-custom-brown focus:ring-custom-brown " rows="9" placeholder="請輸入訊息"></textarea>
               </div>
             </div>
           </div>
