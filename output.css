@@ -2580,6 +2580,14 @@ input:checked + .toggle-bg {
   padding-top: 0.5rem;
 }
 
+.pl-11 {
+  padding-left: 2.75rem;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -3179,6 +3187,10 @@ html {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.focus\:z-10:focus {
+  z-index: 10;
 }
 
 .focus\:border-blue-500:focus {
