@@ -113,216 +113,66 @@
 
   <!-- Content Section -->
   <section class="section relative">
-    <!-- Text Decoration -->
-    <div class="absolute left-0 bottom-0 ml-0.5 text-custom-brown/5 text-9xl hidden sm:block -z-10">
-        Health <br> Evaluation
-    </div>
+    
+    <!-- Content -->
+    <div class="flex flex-col sm:flex-row justify-between">
+      <!-- Pre BTN + Social bar -->
+      <div class="order-2 sm:order-1">
+        <!-- 回上頁 -->
+        <button class="hidden sm:block p-2 md:p-4 border-2 border-custom-brown text-custom-brown group hover:bg-custom-brown hover:text-white transition-all mb-10" onclick="history.back()">
+          <i class="fa-solid fa-chevron-left group-hover:text-white mr-1"></i>
+          回上頁
+        </button>
 
-    <!-- Breadcrumbs -->
-    <ol class="flex items-center whitespace-nowrap text-custom-brown text-sm md:text-xl" aria-label="Breadcrumb">
-        <li class="inline-flex items-center">
-          <a class="flex items-center   hover:text-custom-darkBrown transition-all" href="../index.html">
-            <i class="fa-solid fa-house pr-2.5"></i>
-            首頁
-          </a>
-          <svg class="flex-shrink-0 h-5 w-5 mx-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"/>
-          </svg>
-        </li>
-        <li class="inline-flex items-center  truncate cursor-default" aria-current="page">
-            關係企業
-        </li>
-        <svg class="flex-shrink-0 h-5 w-5 mx-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"/>
-        </svg>
-        <li class="inline-flex items-center  text-custom-darkBrown truncate cursor-default" aria-current="page">
-            健康檢查
-        </li>
-    </ol>
-
-    <!-- Title -->
-    <div class="title">
-        <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">
-          健康檢查
-        </h2>
-        <p class="text-sm lg:text-xl">
-          Health Evaluation Center
-        </p>
-    </div>
-
-    <!-- 健診中心區塊 -->
-    <div class="grid sm:grid-cols-2 gap-6 sm:gap-10">
-        <!-- 哈佛健診 -->
-        <div>
-            <img src="../img/內湖哈佛-櫃台.jpg" alt="" class="aspect-video object-cover mb-4 sm:mb-6">
-            <div class="text-custom-brown flex flex-col gap-2 sm:gap-3">
-                <!-- Title -->
-                <h3 class="text-xl md:text-3xl">
-                  哈佛健診
-                </h3>
-                <hr class="h-px bg-custom-brown border-0 ">
-                <address class="not-italic text-base">
-                    <ul>
-                        <li class="flex whitespace-nowrap">
-                            院區地址：
-                            <span class="whitespace-normal">
-                              台北市內湖區內湖路一段300號2樓
-                            </span>
-                        </li>
-                        <li>
-                            聯絡電話：
-                            <a href="tel:+886-2-27155565">02-2715-5565</a>
-                        </li>
-                        <div class="flex flex-row whitespace-nowrap">
-                            營業時間：
-                            <ul class="whitespace-normal">
-                              <li>
-                                週一至週五 08:00-18:00 (健檢時間至12:00 )
-                              </li>
-                              <li>
-                                週六 08:00-12:00 (非每週開診，請來電詢問)
-                              </li>
-                              <li>
-                                國定假日、例假日休息
-                              </li>
-                            </ul>
-                          </div>
-                    </ul>
-                </address>
-            </div>
-        </div>
-        <!-- 哈佛健診-富盈診所 -->
-        <div>
-          <img src="../img/內湖哈佛-櫃台.jpg" alt="" class="aspect-video object-cover mb-4 sm:mb-6">
-          <div class="text-custom-brown flex flex-col gap-2 sm:gap-3">
-              <!-- Title -->
-              <h3 class="text-xl md:text-3xl">
-                哈佛健診-富盈診所
-              </h3>
-              <hr class="h-px bg-custom-brown border-0 ">
-              <address class="not-italic text-base">
-                  <ul>
-                      <li class="flex whitespace-nowrap">
-                          院區地址：
-                          <span class="whitespace-normal">
-                            台北市大安區基隆路二段172-1號3樓
-                          </span>
-                      </li>
-                      <li>
-                          聯絡電話：
-                          <a href="tel:+886-2-66363996"> 02-6636-3996
-                            <span>
-                              (分機: 237、238、239)
-                            </span>
-                          </a>
-                      </li>
-                      <div class="flex flex-row whitespace-nowrap">
-                          營業時間：
-                          <ul class="whitespace-normal">
-                            <li>
-                              週一至週五08:00-17:30
-                            </li>
-                            <li>
-                              週六 08:00-12:00 (非每週開診，請來電詢問)
-                            </li>
-                            <li>
-                              國定假日、例假日休息
-                            </li>
-                          </ul>
-                        </div>
-                  </ul>
-              </address>
+        <!-- 社群分享 -->
+        <div class="bg-custom-beige/60 px-4 py-3 sm:py-6 text-center flex flex-row sm:flex-col gap-6 text-custom-brown justify-between sm:justify-normal">
+          <p class="text-custom-darkBrown">
+            Share
+          </p>
+          <div class="flex sm:flex-col gap-6 items-center text-lg">
+            <!-- Link -->
+            <i class="fa-solid fa-link hover:text-custom-darkBrown transition-all cursor-pointer" id="copyLinkButton"></i>
+            <!-- FB -->
+            <button class="fb button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="facebook" data-hashtag="hashtag" data-url="">
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <!-- Line -->
+            <button class="line button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="line" data-title="分享至 Line" data-url="">
+              <i class="fa-brands fa-line"></i>
+            </button>
           </div>
         </div>
-        <!-- 哈佛健診-盛祐診所 -->
-        <div>
-          <img src="../img/台南哈佛-櫃台.jpg" alt="" class="aspect-video object-cover mb-4 sm:mb-6">
-          <div class="text-custom-brown flex flex-col gap-2 sm:gap-3">
-              <!-- Title -->
-              <h3 class="text-xl md:text-3xl">
-                哈佛健診-盛祐診所
-              </h3>
-              <hr class="h-px bg-custom-brown border-0 ">
-              <address class="not-italic text-base">
-                  <ul>
-                      <li class="flex whitespace-nowrap">
-                          院區地址：
-                          <span class="whitespace-normal">
-                            台南市北區臨安路二段209號2-3樓
-                          </span>
-                      </li>
-                      <li>
-                          聯絡電話：
-                          <a href="tel:+886-6-3589469"> 06-3589-469
-                            <span>
-                              (分機: 8)
-                            </span>
-                          </a>
-                      </li>
-                      <div class="flex flex-row whitespace-nowrap">
-                          營業時間：
-                          <ul class="whitespace-normal">
-                            <li>
-                              週一至週五08:00-17:00 (健檢時間至12:00 )
-                            </li>
-                            <li>
-                              週六 08:00-12:00 (非每週開診，請來電詢問)
-                            </li>
-                            <li>
-                              國定假日、例假日休息
-                            </li>
-                          </ul>
-                        </div>
-                  </ul>
-              </address>
-          </div>
+      </div>
+
+      <!-- News Content -->
+      <article class="sm:w-4/5 order-1 sm:order-2 mb-4 sm:mb-0">
+        <!-- Time -->
+        <time class="text-custom-brown inline-block mb-3 md:mb-6">
+          2023/12/26
+        </time>
+        <!-- Title -->
+        <h1 class="text-xl md:text-4xl text-gray-900 w-full border-b-2 border-custom-beige pb-3 md:pb-6 mb-4 md:mb-10">
+          基因檢測小教室__該如何選擇基因檢測項目呢?
+        </h1>
+        <!-- Content -->
+        <div class="text-stone-500 leading-loose flex flex-col gap-4 md:gap-6 indent-8">
+          <iframe class="aspect-video" src="https://www.youtube.com/embed/6CpZX8zrBAQ?si=LA8ycr7y_yRP2XjT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p>
+            哈佛健診成立至今已近30年，一直是民眾心中優質健檢的首選品牌。而哈佛健檢於2020年通過JCI國際醫療評鑑，成為台灣首家通過JCI美國國際醫療品質認證的健診中心，證明哈佛健診的服務與品質值得信賴，這是重大的里程碑，也將臺灣健康檢查理念帶入新時代。
+          </p>
+          <img src="https://images.unsplash.com/photo-1533090368676-1fd25485db88?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-video object-cover">
+          <p>
+            台灣睡眠醫學學會針對40到65歲民眾的最新調查發現，全台慢性失眠症盛行率高達10.7％，也就是全台有超過230萬人罹患慢性失眠症，平均每9人就有1人受慢性失眠之苦。
+          </p>
         </div>
-        <!-- 敏盛精準醫學健診中心 -->
-        <div>
-          <img src="../img/內湖哈佛-櫃台.jpg" alt="" class="aspect-video object-cover mb-4 sm:mb-6">
-          <div class="text-custom-brown flex flex-col gap-2 sm:gap-3">
-              <!-- Title -->
-              <h3 class="text-xl md:text-3xl">
-                敏盛精準醫學健診中心
-              </h3>
-              <hr class="h-px bg-custom-brown border-0 ">
-              <address class="not-italic text-base">
-                  <ul>
-                      <li class="flex whitespace-nowrap">
-                          院區地址：
-                          <span class="whitespace-normal">
-                            桃園市桃園區經國路168號21樓
-                          </span>
-                      </li>
-                      <li>
-                          聯絡電話：
-                          <a href="tel:+886-3-3151007"> 03-3151-007
-                            <span>
-                              (分機: 660、668)
-                            </span>
-                          </a>
-                      </li>
-                      <div class="flex flex-row whitespace-nowrap">
-                          營業時間：
-                          <ul class="whitespace-normal">
-                            <li>
-                              週一至週五08:30-17:00
-                            </li>
-                            <li>
-                              週六08:30-17:00 (非每週開診，請來電詢問)
-                            </li>
-                            <li>
-                              國定假日、例假日休息
-                            </li>
-                          </ul>
-                        </div>
-                  </ul>
-              </address>
-          </div>
-        </div>
+      </article>
     </div>
   </section>
   
+  <!-- Alert Copied -->
+  <div id="customAlert" class="fixed left-4 bottom-4 bg-white shadow-md p-4 rounded-lg z-10 transition-opacity ease-out duration-300" style="display: none;">
+    <p id="alertMessage">連結已複製</p>
+  </div>
 
   <!-- Footer Section -->
   <footer class="bg-custom-darkBrown text-white">
@@ -415,12 +265,16 @@
   <script>
     AOS.init();
   </script>
+  <!-- social share js -->
+  <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 
-  <!-- Paroller -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js"></script>
+  <!-- FB & Line Share -->
   <script>
-    $('.my-paroller').paroller(); 
-   </script>
+    var fbButton = document.querySelector('.fb.button');
+    var lineButton = document.querySelector('.line.button');
 
+    fbButton.setAttribute('data-url', window.location.href);
+    lineButton.setAttribute('data-url', window.location.href);
+  </script>
 </body>
 </html>
