@@ -2444,6 +2444,18 @@ input:checked + .toggle-bg {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'img\/\5433\555F\8AA0\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('img/吳啟誠醫師照.jpg');
+}
+
+.bg-\[url\(\'\/img\/\5433\8A69\97FB\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('/img/吳詩韻醫師照.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/\590F\6F22\8A73\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('./img/夏漢詳醫師照.jpg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
