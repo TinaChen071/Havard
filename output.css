@@ -2456,6 +2456,38 @@ input:checked + .toggle-bg {
   background-image: url('./img/夏漢詳醫師照.jpg');
 }
 
+.bg-\[url\(\'img\/\5433\8A69\97FB\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('img/吳詩韻醫師照.jpg');
+}
+
+.bg-\[url\(\'img\/\590F\6F22\8A73\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('img/夏漢詳醫師照.jpg');
+}
+
+.bg-\[url\(\'img\/\8A31\5609\73CA\91AB\5E2B\7167\.png\'\)\] {
+  background-image: url('img/許嘉珊醫師照.png');
+}
+
+.bg-\[url\(\'img\/\90ED\6631\5EF7\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('img/郭昱廷醫師照.jpg');
+}
+
+.bg-\[url\(\'img\/\90ED\7DBB\6D0B\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('img/郭綻洋醫師照.jpg');
+}
+
+.bg-\[url\(\'img\/\9673\5B50\752F\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('img/陳子甯醫師照.jpg');
+}
+
+.bg-\[url\(\'img\/\9673\6021\8AA0\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('img/陳怡誠醫師照.jpg');
+}
+
+.bg-\[url\(\'img\/\9EC3\662D\52F3\91AB\5E2B\7167\.png\'\)\] {
+  background-image: url('img/黃昭勳醫師照.png');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
