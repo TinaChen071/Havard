@@ -1398,6 +1398,23 @@ input:checked + .toggle-bg {
   --tw-ring-color: rgb(128 106 88 / var(--tw-ring-opacity));
 }
 
+.team_img {
+  aspect-ratio: 5/4;
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 211 209 / var(--tw-bg-opacity));
+  background-size: cover;
+  background-position: top;
+}
+
+.team__list {
+  list-style-position: inside;
+  list-style-type: disc;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(58 53 50 / var(--tw-text-opacity));
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1981,6 +1998,10 @@ input:checked + .toggle-bg {
   resize: both;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
 .list-disc {
   list-style-type: disc;
 }
@@ -1989,16 +2010,16 @@ input:checked + .toggle-bg {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2343,6 +2364,18 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-\[url\(\'\.\.\/img\/\8A31\5609\73CA\91AB\5E2B\7167\.png\'\)\] {
+  background-image: url('../img/許嘉珊醫師照.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/\90ED\6631\5EF7\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('../img/郭昱廷醫師照.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/\90ED\7DBB\6D0B\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('../img/郭綻洋醫師照.jpg');
+}
+
 .bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1511174511562-5f7f18b874f8\?q\=80\&w\=2670\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
   background-image: url('https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
@@ -2387,6 +2420,38 @@ input:checked + .toggle-bg {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/img\/\590F\6F22\8A73\91AB\5E2B\7167\.png\'\)\] {
+  background-image: url('../img/夏漢詳醫師照.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/\590F\6F22\8A73\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('../img/夏漢詳醫師照.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/\5433\8A69\97FB\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('../img/吳詩韻醫師照.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/\5433\555F\8AA0\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('../img/吳啟誠醫師照.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/\9673\5B50\752F\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('../img/陳子甯醫師照.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/\9673\6021\8AA0\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('../img/陳怡誠醫師照.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/\9EC3\662D\52F3\91AB\5E2B\7167\.jpg\'\)\] {
+  background-image: url('../img/黃昭勳醫師照.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/\9EC3\662D\52F3\91AB\5E2B\7167\.png\'\)\] {
+  background-image: url('../img/黃昭勳醫師照.png');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
@@ -2416,6 +2481,11 @@ input:checked + .toggle-bg {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -2532,16 +2602,17 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
 
 .pb-3 {
   padding-bottom: 0.75rem;
-}
-
-.pe-9 {
-  padding-inline-end: 2.25rem;
 }
 
 .pl-1 {
@@ -2578,14 +2649,6 @@ input:checked + .toggle-bg {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pl-11 {
-  padding-left: 2.75rem;
-}
-
-.pl-0 {
-  padding-left: 0px;
 }
 
 .text-center {
@@ -3149,6 +3212,16 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-green-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 84 63 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-900:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 71 55 / var(--tw-bg-opacity));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -3187,10 +3260,6 @@ html {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.focus\:z-10:focus {
-  z-index: 10;
 }
 
 .focus\:border-blue-500:focus {
@@ -3843,10 +3912,6 @@ html {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -3899,6 +3964,11 @@ html {
     gap: 2rem;
   }
 
+  .md\:gap-x-4 {
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+
   .md\:gap-x-7 {
     -moz-column-gap: 1.75rem;
          column-gap: 1.75rem;
@@ -3906,11 +3976,6 @@ html {
 
   .md\:gap-y-0 {
     row-gap: 0px;
-  }
-
-  .md\:gap-x-4 {
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
   }
 
   .md\:gap-y-3 {
@@ -4076,6 +4141,10 @@ html {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-col {

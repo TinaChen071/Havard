@@ -144,6 +144,12 @@ html {
   .input {
     @apply py-3 px-4 pl-11 block w-full bg-white border-custom-beige placeholder-custom-brown/70 text-sm focus:z-10 focus:border-custom-brown focus:ring-custom-brown;
   }
+  .team_img {
+    @apply aspect-[5/4] bg-cover bg-top bg-stone-300;
+  }
+  .team__list {
+    @apply text-sm text-custom-darkBrown list-disc list-inside;
+  }
 }
 @screen sm {
   #checkIn__bg {

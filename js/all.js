@@ -187,5 +187,24 @@ function closeCustomAlert() {
   }, 300); // Wait for the 300ms transition duration
 }
 
+// 
+document.addEventListener('DOMContentLoaded', function () {
+  var accordion = document.getElementById('hs-basic-with-title-and-arrow-stretched-heading');
+  // var toggleButton = accordion.querySelector('.hs-accordion-toggle');
+  var accordionContent = accordion.querySelector('.hs-accordion-content');
+
+  // Toggle the accordion when the button is clicked
+  // toggleButton.addEventListener('click', function () {
+  //   accordionContent.classList.toggle('hidden');
+  // });
+
+  // Close the accordion when clicking outside of it
+  document.addEventListener('click', function (event) {
+    if (!accordion.contains(event.target)) {
+      accordionContent.classList.add('hidden');
+    }
+  });
+});
+
 
 // location.reload();
