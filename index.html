@@ -12,25 +12,25 @@
 </head>
 <body id="bg" class="scroll-zone">
   <!-- Navbar -->
-  <header class="sticky top-0 inset-x-0 flex flex-wrap lg:justify-between lg:flex-nowrap w-full bg-custom-darkBrown backdrop-blur-md text-sm py-3 z-100 transition-padding duration-300" id="nav">
-    <nav class="relative max-w-7xl w-full mx-auto px-4 md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
+  <header class="sticky inset-x-0 top-0 flex flex-wrap w-full py-3 text-sm duration-300 lg:justify-between lg:flex-nowrap bg-custom-darkBrown backdrop-blur-md z-100 transition-padding" id="nav">
+    <nav class="relative w-full px-4 mx-auto max-w-7xl md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
       <!-- Logo & 漢堡選單 -->
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a class="flex items-center group" id="logo" href="javascript:void(0);" aria-label="Brand">
-          <div class="bg-white group-hover:bg-custom-beige text-2xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300">
-            <span class="inline-block w-7 h-6">H</span>
+          <div class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige text-custom-darkBrown">
+            <span class="inline-block h-6 w-7">H</span>
           </div>
-          <p class="font-sans text-2xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300">哈佛健康管理</p>
+          <p class="font-sans text-2xl font-normal text-white transition-all duration-300 whitespace-nowrap group-hover:text-custom-beige">哈佛健康管理</p>
         </a>
 
         <!-- 漢堡選單 -->
         <div class="md:hidden">
-          <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-white font-medium bg-custom-darkBrown text-gray-700 shadow-sm align-middle hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50 transition-all text-sm " data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-            <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="white" viewBox="0 0 16 16">
+          <button type="button" class="inline-flex items-center justify-center gap-2 p-2 text-sm font-medium text-gray-700 align-middle transition-all border border-white rounded-md shadow-sm hs-collapse-toggle bg-custom-darkBrown hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50 " data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+            <svg class="w-4 h-4 hs-collapse-open:hidden" width="16" height="16" fill="white" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
-            <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="white" viewBox="0 0 16 16">
+            <svg class="hidden w-4 h-4 hs-collapse-open:block" width="16" height="16" fill="white" viewBox="0 0 16 16">
               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
             </svg>
           </button>
@@ -38,8 +38,8 @@
       </div>
       
       <!-- 按鈕 -->
-      <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
-        <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7 py-4">
+      <div id="navbar-collapse-with-animation" class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block">
+        <div class="flex flex-col py-4 mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
           
           <!-- 關於我們 -->
           <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group">
@@ -74,9 +74,9 @@
               <a class="nav__SubBTN" href="dist/大安院區.html">
                 大安院區
               </a>
-              <a class="nav__SubBTN" href="dist/內湖院區.html">
+              <!-- <a class="nav__SubBTN" href="dist/內湖院區.html">
                 內湖院區
-              </a>
+              </a> -->
             </div>
           </div>
           <!-- 關係企業 -->
@@ -107,7 +107,7 @@
   </header>
 
   <!-- Draw Flower -->
-  <div class="absolute left-0 top-128 z-50 opacity-20 hidden lg:block">
+  <div class="absolute left-0 z-50 hidden top-128 opacity-20 lg:block">
     <svg id="mySVG" class="w-96"  viewBox="0 0 553 473" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path id="flower" fill="none"  stroke-width="4" opacity="1" d="M-4.64874 2.29403C-4.34638 9.1528 20.0376 18.8464 49.0942 45.7557C60.1811 56.0232 81.039 96.4454 92.0886 106.509C119.352 131.338 147.624 150.201 150.038 155.578C165.98 191.103 238.766 197.191 267.316 220.556C279.536 230.556 295.568 244.244 309.348 251.905C324.529 260.345 342.187 267.426 354.671 279.91C362.684 287.924 374.847 292.572 384.129 299.001C396.354 307.469 414.692 315.267 418.986 330.266C420.267 334.743 425.183 338.938 428.917 341.013C435.126 344.465 440.77 350.924 447.303 353.44C454.677 356.28 463.359 350.158 470.089 347.573C480.223 343.68 487.406 335.711 499.415 330.016C521.267 319.653 531.202 320.677 542.031 313.228C547.422 309.519 546.799 304.307 547.139 297.773C547.482 291.183 552.589 284.828 549.416 281.771C538.179 270.95 515.821 298.146 493.106 305.43C474.875 311.276 469.059 314.157 445.484 317.09C441.079 317.638 435.805 318.596 432.581 321.82C428.098 326.302 436.913 334.126 441.083 334.649C444.852 335.123 448.4 337.032 452.235 337.801C456.426 338.642 462.915 339.197 466.369 341.73C475.344 348.315 484.678 355.446 494.765 360.494C503.281 364.756 516.02 382.164 525.237 368.844C529.213 363.099 527.177 353.722 528.614 347.241C529.448 343.48 530.869 342.291 529.425 338.256C527.849 333.849 521.116 327.928 517.125 325.629C506.714 319.631 490.303 320.81 478.813 321.848C466.428 322.966 453.375 323.008 441.364 326.277C437.869 327.228 435.179 329.124 431.523 329.579C427.763 330.047 429.482 337.105 429.61 339.503C430.138 349.417 440.732 358.693 444.167 367.61C445.782 371.804 448.084 378.304 450.628 381.745C454.958 387.601 454.013 398.406 456.36 405.437C457.288 408.215 455.761 417.87 457.839 418.67C466.053 421.834 475.624 423.969 484.308 425.711C490.866 427.026 498.691 425.091 505.054 424.09C509.977 423.316 516.014 415.789 519.914 413.235C522.174 411.755 525.034 409.645 526.363 407.195C530.38 399.79 535.009 393.782 529.454 385.959C524.844 379.465 519.373 374.242 513.108 369.367C508.896 366.091 502.765 364.923 497.992 362.66C490.478 359.097 481.527 358.893 473.404 358.888C471.25 358.887 469.149 358.319 467.195 357.496C463.467 355.924 458.437 356.637 454.452 356.181C445.57 355.164 437.409 350.893 431.165 344.649C424.256 337.74 416.281 332.413 408.569 326.461C404.192 323.084 397.716 344.133 397.432 347.978C396.299 363.337 401.861 379.885 403.424 395.113C404.355 404.192 406.37 413.114 407.279 422.152C407.994 429.263 407.716 437.983 409.662 444.779C411.196 450.141 408.031 456.221 409.345 461.279C410.415 465.398 410.147 467.405 414.822 469.206C421.189 471.658 428.642 469.311 434.67 467.176C445.346 463.393 454.117 458.046 463.004 450.938C463.682 450.396 475.332 441.231 475.332 440.572C475.33 437.871 473.454 434.346 472.304 431.993C470.574 428.452 470.058 424.327 467.969 421.045C465.733 417.534 464.474 413.794 461.836 410.259C449.741 394.053 435.918 381.069 421.377 367.188C415.263 361.352 407.371 357.873 403.151 350.105C399.02 342.501 394.509 347.644 392.044 353.529C388.046 363.076 384.384 373.427 379.646 382.437C374.259 392.682 374.726 403.948 372.886 415.025C371.475 423.522 373.23 432.895 373.474 441.245C373.567 444.431 372.772 448.121 373.112 451.169C373.742 456.805 382.551 457.506 386.962 458.325C396.378 460.074 408.133 454.094 415.791 449.276C417.605 448.134 422.877 445.423 423.751 443.849C425.216 441.211 422.854 436.409 423.296 433.434C424.22 427.205 419.153 418.149 417.402 412.029C414.17 400.743 415.459 388.932 413.705 377.475C412.359 368.688 411.363 358.72 408.542 350.272C406.109 342.985 407.96 333.6 407.956 325.848" stroke="#806A58" stroke-width="4" stroke-linecap="round"/>
       </svg>
@@ -115,15 +115,15 @@
   <!-- Carousel Section -->
   <section class="relative overflow-hidden">
     <!-- Blob -->
-    <div class="hidden lg:block z-50 absolute -top-24 -right-4 ">
+    <div class="absolute z-50 hidden lg:block -top-24 -right-4 ">
       <div class="blob"></div>
     </div>
     
     <!-- Carousel -->
-    <div class="md:max-w-7xl w-full mx-auto  lg:py-16 lg:px-36">
+    <div class="w-full mx-auto md:max-w-7xl lg:py-16 lg:px-36">
       <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative aspect-video overflow-hidden">
+        <div class="relative overflow-hidden aspect-video">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
@@ -154,16 +154,16 @@
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
         </div>
         <!-- Slider controls -->
-        <button type="button" class="hidden absolute top-0 left-0 z-30 md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/50 group-focus:outline-none transition duration-300 ease-in-out">
+        <button type="button" class="absolute top-0 left-0 z-30 items-center justify-center hidden h-full px-4 cursor-pointer md:flex group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 transition duration-300 ease-in-out rounded-full group-hover:bg-white/50 group-focus:outline-none">
                 <svg class="w-4 h-4 text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                 </svg>
                 <span class="sr-only">Previous</span>
             </span>
         </button>
-        <button type="button" class="hidden absolute top-0 right-0 z-30 md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/50 group-focus:outline-none transition duration-300 ease-in-out">
+        <button type="button" class="absolute top-0 right-0 z-30 items-center justify-center hidden h-full px-4 cursor-pointer md:flex group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 transition duration-300 ease-in-out rounded-full group-hover:bg-white/50 group-focus:outline-none">
                 <svg class="w-4 h-4 text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                 </svg>
@@ -176,18 +176,18 @@
   </section>
 
   <!-- News Section -->
-  <section class="max-w-7xl w-full mx-auto relative grid lg:grid-cols-2" data-scroll-section>
+  <section class="relative grid w-full mx-auto max-w-7xl lg:grid-cols-2" data-scroll-section>
     <!-- Left -->
     <div class="sm:bg-custom-beige/40  after:content-['News'] afterText flex items-center justify-center">
       
       <!-- Wrapper -->
-      <div class="flex flex-col px-4 py-8 sm:px-24 lg:px-36 gap-10 lg:gap-24 w-full">
+      <div class="flex flex-col w-full gap-10 px-4 py-8 sm:px-24 lg:px-36 lg:gap-24">
         <!-- Intro -->
         <div class="hidden sm:block">
-          <h1 class="text-4xl lg:text-6xl text-custom-darkBrown py-4 lg:py-8">
+          <h1 class="py-4 text-4xl lg:text-6xl text-custom-darkBrown lg:py-8">
             哈佛健康管理
           </h1>
-          <p class=" text-stone-500 leading-loose">
+          <p class="leading-loose text-stone-500">
             哈佛健診成立至今已近30年，一直是民眾心中優質健檢的首選品牌。而哈佛健檢於2020年通過JCI國際醫療評鑑，成為台灣首家通過JCI美國國際醫療品質認證的健診中心，證明哈佛健診的服務與品質值得信賴，這是重大的里程碑，也將臺灣健康檢查理念帶入新時代。
           </p>
         </div>
@@ -196,8 +196,8 @@
         <div class="z-10 flex justify-between lg:flex-col">
 
           <!-- Title -->
-          <div class="text-custom-brown border-l-4 md:border-l-8 border-custom-darkBrown/20 pl-5 md:mb-8">
-            <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">
+          <div class="pl-5 border-l-4 text-custom-brown md:border-l-8 border-custom-darkBrown/20 md:mb-8">
+            <h2 class="pb-1 text-2xl lg:text-6xl lg:pb-4">
               最新消息
             </h2>
             <p class="text-sm lg:text-xl">
@@ -206,14 +206,14 @@
           </div>
 
           <!-- Read More Button -->
-          <a href="https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/time" class="text-custom-brown flex items-center group readMore">
-            <p class="pr-3 group-hover:text-custom-darkBrown transition-all ease-in-out duration-300">
+          <a href="https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/time" class="flex items-center text-custom-brown group readMore">
+            <p class="pr-3 transition-all duration-300 ease-in-out group-hover:text-custom-darkBrown">
               查看更多
             </p>
             <button class="rounded-full relative align-middle text-center border border-custom-brown/20 transition-all ease-in-out duration-300  h-[45px] w-[45px] group-hover:text-custom-darkBrown"
             style="transition-timing-function: cubic-bezier(.4,.08,0,.97);"
             >
-              <svg class="absolute left-0 top-0 svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <svg class="absolute top-0 left-0 svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <circle class="circle" cx="50" cy="50" r="48" stroke="#3A3532" stroke-width="3" fill="none"  />
               </svg>
               <i class="fa-solid fa-arrow-right"></i>
@@ -235,12 +235,12 @@
         </div>
         
         <!-- Content -->
-        <div class="p-4 md:p-8 bg-white group-hover:bg-custom-beige transition-all">
-          <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+        <div class="p-4 transition-all bg-white md:p-8 group-hover:bg-custom-beige">
+          <time class="inline-flex mb-3 text-xs md:text-sm text-custom-brown sm:mb-4">
             2023/10/20
           </time>
 
-          <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+          <h3 class="mb-2 text-base text-custom-darkBrown md:text-xl line-clamp-2">
             【睡眠門診】-健檢方案限時預約中-哈佛健診
           </h3>
 
@@ -263,12 +263,12 @@
         </div>
         
         <!-- Content -->
-        <div class="p-4 md:p-8 bg-custom-gray group-hover:bg-custom-beige transition-all">
-          <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+        <div class="p-4 transition-all md:p-8 bg-custom-gray group-hover:bg-custom-beige">
+          <time class="inline-flex mb-3 text-xs md:text-sm text-custom-brown sm:mb-4">
             2023/10/20
           </time>
 
-          <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+          <h3 class="mb-2 text-base text-custom-darkBrown md:text-xl line-clamp-2">
             【睡眠門診】-健檢方案限時預約中-哈佛健診
           </h3>
 
@@ -291,12 +291,12 @@
         </div>
         
         <!-- Content -->
-        <div class="p-4 md:p-8 bg-white group-hover:bg-custom-beige transition-all">
-          <time class="text-xs md:text-sm text-custom-brown inline-flex mb-3 sm:mb-4">
+        <div class="p-4 transition-all bg-white md:p-8 group-hover:bg-custom-beige">
+          <time class="inline-flex mb-3 text-xs md:text-sm text-custom-brown sm:mb-4">
             2023/10/20
           </time>
 
-          <h3 class="text-custom-darkBrown text-base md:text-xl line-clamp-2 mb-2">
+          <h3 class="mb-2 text-base text-custom-darkBrown md:text-xl line-clamp-2">
             【睡眠門診】-健檢方案限時預約中-哈佛健診
           </h3>
 
@@ -317,11 +317,11 @@
   <!-- Locations Section -->
   <section class="hidden bg-[url('https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center w-full h-fit">
       <div class="w-full h-full backdrop-blur-lg">
-        <div class="section flex flex-row justify-between text-white">
+        <div class="flex flex-row justify-between text-white section">
 
           <!-- Title -->
-          <div class=" border-l-4 md:border-l-8 border-white/20 pl-5 md:mb-8 h-fit">
-            <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4 whitespace-nowrap">
+          <div class="pl-5 border-l-4 md:border-l-8 border-white/20 md:mb-8 h-fit">
+            <h2 class="pb-1 text-2xl lg:text-6xl lg:pb-4 whitespace-nowrap">
               服務據點
             </h2>
             <p class="text-sm lg:text-xl">
@@ -345,14 +345,14 @@
   </section>
 
   <!-- Services Section -->
-  <section class="section relative">
+  <section class="relative section">
     <!-- Text Decoration -->
     <div class="absolute left-0 bottom-0 ml-0.5 text-custom-brown/5 text-9xl hidden sm:block -z-10">
       Our <br> Services
     </div>
     <!-- Title -->
-    <div class="text-custom-brown border-l-4 md:border-l-8 border-custom-darkBrown/20 pl-5 md:mb-8">
-      <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">
+    <div class="pl-5 border-l-4 text-custom-brown md:border-l-8 border-custom-darkBrown/20 md:mb-8">
+      <h2 class="pb-1 text-2xl lg:text-6xl lg:pb-4">
         服務項目
       </h2>
       <p class="text-sm lg:text-xl">
@@ -361,126 +361,130 @@
     </div>
 
     <!-- Services -->
-    <div class="grid sm:grid-cols-2 gap-4 md:gap-6">
+    <div class="grid gap-4 sm:grid-cols-1 md:gap-6">
 
       <!-- 大安院區 -->
-      <div class="border-2 border-custom-beige">
+      <div class="flex flex-col border-2 md:flex-row border-custom-beige ">
         <!-- Img -->
-        <img src="https://images.unsplash.com/photo-1658439615734-446c226e2602?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-video object-cover">
-        <!-- Title -->
-        <a href="dist/大安院區.html" class="bg-custom-brown py-4 text-center text-white text-2xl md:text-3xl w-full inline-block hover:bg-custom-darkBrown transition-all duration-300">
-          大安院區
-        </a>
-        <!-- Link -->
-        <ul class="bg-white text-custom-brown text-lg md:text-xl divide-y-2 divide-custom-beige">
-          <!-- 方案 1 -->
-          <li>
-            <a href="" class="px-6 md:px-8 py-3 md:py-4 hover:bg-custom-beige/20 transition-all flex items-center group">
-              <p class="mr-auto">
-                經濟方案
-              </p>
-              <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
-            </a>
-          </li>
-          <!-- 方案 2 -->
-          <li>
-            <a href="" class="px-6 md:px-8 py-3 md:py-4 hover:bg-custom-beige/20 transition-all flex items-center group">
-              <p class="mr-auto">
-                超值全日方案
-              </p>
-              <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
-            </a>
-          </li>
-          <!-- 方案 3 -->
-          <li>
-            <a href="" class="px-6 md:px-8 py-3 md:py-4 hover:bg-custom-beige/20 transition-all flex items-center group">
-              <p class="mr-auto">
-                超值腸胃方案
-              </p>
-              <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
-            </a>
-          </li>
-          <!-- 方案 4 -->
-          <li>
-            <a href="" class="px-6 md:px-8 py-3 md:py-4 hover:bg-custom-beige/20 transition-all flex items-center group">
-              <p class="mr-auto">
-                全方位+心肺影像
-              </p>
-              <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
-            </a>
-          </li>
-        </ul>
+        <div class="md:w-4/12 bg-cover bg-no-repeat bg-center h-64 bg-[url('https://images.unsplash.com/photo-1658439615734-446c226e2602?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+        </div>
+        <!-- 按鈕 -->
+        <div class="flex md:w-8/12">
+          <!-- Title -->
+          <a href="dist/大安院區.html" class="inline-block p-4 text-2xl text-center text-white transition-all duration-300 bg-custom-brown md:text-3xl hover:bg-custom-darkBrown [writing-mode:vertical-lr]">
+            大安院區
+          </a>
+          <!-- Link -->
+          <ul class="w-full text-lg bg-white divide-y-2 text-custom-brown md:text-xl divide-custom-beige ">
+            <!-- 方案 1 -->
+            <li>
+              <a href="" class="flex items-center px-6 py-3 transition-all md:px-8 md:py-4 hover:bg-custom-beige/20 group">
+                <p class="mr-auto">
+                  經濟方案
+                </p>
+                <i class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"></i>
+              </a>
+            </li>
+            <!-- 方案 2 -->
+            <li>
+              <a href="" class="flex items-center px-6 py-3 transition-all md:px-8 md:py-4 hover:bg-custom-beige/20 group">
+                <p class="mr-auto">
+                  超值全日方案
+                </p>
+                <i class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"></i>
+              </a>
+            </li>
+            <!-- 方案 3 -->
+            <li>
+              <a href="" class="flex items-center px-6 py-3 transition-all md:px-8 md:py-4 hover:bg-custom-beige/20 group">
+                <p class="mr-auto">
+                  超值腸胃方案
+                </p>
+                <i class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"></i>
+              </a>
+            </li>
+            <!-- 方案 4 -->
+            <li>
+              <a href="" class="flex items-center px-6 py-3 transition-all md:px-8 md:py-4 hover:bg-custom-beige/20 group">
+                <p class="mr-auto">
+                  全方位+心肺影像
+                </p>
+                <i class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- 內湖院區 -->
-      <div class="border-2 border-custom-beige">
-        <!-- Img -->
-        <img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-video object-cover">
-        <!-- Title -->
-        <a href="" class="bg-custom-brown py-4 text-center text-white text-2xl md:text-3xl w-full inline-block hover:bg-custom-darkBrown transition-all duration-300">
+      <!-- <div class="border-2 border-custom-beige">
+        
+        <img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="object-cover aspect-video">
+        
+        <a href="" class="inline-block w-full py-4 text-2xl text-center text-white transition-all duration-300 bg-custom-brown md:text-3xl hover:bg-custom-darkBrown">
           內湖院區
         </a>
-        <!-- Link -->
-        <ul class="bg-white text-custom-brown text-lg md:text-xl divide-y-2 divide-custom-beige">
-          <!-- 方案 1 -->
+        
+        <ul class="text-lg bg-white divide-y-2 text-custom-brown md:text-xl divide-custom-beige">
+          
           <li>
-            <a href="" class="px-6 md:px-8 py-3 md:py-4 hover:bg-custom-beige/20 transition-all flex items-center group">
+            <a href="" class="flex items-center px-6 py-3 transition-all md:px-8 md:py-4 hover:bg-custom-beige/20 group">
               <p class="mr-auto">
                 經濟方案
               </p>
-              <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
+              <i class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"></i>
             </a>
           </li>
-          <!-- 方案 2 -->
+          
           <li>
-            <a href="" class="px-6 md:px-8 py-3 md:py-4 hover:bg-custom-beige/20 transition-all flex items-center group">
+            <a href="" class="flex items-center px-6 py-3 transition-all md:px-8 md:py-4 hover:bg-custom-beige/20 group">
               <p class="mr-auto">
                 超值全日方案
               </p>
-              <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
+              <i class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"></i>
             </a>
           </li>
-          <!-- 方案 3 -->
+          
           <li>
-            <a href="" class="px-6 md:px-8 py-3 md:py-4 hover:bg-custom-beige/20 transition-all flex items-center group">
+            <a href="" class="flex items-center px-6 py-3 transition-all md:px-8 md:py-4 hover:bg-custom-beige/20 group">
               <p class="mr-auto">
                 超值腸胃方案
               </p>
-              <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
+              <i class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"></i>
             </a>
           </li>
-          <!-- 方案 4 -->
+          
           <li>
-            <a href="" class="px-6 md:px-8 py-3 md:py-4 hover:bg-custom-beige/20 transition-all flex items-center group">
+            <a href="" class="flex items-center px-6 py-3 transition-all md:px-8 md:py-4 hover:bg-custom-beige/20 group">
               <p class="mr-auto">
                 全方位+心肺影像
               </p>
-              <i class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"></i>
+              <i class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"></i>
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
       
     </div>
   </section>
   
 
   <!-- Footer Section -->
-  <footer class="bg-custom-darkBrown text-white ">
+  <footer class="text-white bg-custom-darkBrown ">
     <!-- Content -->
     <div class="section md:py-16">
-      <div class="grid md:grid-cols-2 items-center gap-6">
+      <div class="grid items-center gap-6 md:grid-cols-2">
         <!-- Left -->
-        <div class="md:h-full flex md:flex-col justify-between items-end md:items-start order-2 md:order-1">
+        <div class="flex items-end justify-between order-2 md:h-full md:flex-col md:items-start md:order-1">
           <!-- Logo -->
           <a class="flex items-center group " id="logo" href="javascript:void(0);" aria-label="Brand">
-            <div class="bg-white group-hover:bg-custom-beige text-2xl md:text-4xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300">
-              <span class="inline-block w-7 h-6 md:w-10 md:h-8">H</span>
+            <div class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige md:text-4xl text-custom-darkBrown">
+              <span class="inline-block h-6 w-7 md:w-10 md:h-8">H</span>
             </div>
-            <p class="font-sans text-2xl md:text-4xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300">哈佛健康管理</p>
+            <p class="font-sans text-2xl font-normal text-white transition-all duration-300 md:text-4xl whitespace-nowrap group-hover:text-custom-beige">哈佛健康管理</p>
           </a>
           <!-- CopyRight -->
-          <p class="text-white/50 text-sm md:text-base">
+          <p class="text-sm text-white/50 md:text-base">
             © 2023 哈佛健康管理.
           </p>
         </div>
@@ -488,25 +492,25 @@
         <!-- Right -->
         <div class="flex justify-between text-white border-y border-white px-1.5 py-4 md:p-10 order-1 md:order-2">
           <!-- 最新消息 -->
-          <a href="" class="text-sm md:text-xl hover:text-custom-beige transition-all">
+          <a href="" class="text-sm transition-all md:text-xl hover:text-custom-beige">
             最新消息
           </a>
           <!-- 衛教影音 -->
-          <a href="" class="text-sm md:text-xl hover:text-custom-beige transition-all">
+          <a href="" class="text-sm transition-all md:text-xl hover:text-custom-beige">
             衛教影音
           </a>
           <!-- 服務據點 -->
           <div>
-            <p class="text-sm md:text-xl mb-2">
+            <p class="mb-2 text-sm md:text-xl">
               服務據點
             </p>
-            <ul class="border-l-2 border-white/20 pl-3 text-xs md:text-base">
-              <li class="hover:text-custom-beige transition-all mb-3">
+            <ul class="pl-3 text-xs border-l-2 border-white/20 md:text-base">
+              <li class="mb-3 transition-all hover:text-custom-beige">
                 <a href="dist/大安院區.html">大安院區</a>
               </li>
-              <li class="hover:text-custom-beige transition-all">
+              <!-- <li class="transition-all hover:text-custom-beige">
                 <a href="dist/內湖院區.html">內湖院區</a>
-              </li>
+              </li> -->
             </ul>
           </div>
 
@@ -517,9 +521,9 @@
   </footer>
 
  <!-- To Top BTN -->
-  <button class="fixed right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige   hover:bg-custom-brown/80  transition-all duration-600 rounded-full opacity-0 hidden z-100 shadow-md group" id="backToTopBtn">
-    <div class="px-4 py-3 text-sm text-custom-darkBrown group-hover:text-white transition duration-150 xs:text-base ">
-      <i class="fa-solid fa-arrow-up w-4 h-4"></i>
+  <button class="fixed hidden transition-all rounded-full shadow-md opacity-0 right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige hover:bg-custom-brown/80 duration-600 z-100 group" id="backToTopBtn">
+    <div class="px-4 py-3 text-sm transition duration-150 text-custom-darkBrown group-hover:text-white xs:text-base ">
+      <i class="w-4 h-4 fa-solid fa-arrow-up"></i>
     </div>
   </button>
 

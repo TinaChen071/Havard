@@ -1774,6 +1774,10 @@ input:checked + .toggle-bg {
   aspect-ratio: 5/4;
 }
 
+.aspect-\[9\/16\] {
+  aspect-ratio: 9/16;
+}
+
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
@@ -1821,6 +1825,26 @@ input:checked + .toggle-bg {
 
 .h-px {
   height: 1px;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-56 {
+  height: 14rem;
 }
 
 .min-h-\[38px\] {
@@ -1886,6 +1910,22 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-3\/12 {
+  width: 25%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
 }
 
 .min-w-\[14rem\] {
@@ -2364,42 +2404,6 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'\.\.\/img\/\5433\555F\8AA0\91AB\5E2B\7167\.jpg\'\)\] {
-  background-image: url('../img/吳啟誠醫師照.jpg');
-}
-
-.bg-\[url\(\'\.\.\/img\/\5433\8A69\97FB\91AB\5E2B\7167\.jpg\'\)\] {
-  background-image: url('../img/吳詩韻醫師照.jpg');
-}
-
-.bg-\[url\(\'\.\.\/img\/\590F\6F22\8A73\91AB\5E2B\7167\.jpg\'\)\] {
-  background-image: url('../img/夏漢詳醫師照.jpg');
-}
-
-.bg-\[url\(\'\.\.\/img\/\8A31\5609\73CA\91AB\5E2B\7167\.png\'\)\] {
-  background-image: url('../img/許嘉珊醫師照.png');
-}
-
-.bg-\[url\(\'\.\.\/img\/\90ED\6631\5EF7\91AB\5E2B\7167\.jpg\'\)\] {
-  background-image: url('../img/郭昱廷醫師照.jpg');
-}
-
-.bg-\[url\(\'\.\.\/img\/\90ED\7DBB\6D0B\91AB\5E2B\7167\.jpg\'\)\] {
-  background-image: url('../img/郭綻洋醫師照.jpg');
-}
-
-.bg-\[url\(\'\.\.\/img\/\9673\5B50\752F\91AB\5E2B\7167\.jpg\'\)\] {
-  background-image: url('../img/陳子甯醫師照.jpg');
-}
-
-.bg-\[url\(\'\.\.\/img\/\9673\6021\8AA0\91AB\5E2B\7167\.jpg\'\)\] {
-  background-image: url('../img/陳怡誠醫師照.jpg');
-}
-
-.bg-\[url\(\'\.\.\/img\/\9EC3\662D\52F3\91AB\5E2B\7167\.png\'\)\] {
-  background-image: url('../img/黃昭勳醫師照.png');
-}
-
 .bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1511174511562-5f7f18b874f8\?q\=80\&w\=2670\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
   background-image: url('https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
@@ -2440,20 +2444,8 @@ input:checked + .toggle-bg {
   background-image: url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .bg-\[url\(\'img\/\5433\555F\8AA0\91AB\5E2B\7167\.jpg\'\)\] {
   background-image: url('img/吳啟誠醫師照.jpg');
-}
-
-.bg-\[url\(\'\/img\/\5433\8A69\97FB\91AB\5E2B\7167\.jpg\'\)\] {
-  background-image: url('/img/吳詩韻醫師照.jpg');
-}
-
-.bg-\[url\(\'\.\/img\/\590F\6F22\8A73\91AB\5E2B\7167\.jpg\'\)\] {
-  background-image: url('./img/夏漢詳醫師照.jpg');
 }
 
 .bg-\[url\(\'img\/\5433\8A69\97FB\91AB\5E2B\7167\.jpg\'\)\] {
@@ -2486,6 +2478,22 @@ input:checked + .toggle-bg {
 
 .bg-\[url\(\'img\/\9EC3\662D\52F3\91AB\5E2B\7167\.png\'\)\] {
   background-image: url('img/黃昭勳醫師照.png');
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
+  background-image: url('/img/hero-pattern.svg');
+}
+
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1658439615734-446c226e2602\?q\=80\&w\=2500\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1658439615734-446c226e2602?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.bg-\[url\(https\:\/\/images\.unsplash\.com\/photo-1658439615734-446c226e2602\?q\=80\&w\=2500\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\)\] {
+  background-image: url(https://images.unsplash.com/photo-1658439615734-446c226e2602?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .from-transparent {
@@ -2636,11 +2644,6 @@ input:checked + .toggle-bg {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pb-1 {
@@ -3006,6 +3009,10 @@ input:checked + .toggle-bg {
   --trigger: hover;
 }
 
+.\[writing-mode\:vertical-lr\] {
+  writing-mode: vertical-lr;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -3243,19 +3250,14 @@ html {
   background-color: rgb(14 159 110 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-green-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 84 63 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-green-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(1 71 55 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover {
@@ -3771,6 +3773,10 @@ html {
     max-width: 32rem;
   }
 
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3934,6 +3940,14 @@ html {
   .md\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .md\:w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .md\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .md\:max-w-7xl {
@@ -4173,14 +4187,6 @@ html {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-col {

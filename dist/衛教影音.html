@@ -12,25 +12,25 @@
 </head>
 <body id="bg">
   <!-- Navbar -->
-  <header class="sticky top-0 inset-x-0 flex flex-wrap lg:justify-between lg:flex-nowrap w-full bg-custom-darkBrown backdrop-blur-md text-sm py-3 z-100 transition-padding duration-300" id="nav">
-    <nav class="relative max-w-7xl w-full mx-auto px-4 md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
+  <header class="sticky inset-x-0 top-0 flex flex-wrap w-full py-3 text-sm duration-300 lg:justify-between lg:flex-nowrap bg-custom-darkBrown backdrop-blur-md z-100 transition-padding" id="nav">
+    <nav class="relative w-full px-4 mx-auto max-w-7xl md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
       <!-- Logo & 漢堡選單 -->
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a class="flex items-center group" id="logo" href="../index.html" aria-label="Brand">
-          <div class="bg-white group-hover:bg-custom-beige text-2xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300">
-            <span class="inline-block w-7 h-6">H</span>
+          <div class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige text-custom-darkBrown">
+            <span class="inline-block h-6 w-7">H</span>
           </div>
-          <p class="font-sans text-2xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300">哈佛健康管理</p>
+          <p class="font-sans text-2xl font-normal text-white transition-all duration-300 whitespace-nowrap group-hover:text-custom-beige">哈佛健康管理</p>
         </a>
 
         <!-- 漢堡選單 -->
         <div class="md:hidden">
-          <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-white font-medium bg-custom-darkBrown text-gray-700 shadow-sm align-middle hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50 transition-all text-sm " data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-            <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="white" viewBox="0 0 16 16">
+          <button type="button" class="inline-flex items-center justify-center gap-2 p-2 text-sm font-medium text-gray-700 align-middle transition-all border border-white rounded-md shadow-sm hs-collapse-toggle bg-custom-darkBrown hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50 " data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+            <svg class="w-4 h-4 hs-collapse-open:hidden" width="16" height="16" fill="white" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
-            <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="white" viewBox="0 0 16 16">
+            <svg class="hidden w-4 h-4 hs-collapse-open:block" width="16" height="16" fill="white" viewBox="0 0 16 16">
               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
             </svg>
           </button>
@@ -38,8 +38,8 @@
       </div>
       
       <!-- 按鈕 -->
-      <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
-        <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7 py-4">
+      <div id="navbar-collapse-with-animation" class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block">
+        <div class="flex flex-col py-4 mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
           
           <!-- 關於我們 -->
           <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group">
@@ -74,9 +74,9 @@
               <a class="nav__SubBTN" href="../dist/大安院區.html">
                 大安院區
               </a>
-              <a class="nav__SubBTN" href="../dist/內湖院區.html">
+              <!-- <a class="nav__SubBTN" href="../dist/內湖院區.html">
                 內湖院區
-              </a>
+              </a> -->
             </div>
           </div>
           <!-- 關係企業 -->
@@ -115,24 +115,24 @@
   <section class="section relative after:content-['Medias'] afterText">
 
     <!-- Breadcrumbs -->
-    <ol class="flex items-center whitespace-nowrap text-custom-brown text-sm md:text-xl" aria-label="Breadcrumb">
+    <ol class="flex items-center text-sm whitespace-nowrap text-custom-brown md:text-xl" aria-label="Breadcrumb">
         <li class="inline-flex items-center">
-          <a class="flex items-center   hover:text-custom-darkBrown transition-all" href="../index.html">
+          <a class="flex items-center transition-all hover:text-custom-darkBrown" href="../index.html">
             <i class="fa-solid fa-house pr-2.5"></i>
             首頁
           </a>
-          <svg class="flex-shrink-0 h-5 w-5 mx-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg class="flex-shrink-0 w-5 h-5 mx-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"/>
           </svg>
         </li>
-        <li class="inline-flex items-center  text-custom-darkBrown truncate cursor-default" aria-current="page">
+        <li class="inline-flex items-center truncate cursor-default text-custom-darkBrown" aria-current="page">
             衛教影音
         </li>
     </ol>
 
     <!-- Title -->
     <div class="title">
-        <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">
+        <h2 class="pb-1 text-2xl lg:text-6xl lg:pb-4">
           衛教影音
         </h2>
         <p class="text-sm lg:text-xl">
@@ -142,19 +142,19 @@
 
     <!-- 影音卡片區塊 -->
     <div
-    class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-0">
+    class="grid gap-4 mb-6 sm:grid-cols-2 md:grid-cols-3 md:gap-6 md:mb-0">
       <!-- 影音 1 -->
       <a href="../dist/media-1.html">
         <div
-          class=" text-custom-brown bg-white group overflow-hidden"
+          class="overflow-hidden bg-white text-custom-brown group"
         >
           <!-- Img -->
-          <div class="overflow-hidden aspect-video relative">
-            <div class="absolute left-1/2 transform -translate-x-1/2 h-full flex items-center text-custom-YT text-5xl z-20">
+          <div class="relative overflow-hidden aspect-video">
+            <div class="absolute z-20 flex items-center h-full text-5xl transform -translate-x-1/2 left-1/2 text-custom-YT">
               <i class="fa-brands fa-youtube"></i>
             </div>
-            <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center h-full z-10">
-              <span class=" bg-white h-6 w-6"></span>
+            <div class="absolute z-10 flex items-center h-full transform -translate-x-1/2 left-1/2">
+              <span class="w-6 h-6 bg-white "></span>
             </div>
             
             <div
@@ -162,8 +162,8 @@
             ></div>
           </div>
           <!-- 介紹 -->
-          <div class="p-6 group-hover:bg-custom-beige transition-all duration-300">
-            <time class="inline-flex mb-3 md:mb-4 text-sm">
+          <div class="p-6 transition-all duration-300 group-hover:bg-custom-beige">
+            <time class="inline-flex mb-3 text-sm md:mb-4">
               2023/12/26
             </time>
             <h3 class="md:text-xl text-custom-darkBrown">
@@ -175,15 +175,15 @@
       <!-- 影音 2 -->
       <a href="../dist/media-2.html">
         <div
-          class=" text-custom-brown bg-white group overflow-hidden"
+          class="overflow-hidden bg-white text-custom-brown group"
         >
           <!-- Img -->
-          <div class="overflow-hidden aspect-video relative">
-            <div class="absolute left-1/2 transform -translate-x-1/2 h-full flex items-center text-custom-YT text-5xl z-20">
+          <div class="relative overflow-hidden aspect-video">
+            <div class="absolute z-20 flex items-center h-full text-5xl transform -translate-x-1/2 left-1/2 text-custom-YT">
               <i class="fa-brands fa-youtube"></i>
             </div>
-            <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center h-full z-10">
-              <span class=" bg-white h-6 w-6"></span>
+            <div class="absolute z-10 flex items-center h-full transform -translate-x-1/2 left-1/2">
+              <span class="w-6 h-6 bg-white "></span>
             </div>
             
             <div
@@ -191,8 +191,8 @@
             ></div>
           </div>
           <!-- 介紹 -->
-          <div class="p-6 group-hover:bg-custom-beige transition-all duration-300">
-            <time class="inline-flex mb-3 md:mb-4 text-sm">
+          <div class="p-6 transition-all duration-300 group-hover:bg-custom-beige">
+            <time class="inline-flex mb-3 text-sm md:mb-4">
               2023/11/23
             </time>
             <h3 class="md:text-xl text-custom-darkBrown">
@@ -204,7 +204,7 @@
     </div>
 
     <!-- Pagination -->
-    <nav class="flex items-center gap-x-1 mx-auto text-custom-darkBrown">
+    <nav class="flex items-center mx-auto gap-x-1 text-custom-darkBrown">
         <!-- 上一頁 -->
         <button type="button" class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex jusify-center items-center gap-x-2 text-sm rounded-lg hover:bg-custom-beige transition-all">
           <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
@@ -218,11 +218,11 @@
           <!-- 第 3 頁 -->
           <button type="button" class="pagination__BTN">3</button>
           <!-- 後 4 頁 -->
-          <div class="hs-tooltip inline-block">
+          <div class="inline-block hs-tooltip">
             <button type="button" class="hs-tooltip-toggle group min-h-[38px] min-w-[38px] flex justify-center items-center hover:bg-custom-beige hover:text-custom-brown p-2 text-sm rounded-lg focus:bg-custom-beige transition-all">
-              <span class="group-hover:hidden text-xs">•••</span>
-              <svg class="group-hover:block hidden flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
-              <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm " role="tooltip">
+              <span class="text-xs group-hover:hidden">•••</span>
+              <svg class="flex-shrink-0 hidden w-5 h-5 group-hover:block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
+              <span class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-white transition-opacity bg-gray-900 rounded shadow-sm opacity-0 hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible " role="tooltip">
                 後 4 頁
               </span>
             </button>
@@ -240,13 +240,13 @@
   
 
   <!-- Footer Section -->
-  <footer class="bg-custom-darkBrown text-white">
+  <footer class="text-white bg-custom-darkBrown">
     <!-- Content -->
     <div class="section md:py-16">
-      <div class="grid md:grid-cols-2 items-center gap-6">
+      <div class="grid items-center gap-6 md:grid-cols-2">
         <!-- Left -->
         <div
-          class="md:h-full flex md:flex-col justify-between items-end md:items-start order-2 md:order-1"
+          class="flex items-end justify-between order-2 md:h-full md:flex-col md:items-start md:order-1"
         >
           <!-- Logo -->
           <a
@@ -256,18 +256,18 @@
             aria-label="Brand"
           >
             <div
-              class="bg-white group-hover:bg-custom-beige text-2xl md:text-4xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300"
+              class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige md:text-4xl text-custom-darkBrown"
             >
-              <span class="inline-block w-7 h-6 md:w-10 md:h-8">H</span>
+              <span class="inline-block h-6 w-7 md:w-10 md:h-8">H</span>
             </div>
             <p
-              class="font-sans text-2xl md:text-4xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300"
+              class="font-sans text-2xl font-normal text-white transition-all duration-300 md:text-4xl whitespace-nowrap group-hover:text-custom-beige"
             >
               哈佛健康管理
             </p>
           </a>
           <!-- CopyRight -->
-          <p class="text-white/50 text-sm md:text-base">
+          <p class="text-sm text-white/50 md:text-base">
             © 2023 哈佛健康管理.
           </p>
         </div>
@@ -279,27 +279,27 @@
           <!-- 最新消息 -->
           <a
             href=""
-            class="text-sm md:text-xl hover:text-custom-beige transition-all"
+            class="text-sm transition-all md:text-xl hover:text-custom-beige"
           >
             最新消息
           </a>
           <!-- 衛教影音 -->
           <a
             href=""
-            class="text-sm md:text-xl hover:text-custom-beige transition-all"
+            class="text-sm transition-all md:text-xl hover:text-custom-beige"
           >
             衛教影音
           </a>
           <!-- 服務據點 -->
           <div>
-            <p class="text-sm md:text-xl mb-2">服務據點</p>
-            <ul class="border-l-2 border-white/20 pl-3 text-xs md:text-base">
-              <li class="hover:text-custom-beige transition-all mb-3">
+            <p class="mb-2 text-sm md:text-xl">服務據點</p>
+            <ul class="pl-3 text-xs border-l-2 border-white/20 md:text-base">
+              <li class="mb-3 transition-all hover:text-custom-beige">
                 <a href="../dist/大安院區.html">大安院區</a>
               </li>
-              <li class="hover:text-custom-beige transition-all">
+              <!-- <li class="transition-all hover:text-custom-beige">
                 <a href="../dist/內湖院區.html">內湖院區</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -308,9 +308,9 @@
   </footer>
 
  <!-- To Top BTN -->
-  <button class="fixed right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige   hover:bg-custom-brown/80  transition-all duration-600 rounded-full opacity-0 hidden z-100 shadow-md group" id="backToTopBtn">
-    <div class="px-4 py-3 text-sm text-custom-darkBrown group-hover:text-white transition duration-150 xs:text-base ">
-      <i class="fa-solid fa-arrow-up w-4 h-4"></i>
+  <button class="fixed hidden transition-all rounded-full shadow-md opacity-0 right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige hover:bg-custom-brown/80 duration-600 z-100 group" id="backToTopBtn">
+    <div class="px-4 py-3 text-sm transition duration-150 text-custom-darkBrown group-hover:text-white xs:text-base ">
+      <i class="w-4 h-4 fa-solid fa-arrow-up"></i>
     </div>
   </button>
 

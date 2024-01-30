@@ -12,25 +12,25 @@
 </head>
 <body id="bg">
   <!-- Navbar -->
-  <header class="sticky top-0 inset-x-0 flex flex-wrap lg:justify-between lg:flex-nowrap w-full bg-custom-darkBrown backdrop-blur-md text-sm py-3 z-100 transition-padding duration-300" id="nav">
-    <nav class="relative max-w-7xl w-full mx-auto px-4 md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
+  <header class="sticky inset-x-0 top-0 flex flex-wrap w-full py-3 text-sm duration-300 lg:justify-between lg:flex-nowrap bg-custom-darkBrown backdrop-blur-md z-100 transition-padding" id="nav">
+    <nav class="relative w-full px-4 mx-auto max-w-7xl md:flex md:items-center md:justify-between lg:px-36" aria-label="Global">
       <!-- Logo & 漢堡選單 -->
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a class="flex items-center group" id="logo" href="../index.html" aria-label="Brand">
-          <div class="bg-white group-hover:bg-custom-beige text-2xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300">
-            <span class="inline-block w-7 h-6">H</span>
+          <div class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige text-custom-darkBrown">
+            <span class="inline-block h-6 w-7">H</span>
           </div>
-          <p class="font-sans text-2xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300">哈佛健康管理</p>
+          <p class="font-sans text-2xl font-normal text-white transition-all duration-300 whitespace-nowrap group-hover:text-custom-beige">哈佛健康管理</p>
         </a>
 
         <!-- 漢堡選單 -->
         <div class="md:hidden">
-          <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-white font-medium bg-custom-darkBrown text-gray-700 shadow-sm align-middle hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50 transition-all text-sm " data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-            <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="white" viewBox="0 0 16 16">
+          <button type="button" class="inline-flex items-center justify-center gap-2 p-2 text-sm font-medium text-gray-700 align-middle transition-all border border-white rounded-md shadow-sm hs-collapse-toggle bg-custom-darkBrown hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50 " data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+            <svg class="w-4 h-4 hs-collapse-open:hidden" width="16" height="16" fill="white" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
-            <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="white" viewBox="0 0 16 16">
+            <svg class="hidden w-4 h-4 hs-collapse-open:block" width="16" height="16" fill="white" viewBox="0 0 16 16">
               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
             </svg>
           </button>
@@ -38,8 +38,8 @@
       </div>
       
       <!-- 按鈕 -->
-      <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
-        <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7 py-4">
+      <div id="navbar-collapse-with-animation" class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block">
+        <div class="flex flex-col py-4 mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
           
           <!-- 關於我們 -->
           <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group">
@@ -74,9 +74,9 @@
               <a class="nav__SubBTN" href="../dist/大安院區.html">
                 大安院區
               </a>
-              <a class="nav__SubBTN" href="../dist/內湖院區.html">
+              <!-- <a class="nav__SubBTN" href="../dist/內湖院區.html">
                 內湖院區
-              </a>
+              </a> -->
             </div>
           </div>
           <!-- 關係企業 -->
@@ -112,32 +112,32 @@
   </section>
 
   <!-- Content Section -->
-  <section class="section relative">
+  <section class="relative section">
     
     <!-- Content -->
-    <div class="flex flex-col sm:flex-row justify-between">
+    <div class="flex flex-col justify-between sm:flex-row">
       <!-- Pre BTN + Social bar -->
       <div class="order-2 sm:order-1">
         <!-- 回上頁 -->
-        <button class="hidden sm:block p-2 md:p-4 border-2 border-custom-brown text-custom-brown group hover:bg-custom-brown hover:text-white transition-all mb-10" onclick="history.back()">
-          <i class="fa-solid fa-chevron-left group-hover:text-white mr-1"></i>
+        <button class="hidden p-2 mb-10 transition-all border-2 sm:block md:p-4 border-custom-brown text-custom-brown group hover:bg-custom-brown hover:text-white" onclick="history.back()">
+          <i class="mr-1 fa-solid fa-chevron-left group-hover:text-white"></i>
           回上頁
         </button>
 
         <!-- 社群分享 -->
-        <div class="bg-custom-beige/60 px-4 py-3 sm:py-6 text-center flex flex-row sm:flex-col gap-6 text-custom-brown justify-between sm:justify-normal">
+        <div class="flex flex-row justify-between gap-6 px-4 py-3 text-center bg-custom-beige/60 sm:py-6 sm:flex-col text-custom-brown sm:justify-normal">
           <p class="text-custom-darkBrown">
             Share
           </p>
-          <div class="flex sm:flex-col gap-6 items-center text-lg">
+          <div class="flex items-center gap-6 text-lg sm:flex-col">
             <!-- Link -->
-            <i class="fa-solid fa-link hover:text-custom-darkBrown transition-all cursor-pointer" id="copyLinkButton"></i>
+            <i class="transition-all cursor-pointer fa-solid fa-link hover:text-custom-darkBrown" id="copyLinkButton"></i>
             <!-- FB -->
-            <button class="fb button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="facebook" data-hashtag="hashtag" data-url="">
+            <button class="transition-all cursor-pointer fb button hover:text-custom-darkBrown" data-sharer="facebook" data-hashtag="hashtag" data-url="">
               <i class="fa-brands fa-facebook-f"></i>
             </button>
             <!-- Line -->
-            <button class="line button hover:text-custom-darkBrown transition-all cursor-pointer" data-sharer="line" data-title="分享至 Line" data-url="">
+            <button class="transition-all cursor-pointer line button hover:text-custom-darkBrown" data-sharer="line" data-title="分享至 Line" data-url="">
               <i class="fa-brands fa-line"></i>
             </button>
           </div>
@@ -145,22 +145,22 @@
       </div>
 
       <!-- News Content -->
-      <article class="sm:w-4/5 order-1 sm:order-2 mb-4 sm:mb-0">
+      <article class="order-1 mb-4 sm:w-4/5 sm:order-2 sm:mb-0">
         <!-- Time -->
-        <time class="text-custom-brown inline-block mb-3 md:mb-6">
+        <time class="inline-block mb-3 text-custom-brown md:mb-6">
           2023/12/26
         </time>
         <!-- Title -->
-        <h1 class="text-xl md:text-4xl text-gray-900 w-full border-b-2 border-custom-beige pb-3 md:pb-6 mb-4 md:mb-10">
+        <h1 class="w-full pb-3 mb-4 text-xl text-gray-900 border-b-2 md:text-4xl border-custom-beige md:pb-6 md:mb-10">
           基因檢測小教室__基因檢測和健康檢查有什麼差別呢?
         </h1>
         <!-- Content -->
-        <div class="text-stone-500 leading-loose flex flex-col gap-4 md:gap-6 indent-8">
+        <div class="flex flex-col gap-4 leading-loose text-stone-500 md:gap-6 indent-8">
           <iframe class="aspect-video" src="https://www.youtube.com/embed/zr1tE-0-_tY?si=Mi3GHOgqGic6NWUG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <p>
             哈佛健診成立至今已近30年，一直是民眾心中優質健檢的首選品牌。而哈佛健檢於2020年通過JCI國際醫療評鑑，成為台灣首家通過JCI美國國際醫療品質認證的健診中心，證明哈佛健診的服務與品質值得信賴，這是重大的里程碑，也將臺灣健康檢查理念帶入新時代。
           </p>
-          <img src="https://images.unsplash.com/photo-1533090368676-1fd25485db88?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-video object-cover">
+          <img src="https://images.unsplash.com/photo-1533090368676-1fd25485db88?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="object-cover aspect-video">
           <p>
             台灣睡眠醫學學會針對40到65歲民眾的最新調查發現，全台慢性失眠症盛行率高達10.7％，也就是全台有超過230萬人罹患慢性失眠症，平均每9人就有1人受慢性失眠之苦。
           </p>
@@ -170,18 +170,18 @@
   </section>
   
   <!-- Alert Copied -->
-  <div id="customAlert" class="fixed left-4 bottom-4 bg-white shadow-md p-4 rounded-lg z-10 transition-opacity ease-out duration-300" style="display: none;">
+  <div id="customAlert" class="fixed z-10 p-4 transition-opacity duration-300 ease-out bg-white rounded-lg shadow-md left-4 bottom-4" style="display: none;">
     <p id="alertMessage">連結已複製</p>
   </div>
 
   <!-- Footer Section -->
-  <footer class="bg-custom-darkBrown text-white">
+  <footer class="text-white bg-custom-darkBrown">
     <!-- Content -->
     <div class="section md:py-16">
-      <div class="grid md:grid-cols-2 items-center gap-6">
+      <div class="grid items-center gap-6 md:grid-cols-2">
         <!-- Left -->
         <div
-          class="md:h-full flex md:flex-col justify-between items-end md:items-start order-2 md:order-1"
+          class="flex items-end justify-between order-2 md:h-full md:flex-col md:items-start md:order-1"
         >
           <!-- Logo -->
           <a
@@ -191,18 +191,18 @@
             aria-label="Brand"
           >
             <div
-              class="bg-white group-hover:bg-custom-beige text-2xl md:text-4xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300"
+              class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige md:text-4xl text-custom-darkBrown"
             >
-              <span class="inline-block w-7 h-6 md:w-10 md:h-8">H</span>
+              <span class="inline-block h-6 w-7 md:w-10 md:h-8">H</span>
             </div>
             <p
-              class="font-sans text-2xl md:text-4xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300"
+              class="font-sans text-2xl font-normal text-white transition-all duration-300 md:text-4xl whitespace-nowrap group-hover:text-custom-beige"
             >
               哈佛健康管理
             </p>
           </a>
           <!-- CopyRight -->
-          <p class="text-white/50 text-sm md:text-base">
+          <p class="text-sm text-white/50 md:text-base">
             © 2023 哈佛健康管理.
           </p>
         </div>
@@ -214,27 +214,27 @@
           <!-- 最新消息 -->
           <a
             href=""
-            class="text-sm md:text-xl hover:text-custom-beige transition-all"
+            class="text-sm transition-all md:text-xl hover:text-custom-beige"
           >
             最新消息
           </a>
           <!-- 衛教影音 -->
           <a
             href=""
-            class="text-sm md:text-xl hover:text-custom-beige transition-all"
+            class="text-sm transition-all md:text-xl hover:text-custom-beige"
           >
             衛教影音
           </a>
           <!-- 服務據點 -->
           <div>
-            <p class="text-sm md:text-xl mb-2">服務據點</p>
-            <ul class="border-l-2 border-white/20 pl-3 text-xs md:text-base">
-              <li class="hover:text-custom-beige transition-all mb-3">
+            <p class="mb-2 text-sm md:text-xl">服務據點</p>
+            <ul class="pl-3 text-xs border-l-2 border-white/20 md:text-base">
+              <li class="mb-3 transition-all hover:text-custom-beige">
                 <a href="../dist/大安院區.html">大安院區</a>
               </li>
-              <li class="hover:text-custom-beige transition-all">
+              <!-- <li class="transition-all hover:text-custom-beige">
                 <a href="../dist/內湖院區.html">內湖院區</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -243,9 +243,9 @@
   </footer>
 
  <!-- To Top BTN -->
-  <button class="fixed right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige   hover:bg-custom-brown/80  transition-all duration-600 rounded-full opacity-0 hidden z-100 shadow-md group" id="backToTopBtn">
-    <div class="px-4 py-3 text-sm text-custom-darkBrown group-hover:text-white transition duration-150 xs:text-base ">
-      <i class="fa-solid fa-arrow-up w-4 h-4"></i>
+  <button class="fixed hidden transition-all rounded-full shadow-md opacity-0 right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige hover:bg-custom-brown/80 duration-600 z-100 group" id="backToTopBtn">
+    <div class="px-4 py-3 text-sm transition duration-150 text-custom-darkBrown group-hover:text-white xs:text-base ">
+      <i class="w-4 h-4 fa-solid fa-arrow-up"></i>
     </div>
   </button>
 

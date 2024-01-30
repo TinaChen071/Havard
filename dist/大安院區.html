@@ -13,11 +13,11 @@
   <body id="bg">
     <!-- Navbar -->
     <header
-      class="sticky top-0 inset-x-0 flex flex-wrap lg:justify-between lg:flex-nowrap w-full bg-custom-darkBrown backdrop-blur-md text-sm py-3 z-100 transition-padding duration-300"
+      class="sticky inset-x-0 top-0 flex flex-wrap w-full py-3 text-sm duration-300 lg:justify-between lg:flex-nowrap bg-custom-darkBrown backdrop-blur-md z-100 transition-padding"
       id="nav"
     >
       <nav
-        class="relative max-w-7xl w-full mx-auto px-4 md:flex md:items-center md:justify-between lg:px-36"
+        class="relative w-full px-4 mx-auto max-w-7xl md:flex md:items-center md:justify-between lg:px-36"
         aria-label="Global"
       >
         <!-- Logo & 漢堡選單 -->
@@ -30,12 +30,12 @@
             aria-label="Brand"
           >
             <div
-              class="bg-white group-hover:bg-custom-beige text-2xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300"
+              class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige text-custom-darkBrown"
             >
-              <span class="inline-block w-7 h-6">H</span>
+              <span class="inline-block h-6 w-7">H</span>
             </div>
             <p
-              class="font-sans text-2xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300"
+              class="font-sans text-2xl font-normal text-white transition-all duration-300 whitespace-nowrap group-hover:text-custom-beige"
             >
               哈佛健康管理
             </p>
@@ -45,13 +45,13 @@
           <div class="md:hidden">
             <button
               type="button"
-              class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-white font-medium bg-custom-darkBrown text-gray-700 shadow-sm align-middle hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50 transition-all text-sm"
+              class="inline-flex items-center justify-center gap-2 p-2 text-sm font-medium text-gray-700 align-middle transition-all border border-white rounded-md shadow-sm hs-collapse-toggle bg-custom-darkBrown hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50"
               data-hs-collapse="#navbar-collapse-with-animation"
               aria-controls="navbar-collapse-with-animation"
               aria-label="Toggle navigation"
             >
               <svg
-                class="hs-collapse-open:hidden w-4 h-4"
+                class="w-4 h-4 hs-collapse-open:hidden"
                 width="16"
                 height="16"
                 fill="white"
@@ -63,7 +63,7 @@
                 />
               </svg>
               <svg
-                class="hs-collapse-open:block hidden w-4 h-4"
+                class="hidden w-4 h-4 hs-collapse-open:block"
                 width="16"
                 height="16"
                 fill="white"
@@ -80,10 +80,10 @@
         <!-- 按鈕 -->
         <div
           id="navbar-collapse-with-animation"
-          class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
+          class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block"
         >
           <div
-            class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7 py-4"
+            class="flex flex-col py-4 mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7"
           >
             <!-- 關於我們 -->
             <div
@@ -132,9 +132,9 @@
                 <a class="nav__SubBTN" href="../dist/大安院區.html">
                   大安院區
                 </a>
-                <a class="nav__SubBTN" href="../dist/內湖院區.html">
+                <!-- <a class="nav__SubBTN" href="../dist/內湖院區.html">
                   內湖院區
-                </a>
+                </a> -->
               </div>
             </div>
             <!-- 關係企業 -->
@@ -176,7 +176,7 @@
     ></section>
 
     <!-- Content Section -->
-    <section class="section relative">
+    <section class="relative section">
       <!-- Text Decoration -->
       <div
         class="absolute left-0 bottom-0 ml-0.5 text-custom-brown/5 text-9xl hidden sm:block -z-10"
@@ -187,19 +187,19 @@
 
       <!-- Breadcrumbs -->
       <ol
-        class="flex items-center whitespace-nowrap text-custom-brown text-sm md:text-xl"
+        class="flex items-center text-sm whitespace-nowrap text-custom-brown md:text-xl"
         aria-label="Breadcrumb"
       >
         <li class="inline-flex items-center">
           <a
-            class="flex items-center hover:text-custom-darkBrown transition-all"
+            class="flex items-center transition-all hover:text-custom-darkBrown"
             href="../index.html"
           >
             <i class="fa-solid fa-house pr-2.5"></i>
             首頁
           </a>
           <svg
-            class="flex-shrink-0 h-5 w-5 mx-2"
+            class="flex-shrink-0 w-5 h-5 mx-2"
             width="16"
             height="16"
             viewBox="0 0 16 16"
@@ -217,7 +217,7 @@
           服務據點
         </li>
         <svg
-          class="flex-shrink-0 h-5 w-5 mx-2"
+          class="flex-shrink-0 w-5 h-5 mx-2"
           width="16"
           height="16"
           viewBox="0 0 16 16"
@@ -228,7 +228,7 @@
           <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
         </svg>
         <li
-          class="inline-flex items-center text-custom-darkBrown truncate cursor-default"
+          class="inline-flex items-center truncate cursor-default text-custom-darkBrown"
           aria-current="page"
         >
           大安院區
@@ -237,11 +237,11 @@
 
       <!-- Title + Tab -->
       <div
-        class="flex items-start md:items-center justify-between flex-col md:flex-row gap-4"
+        class="flex flex-col items-start justify-between gap-4 md:items-center md:flex-row"
       >
         <!-- Title -->
         <div class="title">
-          <h2 class="text-2xl lg:text-6xl pb-1 lg:pb-4">大安院區</h2>
+          <h2 class="pb-1 text-2xl lg:text-6xl lg:pb-4">大安院區</h2>
           <p class="text-sm lg:text-xl">Da'an Branch</p>
         </div>
 
@@ -249,7 +249,7 @@
         <div
           class="flex bg-custom-beige transition p-1 md:p-1.5 w-full md:w-fit"
         >
-          <nav class="flex space-x-2 w-full" aria-label="Tabs" role="tablist">
+          <nav class="flex w-full space-x-2" aria-label="Tabs" role="tablist">
             <!-- 院區介紹 -->
             <button
               type="button"
@@ -300,23 +300,23 @@
             />
             <!-- 介紹 -->
             <div
-              class="bg-white text-custom-brown flex flex-col gap-3 md:gap-8 py-6 px-4 md:p-16"
+              class="flex flex-col gap-3 px-4 py-6 bg-white text-custom-brown md:gap-8 md:p-16"
             >
               <h3 class="text-2xl md:text-4xl">大安院區</h3>
-              <p class="text-base md:text-lg leading-loose">
+              <p class="text-base leading-loose md:text-lg">
                 哈佛健康管理大安院區位處台北市大安區敦化南路林蔭大道，占地逾600坪，近台北捷運文湖線六張犁站、和平高中、大安運動中心、台北遠東國際大飯店，以國泰綜合醫院為醫療資源後盾，提供醫學中心等級的健康檢查服務，並備有多項健康檢查設備，守護你的健康。
               </p>
             </div>
             <!-- 聯絡資訊 -->
             <div
-              class="bg-custom-beige/40 text-custom-darkBrown flex flex-col gap-3 md:gap-8 py-6 px-4 md:p-16 order-2 md:order-1"
+              class="flex flex-col order-2 gap-3 px-4 py-6 bg-custom-beige/40 text-custom-darkBrown md:gap-8 md:p-16 md:order-1"
             >
               <h3 class="text-2xl md:text-4xl">院區資訊</h3>
-              <div class="text-base md:text-lg flex flex-col gap-3">
+              <div class="flex flex-col gap-3 text-base md:text-lg">
                 <!-- 地址 -->
                 <div class="flex items-start">
                   <div class="flex items-center">
-                    <i class="fa-solid fa-location-dot mr-2 w-4"></i>
+                    <i class="w-4 mr-2 fa-solid fa-location-dot"></i>
                     <p class="whitespace-nowrap">院區地址：</p>
                   </div>
                   <p>114台北市內湖區內湖路一段300號2樓</p>
@@ -324,7 +324,7 @@
                 <!-- 電話 -->
                 <div class="flex items-start">
                   <div class="flex items-center">
-                    <i class="fa-solid fa-phone mr-2 w-4"></i>
+                    <i class="w-4 mr-2 fa-solid fa-phone"></i>
                     <p class="whitespace-nowrap">聯絡電話：</p>
                   </div>
                   <a href="tel:+886-2-11111111"> 02-1111-1111 </a>
@@ -332,7 +332,7 @@
                 <!-- 時間 -->
                 <div class="flex items-start">
                   <div class="flex items-center">
-                    <i class="fa-solid fa-clock mr-2 w-4"></i>
+                    <i class="w-4 mr-2 fa-solid fa-clock"></i>
                     <p class="whitespace-nowrap">營業時間：</p>
                   </div>
                   <p>週一至週五 9:00 - 18:00</p>
@@ -358,12 +358,12 @@
         >
           <!-- 方案卡片區塊 -->
           <div
-            class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-0"
+            class="grid gap-4 mb-6 sm:grid-cols-2 md:grid-cols-3 md:gap-6 md:mb-0"
           >
             <!-- 方案 1 -->
             <a href="../dist/方案一(大安).html">
               <div
-                class="border-2 border-custom-beige text-custom-brown bg-white divide-y-2 divide-custom-beige group overflow-hidden"
+                class="overflow-hidden bg-white border-2 divide-y-2 border-custom-beige text-custom-brown divide-custom-beige group"
               >
                 <!-- Img -->
                 <div class="overflow-hidden aspect-video">
@@ -373,18 +373,18 @@
                 </div>
                 <!-- 介紹 -->
                 <div class="p-6">
-                  <h3 class="text-2xl text-custom-darkBrown mb-4">經濟方案</h3>
+                  <h3 class="mb-4 text-2xl text-custom-darkBrown">經濟方案</h3>
                   <p>
                     欲瞭解身體是否有血液、代謝、三高(高血脂、高血壓、高血糖)或肝腎疾病者
                   </p>
                 </div>
                 <!-- 按鈕 -->
                 <button
-                  class="w-full flex items-center group gap-2 justify-end px-6 py-4 group-hover:bg-custom-brown group-hover:text-white transition-all duration-300"
+                  class="flex items-center justify-end w-full gap-2 px-6 py-4 transition-all duration-300 group group-hover:bg-custom-brown group-hover:text-white"
                 >
                   <p class="mr-2">查看內容</p>
                   <i
-                    class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"
+                    class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"
                   ></i>
                 </button>
               </div>
@@ -392,7 +392,7 @@
             <!-- 方案 2 -->
             <a href="../dist/方案一(大安).html">
               <div
-                class="border-2 border-custom-beige text-custom-brown bg-white divide-y-2 divide-custom-beige group overflow-hidden"
+                class="overflow-hidden bg-white border-2 divide-y-2 border-custom-beige text-custom-brown divide-custom-beige group"
               >
                 <!-- Img -->
                 <div class="overflow-hidden aspect-video">
@@ -402,18 +402,18 @@
                 </div>
                 <!-- 介紹 -->
                 <div class="p-6">
-                  <h3 class="text-2xl text-custom-darkBrown mb-4">經濟方案</h3>
+                  <h3 class="mb-4 text-2xl text-custom-darkBrown">經濟方案</h3>
                   <p>
                     欲瞭解身體是否有血液、代謝、三高(高血脂、高血壓、高血糖)或肝腎疾病者
                   </p>
                 </div>
                 <!-- 按鈕 -->
                 <button
-                  class="w-full flex items-center group gap-2 justify-end px-6 py-4 group-hover:bg-custom-brown group-hover:text-white transition-all duration-300"
+                  class="flex items-center justify-end w-full gap-2 px-6 py-4 transition-all duration-300 group group-hover:bg-custom-brown group-hover:text-white"
                 >
                   <p class="mr-2">查看內容</p>
                   <i
-                    class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"
+                    class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"
                   ></i>
                 </button>
               </div>
@@ -421,7 +421,7 @@
             <!-- 方案 3 -->
             <a href="../dist/方案一(大安).html">
               <div
-                class="border-2 border-custom-beige text-custom-brown bg-white divide-y-2 divide-custom-beige group overflow-hidden"
+                class="overflow-hidden bg-white border-2 divide-y-2 border-custom-beige text-custom-brown divide-custom-beige group"
               >
                 <!-- Img -->
                 <div class="overflow-hidden aspect-video">
@@ -431,18 +431,18 @@
                 </div>
                 <!-- 介紹 -->
                 <div class="p-6">
-                  <h3 class="text-2xl text-custom-darkBrown mb-4">經濟方案</h3>
+                  <h3 class="mb-4 text-2xl text-custom-darkBrown">經濟方案</h3>
                   <p>
                     欲瞭解身體是否有血液、代謝、三高(高血脂、高血壓、高血糖)或肝腎疾病者
                   </p>
                 </div>
                 <!-- 按鈕 -->
                 <button
-                  class="w-full flex items-center group gap-2 justify-end px-6 py-4 group-hover:bg-custom-brown group-hover:text-white transition-all duration-300"
+                  class="flex items-center justify-end w-full gap-2 px-6 py-4 transition-all duration-300 group group-hover:bg-custom-brown group-hover:text-white"
                 >
                   <p class="mr-2">查看內容</p>
                   <i
-                    class="fa-solid fa-chevron-right pr-2 group-hover:pr-0 transition-all"
+                    class="pr-2 transition-all fa-solid fa-chevron-right group-hover:pr-0"
                   ></i>
                 </button>
               </div>
@@ -450,7 +450,7 @@
           </div>
           <!-- Pagination -->
           <nav
-            class="flex items-center justify-center gap-x-1 mx-auto text-custom-darkBrown md:hidden"
+            class="flex items-center justify-center mx-auto gap-x-1 text-custom-darkBrown md:hidden"
           >
             <!-- 上一頁 -->
             <button
@@ -487,14 +487,14 @@
               <!-- 第 3 頁 -->
               <button type="button" class="pagination__BTN">3</button>
               <!-- 後 4 頁 -->
-              <div class="hs-tooltip inline-block">
+              <div class="inline-block hs-tooltip">
                 <button
                   type="button"
                   class="hs-tooltip-toggle group min-h-[38px] min-w-[38px] flex justify-center items-center hover:bg-custom-beige hover:text-custom-brown p-2 text-sm rounded-lg focus:bg-custom-beige transition-all"
                 >
-                  <span class="group-hover:hidden text-xs">•••</span>
+                  <span class="text-xs group-hover:hidden">•••</span>
                   <svg
-                    class="group-hover:block hidden flex-shrink-0 w-5 h-5"
+                    class="flex-shrink-0 hidden w-5 h-5 group-hover:block"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -509,7 +509,7 @@
                     <path d="m13 17 5-5-5-5" />
                   </svg>
                   <span
-                    class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm"
+                    class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-white transition-opacity bg-gray-900 rounded shadow-sm opacity-0 hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible"
                     role="tooltip"
                   >
                     後 4 頁
@@ -550,18 +550,18 @@
           aria-labelledby="segment-item-3"
         >
           <!-- Form -->
-          <div class="grid md:grid-cols-2 gap-4 md:gap-16 text-custom-darkBrown mb-8 md:mb-14">
+          <div class="grid gap-4 mb-8 md:grid-cols-2 md:gap-16 text-custom-darkBrown md:mb-14">
             <!-- Left -->
             <div class="flex flex-col gap-4 sm:gap-6">
               <!-- 姓名 -->
               <div>
                 <label for="hs-leading-icon" class="block mb-2 md:text-xl">姓名<span class="pl-1 text-red-500">*</span></label>
                 
-                <div class="flex gap-4 items-center">
+                <div class="flex items-center gap-4">
                   <!-- Input -->
                   <div class="relative w-full">
                     <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入姓名">
-                    <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                    <div class="absolute inset-y-0 left-0 z-20 flex items-center pl-4 pointer-events-none">
                       <i class="fa-solid fa-user"></i>
                     </div>
                   </div>
@@ -570,12 +570,12 @@
                   <div class="flex gap-3 md:gap-4">
                     <div class="flex items-center">
                       <input type="radio" name="hs-radio-group-1" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
-                      <label for="hs-radio-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">先生</label>
+                      <label for="hs-radio-group-1" class="ml-2 text-gray-900 whitespace-nowrap">先生</label>
                     </div>
                     
                     <div class="flex items-center">
                       <input type="radio" name="hs-radio-group-1" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                      <label for="hs-radio-vertical-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">小姐</label>
+                      <label for="hs-radio-vertical-group-2" class="ml-2 text-gray-900 whitespace-nowrap">小姐</label>
                     </div>
                   </div>
                 </div>
@@ -585,35 +585,35 @@
                 <label for="hs-leading-icon" class="block mb-2 md:text-xl">年齡<span class="pl-1 text-red-500">*</span></label>
                 
                 <!-- 選項 -->
-                <div class="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-x-4 md:gap-y-3">
+                <div class="grid grid-cols-3 gap-3 md:grid-cols-4 md:gap-x-4 md:gap-y-3">
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-2" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
-                    <label for="hs-radio-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">20歲以下</label>
+                    <label for="hs-radio-group-1" class="ml-2 text-gray-900 whitespace-nowrap">20歲以下</label>
                   </div>
                   
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-2" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                    <label for="hs-radio-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">20-29歲</label>
+                    <label for="hs-radio-group-2" class="ml-2 text-gray-900 whitespace-nowrap">20-29歲</label>
                   </div>
 
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-2" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                    <label for="hs-radio-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">30-39歲</label>
+                    <label for="hs-radio-group-2" class="ml-2 text-gray-900 whitespace-nowrap">30-39歲</label>
                   </div>
 
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-2" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                    <label for="hs-radio-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">40-49歲</label>
+                    <label for="hs-radio-group-2" class="ml-2 text-gray-900 whitespace-nowrap">40-49歲</label>
                   </div>
 
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-2" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                    <label for="hs-radio-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">50-59歲</label>
+                    <label for="hs-radio-group-2" class="ml-2 text-gray-900 whitespace-nowrap">50-59歲</label>
                   </div>
 
                   <div class="flexitems-center">
                     <input type="radio" name="hs-radio-group-2" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                    <label for="hs-radio-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">60歲以上</label>
+                    <label for="hs-radio-group-2" class="ml-2 text-gray-900 whitespace-nowrap">60歲以上</label>
                   </div>
                 </div>
               </div>
@@ -622,7 +622,7 @@
                 <label for="hs-leading-icon" class="block mb-2 md:text-xl">聯絡電話<span class="pl-1 text-red-500">*</span></label>
                 <div class="relative">
                   <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入聯絡電話">
-                  <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                  <div class="absolute inset-y-0 left-0 z-20 flex items-center pl-4 pointer-events-none">
                     <i class="fa-solid fa-phone"></i>
                   </div>
                 </div>
@@ -632,14 +632,14 @@
                 <label for="hs-leading-icon" class="block mb-2 md:text-xl">Email</label>
                 <div class="relative">
                   <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="input" placeholder="請輸入信箱">
-                  <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4 ">
+                  <div class="absolute inset-y-0 left-0 z-20 flex items-center pl-4 pointer-events-none ">
                     <i class="fa-solid fa-envelope"></i>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Right -->
-            <div class="flex flex-col gap-4 sm:gap-6 h-full">
+            <div class="flex flex-col h-full gap-4 sm:gap-6">
               <!-- 優先聯絡方式 -->
               <div>
                 <label for="hs-leading-icon" class="block mb-2 md:text-xl">優先聯絡方式</label>
@@ -648,12 +648,12 @@
                 <div class="flex gap-3 md:gap-4">
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-3" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
-                    <label for="hs-radio-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">電話</label>
+                    <label for="hs-radio-group-1" class="ml-2 text-gray-900 whitespace-nowrap">電話</label>
                   </div>
                   
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-3" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                    <label for="hs-radio-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">Email</label>
+                    <label for="hs-radio-group-2" class="ml-2 text-gray-900 whitespace-nowrap">Email</label>
                   </div>
                 </div>
               </div>
@@ -662,50 +662,50 @@
                 <label for="hs-leading-icon" class="block mb-2 md:text-xl">優先聯絡時段</label>
                 
                 <!-- 選項 -->
-                <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-x-4 md:gap-y-3">
+                <div class="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4 md:gap-x-4 md:gap-y-3">
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-4" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" checked>
-                    <label for="hs-radio-group-1" class=" text-gray-900 ml-2 whitespace-nowrap">9:00-12:00</label>
+                    <label for="hs-radio-group-1" class="ml-2 text-gray-900 whitespace-nowrap">9:00-12:00</label>
                   </div>
                   
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-4" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                    <label for="hs-radio-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">13:00-17:00</label>
+                    <label for="hs-radio-group-2" class="ml-2 text-gray-900 whitespace-nowrap">13:00-17:00</label>
                   </div>
 
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-4" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                    <label for="hs-radio-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">18:00-20:00</label>
+                    <label for="hs-radio-group-2" class="ml-2 text-gray-900 whitespace-nowrap">18:00-20:00</label>
                   </div>
 
                   <div class="flex items-center">
                     <input type="radio" name="hs-radio-group-4" class="shrink-0 mt-0.5 border-custom-beige text-custom-brown rounded-full focus:ring-custom-brown" id="hs-radio-group-2">
-                    <label for="hs-radio-group-2" class=" text-gray-900 ml-2 whitespace-nowrap">時間皆可</label>
+                    <label for="hs-radio-group-2" class="ml-2 text-gray-900 whitespace-nowrap">時間皆可</label>
                   </div>
                 </div>
               </div>
               <!-- 訊息 -->
               <div>
                 <label for="hs-leading-icon" class="block mb-2 md:text-xl">請簡述您的健康問題</label>
-                <textarea class="py-3 px-4 block w-full border-custom-beige placeholder-custom-brown/70 text-sm focus:border-custom-brown focus:ring-custom-brown " rows="9" placeholder="請輸入訊息"></textarea>
+                <textarea class="block w-full px-4 py-3 text-sm border-custom-beige placeholder-custom-brown/70 focus:border-custom-brown focus:ring-custom-brown " rows="9" placeholder="請輸入訊息"></textarea>
               </div>
             </div>
           </div>
 
           <!-- 按鈕區塊 -->
-          <div class="flex flex-col w-full md:w-fit mx-auto">
+          <div class="flex flex-col w-full mx-auto md:w-fit">
             <!-- 重填 + 送出 -->
-            <div class="inline-flex gap-4 md:gap-6 mb-5">
-              <button type="button" class="py-3 px-5 md:py-4 md:px-10 items-center text-base md:text-2xl border-2 border-custom-darkBrown text-custom-darkBrown hover:bg-custom-darkBrown hover:text-white transition-all duration-300 w-full md:w-fit" >
+            <div class="inline-flex gap-4 mb-5 md:gap-6">
+              <button type="button" class="items-center w-full px-5 py-3 text-base transition-all duration-300 border-2 md:py-4 md:px-10 md:text-2xl border-custom-darkBrown text-custom-darkBrown hover:bg-custom-darkBrown hover:text-white md:w-fit" >
                 重新填寫
               </button>
-              <button type="button" class="py-3 px-5 md:py-4 md:px-10 items-center text-base md:text-2xl border-2 border-custom-darkBrown/90 bg-custom-darkBrown/90 text-white hover:bg-custom-darkBrown hover:border-custom-darkBrown transition-all duration-300 w-full md:w-fit" data-hs-overlay="#hs-vertically-centered-modal">
+              <button type="button" class="items-center w-full px-5 py-3 text-base text-white transition-all duration-300 border-2 md:py-4 md:px-10 md:text-2xl border-custom-darkBrown/90 bg-custom-darkBrown/90 hover:bg-custom-darkBrown hover:border-custom-darkBrown md:w-fit" data-hs-overlay="#hs-vertically-centered-modal">
                 確認送出
               </button>
             </div>
             <!-- Line 聯繫按鈕 -->
-            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=151kidrx" class="text-base md:text-2xl text-white bg-custom-line px-4 py-4 md:px-6 md:py-4 w-full rounded-md hover:bg-green-900 transition-all duration-300 text-center">
-              <i class="fa-brands fa-line mr-2 md:mr-4"></i>
+            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=151kidrx" class="w-full px-4 py-4 text-base text-center text-white transition-all duration-300 rounded-md md:text-2xl bg-custom-line md:px-6 md:py-4 hover:bg-green-900">
+              <i class="mr-2 fa-brands fa-line md:mr-4"></i>
               透過 Line 聯繫
             </a>
           </div>
@@ -715,10 +715,10 @@
     <!-- 確認送出 Modal -->
     <div id="hs-vertically-centered-modal" class="hs-overlay hidden w-full h-full fixed top-0 start-0 z-[60] overflow-x-hidden overflow-y-auto pointer-events-none ">
       <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center justify-center">
-        <div class="flex flex-col bg-white border shadow-sm rounded-lg">
+        <div class="flex flex-col bg-white border rounded-lg shadow-sm">
           <div class="p-12 overflow-y-auto text-center">
-            <i class="fa-solid fa-circle-check text-5xl md:text-6xl mb-4 text-custom-line"></i>
-            <p class="text-custom-darkBrown text-lg md:text-2xl text-center">
+            <i class="mb-4 text-5xl fa-solid fa-circle-check md:text-6xl text-custom-line"></i>
+            <p class="text-lg text-center text-custom-darkBrown md:text-2xl">
               您的表單已送出！
               <br>
               我們會盡快與您聯繫
@@ -729,13 +729,13 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="bg-custom-darkBrown text-white">
+    <footer class="text-white bg-custom-darkBrown">
       <!-- Content -->
       <div class="section md:py-16">
-        <div class="grid md:grid-cols-2 items-center gap-6">
+        <div class="grid items-center gap-6 md:grid-cols-2">
           <!-- Left -->
           <div
-            class="md:h-full flex md:flex-col justify-between items-end md:items-start order-2 md:order-1"
+            class="flex items-end justify-between order-2 md:h-full md:flex-col md:items-start md:order-1"
           >
             <!-- Logo -->
             <a
@@ -745,18 +745,18 @@
               aria-label="Brand"
             >
               <div
-                class="bg-white group-hover:bg-custom-beige text-2xl md:text-4xl text-custom-darkBrown p-1 text-center rounded-sm mr-3 transition-all duration-300"
+                class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige md:text-4xl text-custom-darkBrown"
               >
-                <span class="inline-block w-7 h-6 md:w-10 md:h-8">H</span>
+                <span class="inline-block h-6 w-7 md:w-10 md:h-8">H</span>
               </div>
               <p
-                class="font-sans text-2xl md:text-4xl text-white whitespace-nowrap font-normal group-hover:text-custom-beige transition-all duration-300"
+                class="font-sans text-2xl font-normal text-white transition-all duration-300 md:text-4xl whitespace-nowrap group-hover:text-custom-beige"
               >
                 哈佛健康管理
               </p>
             </a>
             <!-- CopyRight -->
-            <p class="text-white/50 text-sm md:text-base">
+            <p class="text-sm text-white/50 md:text-base">
               © 2023 哈佛健康管理.
             </p>
           </div>
@@ -768,27 +768,27 @@
             <!-- 最新消息 -->
             <a
               href=""
-              class="text-sm md:text-xl hover:text-custom-beige transition-all"
+              class="text-sm transition-all md:text-xl hover:text-custom-beige"
             >
               最新消息
             </a>
             <!-- 衛教影音 -->
             <a
               href=""
-              class="text-sm md:text-xl hover:text-custom-beige transition-all"
+              class="text-sm transition-all md:text-xl hover:text-custom-beige"
             >
               衛教影音
             </a>
             <!-- 服務據點 -->
             <div>
-              <p class="text-sm md:text-xl mb-2">服務據點</p>
-              <ul class="border-l-2 border-white/20 pl-3 text-xs md:text-base">
-                <li class="hover:text-custom-beige transition-all mb-3">
+              <p class="mb-2 text-sm md:text-xl">服務據點</p>
+              <ul class="pl-3 text-xs border-l-2 border-white/20 md:text-base">
+                <li class="mb-3 transition-all hover:text-custom-beige">
                   <a href="../dist/大安院區.html">大安院區</a>
                 </li>
-                <li class="hover:text-custom-beige transition-all">
+                <!-- <li class="transition-all hover:text-custom-beige">
                   <a href="../dist/內湖院區.html">內湖院區</a>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -798,13 +798,13 @@
 
     <!-- To Top BTN -->
     <button
-      class="fixed right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige hover:bg-custom-brown/80 transition-all duration-600 rounded-full opacity-0 hidden z-100 shadow-md group"
+      class="fixed hidden transition-all rounded-full shadow-md opacity-0 right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige hover:bg-custom-brown/80 duration-600 z-100 group"
       id="backToTopBtn"
     >
       <div
-        class="px-4 py-3 text-sm text-custom-darkBrown group-hover:text-white transition duration-150 xs:text-base"
+        class="px-4 py-3 text-sm transition duration-150 text-custom-darkBrown group-hover:text-white xs:text-base"
       >
-        <i class="fa-solid fa-arrow-up w-4 h-4"></i>
+        <i class="w-4 h-4 fa-solid fa-arrow-up"></i>
       </div>
     </button>
 
