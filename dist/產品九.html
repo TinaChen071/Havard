@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>哈佛健康管理</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../output.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico" />
+  </head>
+  <body id="bg">
+    <!-- Navbar -->
+    <header
+      class="sticky inset-x-0 top-0 flex flex-wrap w-full py-3 text-sm duration-300 lg:justify-between lg:flex-nowrap bg-custom-darkBrown backdrop-blur-md z-100 transition-padding"
+      id="nav"
+    >
+      <nav
+        class="relative w-full px-4 mx-auto max-w-7xl md:flex md:items-center md:justify-between lg:px-36"
+        aria-label="Global"
+      >
+        <!-- Logo & 漢堡選單 -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a
+            class="flex items-center group"
+            id="logo"
+            href="../index.html"
+            aria-label="Brand"
+          >
+            <div
+              class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige text-custom-darkBrown"
+            >
+              <span class="inline-block h-6 w-7">H</span>
+            </div>
+            <p
+              class="font-sans text-2xl font-normal text-white transition-all duration-300 whitespace-nowrap group-hover:text-custom-beige"
+            >
+              哈佛健康管理
+            </p>
+          </a>
+
+          <!-- 漢堡選單 -->
+          <div class="md:hidden">
+            <button
+              type="button"
+              class="inline-flex items-center justify-center gap-2 p-2 text-sm font-medium text-gray-700 align-middle transition-all border border-white rounded-md shadow-sm hs-collapse-toggle bg-custom-darkBrown hover:bg-custom-darkBrown/50 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-white focus:ring-white/50"
+              data-hs-collapse="#navbar-collapse-with-animation"
+              aria-controls="navbar-collapse-with-animation"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                class="w-4 h-4 hs-collapse-open:hidden"
+                width="16"
+                height="16"
+                fill="white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+              <svg
+                class="hidden w-4 h-4 hs-collapse-open:block"
+                width="16"
+                height="16"
+                fill="white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 按鈕 -->
+        <div
+          id="navbar-collapse-with-animation"
+          class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow md:block"
+        >
+          <div
+            class="flex flex-col py-4 mt-5 gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7"
+          >
+            <!-- 關於我們 -->
+            <div
+              class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group"
+            >
+              <button
+                type="button"
+                class="flex items-center w-full nav__BTN group-hover:text-blue-5"
+              >
+                關於我們
+                <i class="fa-solid fa-chevron-down ml-1.5 text-xs"></i>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5"
+              >
+                <a class="nav__SubBTN" href="../dist/品牌精神.html">
+                  品牌精神
+                </a>
+
+                <a class="nav__SubBTN" href="../dist/專業團隊.html">
+                  專業團隊
+                </a>
+                <a class="nav__SubBTN" href="https://www.104.com.tw/company/1a2x6bmazq?jobsource=checkc">
+                  人才招募
+                </a>
+              </div>
+            </div>
+            <!-- 最新消息 -->
+            <a class="nav__BTN" href="../dist/最新消息.html">最新消息</a>
+            <!-- 服務據點 -->
+            <div
+              class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group"
+            >
+              <button
+                type="button"
+                class="flex items-center w-full nav__BTN group-hover:text-blue-5"
+              >
+                服務據點
+                <i class="fa-solid fa-chevron-down ml-1.5 text-xs"></i>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5"
+              >
+                <a class="nav__SubBTN" href="../dist/大安院區.html">
+                  大安院區
+                </a>
+                <!-- <a class="nav__SubBTN" href="../dist/內湖院區.html">
+                  內湖院區
+                </a> -->
+              </div>
+            </div>
+            <!-- 關係企業 -->
+            <div
+              class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] group"
+            >
+              <button
+                type="button"
+                class="flex items-center w-full nav__BTN group-hover:text-blue-5"
+              >
+                關係企業
+                <i class="fa-solid fa-chevron-down ml-1.5 text-xs"></i>
+              </button>
+
+              <div
+                class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-40 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5"
+              >
+                <a class="nav__SubBTN" href="../dist/儀器設備.html">
+                  儀器設備
+                </a>
+                <a class="nav__SubBTN" href="../dist/健康檢查.html">
+                  健康檢查
+                </a>
+                <a class="nav__SubBTN" href="../dist/保健食品.html">
+                  保健食品
+                </a>
+              </div>
+            </div>
+            <!-- 衛教影音 -->
+            <a class="nav__BTN" href="../dist/衛教影音.html">衛教影音</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section
+      class="aspect-[3/1] bg-[url('https://images.unsplash.com/photo-1618211535056-e678b388af32?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] sm:bg-fixed bg-cover bg-center bg-no-repeat"
+    ></section>
+
+    <!-- Content Section -->
+    <section class="relative section md:pt-24 md:pb-16">
+      <!-- Breadcrumbs -->
+      <ol
+        class="flex items-center text-sm whitespace-nowrap text-custom-brown md:text-xl"
+        aria-label="Breadcrumb"
+      >
+        <li class="inline-flex items-center">
+          <a
+            class="flex items-center transition-all hover:text-custom-darkBrown"
+            href="../index.html"
+          >
+            <i class="fa-solid fa-house pr-2.5"></i>
+            首頁
+          </a>
+          <svg
+            class="flex-shrink-0 w-5 h-5 mx-2"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
+          </svg>
+        </li>
+        <li
+          class="inline-flex items-center truncate cursor-default"
+          aria-current="page"
+        >
+          關係企業
+        </li>
+        <svg
+          class="flex-shrink-0 w-5 h-5 mx-2"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
+        </svg>
+        <li
+          class="inline-flex items-center truncate cursor-default"
+          aria-current="page"
+        >
+          儀器設備
+        </li>
+        <svg
+          class="flex-shrink-0 w-5 h-5 mx-2"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
+        </svg>
+        <li
+          class="inline-flex items-center truncate cursor-default text-custom-darkBrown"
+          aria-current="page"
+        >
+        水天使腸浴系統
+        </li>
+      </ol>
+
+      <!-- Title + Button -->
+      <div class="flex items-center justify-between gap-8">
+        <!-- Title -->
+        <div class="title">
+          <h2 class="pb-1 text-2xl lg:text-6xl lg:pb-4">水天使腸浴系統</h2>
+          <!-- <p class="text-sm lg:text-xl">Machine A</p> -->
+        </div>
+        <!-- 回上頁 -->
+        <a
+          href="../dist/儀器設備.html#backToSegment2"
+          id="goBackBtn"
+          class="p-4 text-sm text-white transition-all duration-300 whitespace-nowrap md:text-2xl sm:block md:p-6 bg-custom-brown hover:bg-custom-darkBrown group hover:mr-2"
+        >
+          <i
+            class="mr-1 fa-solid fa-chevron-left group-hover:text-white md:mr-4 "
+          ></i>
+          回產品介紹
+        </a>
+      </div>
+
+      <!-- 產品介紹 -->
+      <div class="grid bg-white md:grid-cols-2 text-custom-darkBrown">
+        <!-- 內容 -->
+        <div class="px-4 py-6 sm:p-10 lg:p-16">
+          <h3 class="text-2xl md:text-3xl">水天使腸浴系統</h3>
+          <hr class="my-4 border-custom-darkBrown md:my-6" />
+          <div class="flex flex-col gap-3">
+            <!-- 用途說明 -->
+            <div>
+              <h4 class="mb-2 text-base md:text-lg">用途說明</h4>
+              <p class="text-custom-brown">
+                適用於追求腸道保健、排便困難等族群。
+              </p>
+            </div>
+            <!-- 特色說明 -->
+            <div>
+              <h4 class="mb-2 text-base md:text-lg">特色說明</h4>
+              <ul class="ml-4 list-disc text-custom-brown">
+                <li>
+                  <span class="font-semibold">安全舒適:</span> 
+                  <br>治療座位符合人體工學，維持40分鐘依然舒適。
+                </li>
+                <li>
+                  <span class="font-semibold">溫控專利:</span> 
+                  <br>安全設計，超過攝氏40度會自動斷電。
+                </li>
+                <li>
+                  <span class="font-semibold">醫療許可:</span> 
+                  <br>符合台灣衛生福利部醫療器材認證。
+                </li>
+                <li>
+                  <span class="font-semibold">獨立空間:</span> 
+                  <br>高度隱私性，療程中可放鬆及放心。
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Img -->
+        <div class="h-full bg-[#F0F0F0]">
+          <img
+          src="../img/MCS+機器圖.jpg"
+          alt=""
+          class="hidden w-full object-fit md:block aspect-auto"
+        />
+        </div>
+      </div>
+
+      <!-- 關鍵字（後台編輯文字） -->
+      <div class="grid justify-around grid-cols-4 gap-4 text-custom-darkBrown md:gap-10">
+        <!-- 關鍵字 1 -->
+        <div class="keyword">
+          安全舒適
+        </div>
+        <!-- 關鍵字 2 -->
+        <div class="keyword">
+          溫控專利
+        </div>
+        <!-- 關鍵字 3 -->
+        <div class="keyword">
+          醫療許可
+        </div>
+        <!-- 關鍵字 4 -->
+        <div class="keyword">
+          獨立空間
+        </div>
+      </div>
+    </section>
+
+    <!-- 儀器詳細介紹（後台可編輯內容） -->
+    <section class="section md:py-16 bg-custom-beige/40">
+      <!-- 原理 -->
+      <div class="grid items-center gap-4 sm:grid-cols-2 sm:gap-10">
+        <!-- Content -->
+        <div class="text-custom-darkBrown">
+            <h3 class="flex items-center mb-3 md:text-2xl md:mb-6">
+                <i class="pr-4 text-xs fa-solid fa-circle md:text-xl"></i>
+                原理
+            </h3>
+            <p class="text-base leading-relaxed md:text-xl">
+              水天使腸浴系統以創新設計閥門重力壓控專利盒開放式水流量的控制，將過濾水導入客戶腸道內，讓客戶在安全、舒適、隱蔽環境下，如同自己在廁所內一樣。
+            </p>
+        </div>
+
+        <!-- Img -->
+        <div class="my-paroller aspect-video bg-no-repeat bg-center bg-cover  bg-[url('https://images.unsplash.com/photo-1582560475093-ba66accbc424?q=80&w=2520&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+        data-paroller-factor="0.3"
+        data-paroller-transition="all 0.2s ease-in">
+        </div>
+      </div>
+
+      <!-- 儀器說明 -->
+      <!-- <div class="grid items-center gap-4 sm:grid-cols-3 sm:gap-10">
+
+          <div class="grid order-2 grid-cols-2 gap-4 sm:order-1 sm:gap-10 sm:col-span-2">
+              <div class="my-paroller aspect-[4/5] bg-no-repeat bg-center bg-cover  bg-[url('https://images.unsplash.com/photo-1618015358954-344302f421a4?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+              data-paroller-factor="0.1"
+              data-paroller-transition="all 0.2s ease-in">
+              </div>
+              <div class="my-paroller mt-4 sm:mt-16 aspect-[4/5] bg-no-repeat bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1615631648086-325025c9e51e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+              data-paroller-factor="0.1"
+              data-paroller-transition="all 0.2s ease-in">
+              </div>
+          </div>
+          
+          
+          <div class="order-1 my-auto text-custom-darkBrown sm:order-2">
+              <h3 class="flex items-center mb-3 md:text-2xl md:mb-6">
+                  <i class="pr-4 text-xs fa-solid fa-circle md:text-xl"></i>
+                  儀器說明
+              </h3>
+              <p class="text-base leading-relaxed md:text-xl">
+                引進新型的生化免疫整合分析設備，以先進的設備與專業的人員提供醫生精確的數據進行診斷。
+              </p>
+          </div>
+      </div> -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-white bg-custom-darkBrown">
+      <!-- Content -->
+      <div class="section md:py-16">
+        <div class="grid items-center gap-6 md:grid-cols-2">
+          <!-- Left -->
+          <div
+            class="flex items-end justify-between order-2 md:h-full md:flex-col md:items-start md:order-1"
+          >
+            <!-- Logo -->
+            <a
+              class="flex items-center group"
+              id="logo"
+              href="../index.html"
+              aria-label="Brand"
+            >
+              <div
+                class="p-1 mr-3 text-2xl text-center transition-all duration-300 bg-white rounded-sm group-hover:bg-custom-beige md:text-4xl text-custom-darkBrown"
+              >
+                <span class="inline-block h-6 w-7 md:w-10 md:h-8">H</span>
+              </div>
+              <p
+                class="font-sans text-2xl font-normal text-white transition-all duration-300 md:text-4xl whitespace-nowrap group-hover:text-custom-beige"
+              >
+                哈佛健康管理
+              </p>
+            </a>
+            <!-- CopyRight -->
+            <p class="text-sm text-white/50 md:text-base">
+              © 2023 哈佛健康管理.
+            </p>
+          </div>
+
+          <!-- Right -->
+          <div
+            class="flex justify-between text-white border-y border-white px-1.5 py-4 md:p-10 order-1 md:order-2"
+          >
+            <!-- 最新消息 -->
+            <a
+              href=""
+              class="text-sm transition-all md:text-xl hover:text-custom-beige"
+            >
+              最新消息
+            </a>
+            <!-- 衛教影音 -->
+            <a
+              href=""
+              class="text-sm transition-all md:text-xl hover:text-custom-beige"
+            >
+              衛教影音
+            </a>
+            <!-- 服務據點 -->
+            <div>
+              <p class="mb-2 text-sm md:text-xl">服務據點</p>
+              <ul class="pl-3 text-xs border-l-2 border-white/20 md:text-base">
+                <li class="mb-3 transition-all hover:text-custom-beige">
+                  <a href="../dist/大安院區.html">大安院區</a>
+                </li>
+                <!-- <li class="transition-all hover:text-custom-beige">
+                  <a href="../dist/內湖院區.html">內湖院區</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- To Top BTN -->
+    <button
+      class="fixed hidden transition-all rounded-full shadow-md opacity-0 right-4 bottom-4 xs:right-8 xs:bottom-8 bg-custom-beige hover:bg-custom-brown/80 duration-600 z-100 group"
+      id="backToTopBtn"
+    >
+      <div
+        class="px-4 py-3 text-sm transition duration-150 text-custom-darkBrown group-hover:text-white xs:text-base"
+      >
+        <i class="w-4 h-4 fa-solid fa-arrow-up"></i>
+      </div>
+    </button>
+
+    <!-- jQuery main -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/all.js"></script>
+
+    <!-- Preline -->
+    <script src="../node_modules/preline/dist/preline.js"></script>
+    <!-- Flowbite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a8b708c9db.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Paroller -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js"></script>
+    <script>
+      $(".my-paroller").paroller();
+    </script>
+
+    <!-- Rellax -->
+    <!-- <script src="../node_modules/rellax/rellax.min.js"></script>
+   <script>
+    var rellax = new Rellax('.rellax');
+   </script> -->
+  </body>
+</html>

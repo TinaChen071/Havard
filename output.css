@@ -1593,10 +1593,6 @@ input:checked + .toggle-bg {
   margin: 0.75rem;
 }
 
-.m-6 {
-  margin: 1.5rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1778,60 +1774,12 @@ input:checked + .toggle-bg {
   aspect-ratio: 5/4;
 }
 
-.aspect-\[9\/16\] {
-  aspect-ratio: 9/16;
-}
-
-.aspect-video {
-  aspect-ratio: 16 / 9;
-}
-
-.aspect-\[5\/7\] {
-  aspect-ratio: 5/7;
-}
-
-.aspect-\[5\/6\] {
-  aspect-ratio: 5/6;
-}
-
-.aspect-\[5\/5\] {
-  aspect-ratio: 5/5;
-}
-
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
-.aspect-\[16\/16\] {
-  aspect-ratio: 16/16;
-}
-
-.aspect-\[16\/9\] {
-  aspect-ratio: 16/9;
-}
-
 .aspect-auto {
   aspect-ratio: auto;
 }
 
-.aspect-\[16\/4\] {
-  aspect-ratio: 16/4;
-}
-
-.aspect-\[16\/3\] {
-  aspect-ratio: 16/3;
-}
-
-.aspect-\[3\/3\] {
-  aspect-ratio: 3/3;
-}
-
-.aspect-\[3\/16\] {
-  aspect-ratio: 3/16;
-}
-
-.aspect-\[16\/2\] {
-  aspect-ratio: 16/2;
+.aspect-video {
+  aspect-ratio: 16 / 9;
 }
 
 .h-10 {
@@ -1858,6 +1806,10 @@ input:checked + .toggle-bg {
   height: 1.5rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .h-9 {
   height: 2.25rem;
 }
@@ -1877,26 +1829,6 @@ input:checked + .toggle-bg {
 
 .h-px {
   height: 1px;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-48 {
-  height: 12rem;
-}
-
-.h-64 {
-  height: 16rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
-.h-56 {
-  height: 14rem;
 }
 
 .min-h-\[38px\] {
@@ -1962,22 +1894,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-9\/12 {
-  width: 75%;
-}
-
-.w-3\/12 {
-  width: 25%;
-}
-
-.w-8\/12 {
-  width: 66.666667%;
-}
-
-.w-4\/12 {
-  width: 33.333333%;
 }
 
 .min-w-\[14rem\] {
@@ -2375,6 +2291,11 @@ input:checked + .toggle-bg {
   border-color: rgb(255 255 255 / 0.2);
 }
 
+.bg-\[\#F0F0F0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
+}
+
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(164 202 254 / var(--tw-bg-opacity));
@@ -2456,37 +2377,12 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-stone-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 249 / var(--tw-bg-opacity));
-}
-
-.bg-stone-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
-}
-
-.bg-stone-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#F0F0F0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.bg-\[url\(\'\.\.\/img\/MCS\+\6A5F\5668\5716\.jpg\'\)\] {
+  background-image: url('../img/MCS+機器圖.jpg');
 }
 
 .bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1511174511562-5f7f18b874f8\?q\=80\&w\=2670\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
@@ -2529,6 +2425,10 @@ input:checked + .toggle-bg {
   background-image: url('https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1658439615734-446c226e2602\?q\=80\&w\=2500\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1658439615734-446c226e2602?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
 .bg-\[url\(\'img\/\5433\555F\8AA0\91AB\5E2B\7167\.jpg\'\)\] {
   background-image: url('img/吳啟誠醫師照.jpg');
 }
@@ -2567,50 +2467,6 @@ input:checked + .toggle-bg {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
-  background-image: url('/img/hero-pattern.svg');
-}
-
-.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1658439615734-446c226e2602\?q\=80\&w\=2500\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
-  background-image: url('https://images.unsplash.com/photo-1658439615734-446c226e2602?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-.bg-\[url\(https\:\/\/images\.unsplash\.com\/photo-1658439615734-446c226e2602\?q\=80\&w\=2500\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\)\] {
-  background-image: url(https://images.unsplash.com/photo-1658439615734-446c226e2602?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-}
-
-.bg-\[url\(\'\/\'\)\] {
-  background-image: url('/');
-}
-
-.bg-\[url\(\'\/im\'\)\] {
-  background-image: url('/im');
-}
-
-.bg-\[url\(\'\/img\'\)\] {
-  background-image: url('/img');
-}
-
-.bg-\[url\(\'\/img\/\'\)\] {
-  background-image: url('/img/');
-}
-
-.bg-\[url\(\'\.\/img\/\'\)\] {
-  background-image: url('./img/');
-}
-
-.bg-\[url\(\'\.\.\/img\/\'\)\] {
-  background-image: url('../img/');
-}
-
-.bg-\[url\(\'\.\.\/img\/MCS\+\6A5F\5668\5716\'\)\] {
-  background-image: url('../img/MCS+機器圖');
-}
-
-.bg-\[url\(\'\.\.\/img\/MCS\+\6A5F\5668\5716\.jpg\'\)\] {
-  background-image: url('../img/MCS+機器圖.jpg');
 }
 
 .from-transparent {
@@ -2676,10 +2532,6 @@ input:checked + .toggle-bg {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-60 {
-  padding: 15rem;
 }
 
 .px-1 {
@@ -4058,17 +3910,17 @@ html {
     width: 2.5rem;
   }
 
-  .md\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
   .md\:w-4\/12 {
     width: 33.333333%;
   }
 
   .md\:w-8\/12 {
     width: 66.666667%;
+  }
+
+  .md\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .md\:max-w-7xl {
@@ -4085,10 +3937,6 @@ html {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:flex-row {
