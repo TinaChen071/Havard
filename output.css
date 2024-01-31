@@ -2468,6 +2468,10 @@ input:checked + .toggle-bg {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/img\/MCS\+\6A5F\5668\5716\.jpg\'\)\] {
+  background-image: url('./img/MCS+機器圖.jpg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
