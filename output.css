@@ -1213,6 +1213,7 @@ input:checked + .toggle-bg {
 
 @media (min-width: 640px) {
   .section {
+    gap: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -1220,7 +1221,8 @@ input:checked + .toggle-bg {
 
 @media (min-width: 768px) {
   .section {
-    gap: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
@@ -1228,6 +1230,7 @@ input:checked + .toggle-bg {
 
 @media (min-width: 1024px) {
   .section {
+    gap: 4rem;
     padding-left: 9rem;
     padding-right: 9rem;
   }
@@ -2074,10 +2077,6 @@ input:checked + .toggle-bg {
   justify-content: space-around;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
@@ -2612,11 +2611,6 @@ input:checked + .toggle-bg {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pb-1 {
@@ -3798,11 +3792,6 @@ html {
     padding: 2.5rem;
   }
 
-  .sm\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
   .sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -3900,6 +3889,10 @@ html {
 
   .md\:h-8 {
     height: 2rem;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:h-full {
@@ -4172,10 +4165,6 @@ html {
 
   .lg\:justify-between {
     justify-content: space-between;
-  }
-
-  .lg\:gap-24 {
-    gap: 6rem;
   }
 
   .lg\:p-16 {
